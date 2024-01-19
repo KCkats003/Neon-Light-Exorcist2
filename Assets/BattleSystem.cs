@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public enum BattleState { START, PLAYERTURN, ENEMYTURN, WON, LOST }
@@ -21,6 +22,8 @@ public class BattleSystem : MonoBehaviour
     public BattleHUD enemyHUD;
 
     public BattleState state;
+
+    public string SampleScene;
 
     // Start is called before the first frame update
     void Start()
@@ -107,9 +110,13 @@ public class BattleSystem : MonoBehaviour
         if(state == BattleState.WON)
         {
             //Load the sample scene without this enemy
+            print("Switching scene to " + SampleScene);
+            SceneManager.LoadScene(SampleScene, LoadSceneMode.Single);
         } else if (state == BattleState.LOST)
         {
             //Whatever happens when you lose
+            print("Switching scene to " + SampleScene);
+            SceneManager.LoadScene(SampleScene, LoadSceneMode.Single);
         }
     }
 

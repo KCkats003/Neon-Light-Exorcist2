@@ -14,10 +14,10 @@ OcclusionCullingSettings:
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
-  m_Fog: 0
-  m_FogColor: {r: 0.6691416, g: 0.6553044, b: 0.6981132, a: 1}
+  m_Fog: 1
+  m_FogColor: {r: 0.3090149, g: 0.17292629, b: 0.5471698, a: 1}
   m_FogMode: 3
-  m_FogDensity: 0.028
+  m_FogDensity: 0.03
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
   m_AmbientSkyColor: {r: 0.039344095, g: 0.01201495, b: 0.16981131, a: 1}
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748171, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1129,6 +1129,7 @@ MonoBehaviour:
   playerHUD: {fileID: 1901947084}
   enemyHUD: {fileID: 1059453583}
   state: 0
+  SampleScene: SampleScene
 --- !u!4 &895650135
 Transform:
   m_ObjectHideFlags: 0
