@@ -19,6 +19,8 @@ public class PlayerController : MonoBehaviour
     private void Start()
     {
         rb = gameObject.GetComponent<Rigidbody>();
+        //BGMusic
+       // FindObjectOfType<AudioManager>().PlaySound("BGMusic");
     }
 
     void Update()
