@@ -9,6 +9,9 @@ public class PlayerController : MonoBehaviour
     public float groundDist;
     private bool canMove = true;  // New variable to control movement
 
+    public GameObject animation_1;
+    public GameObject Static;
+
     public LayerMask terrainLayer;
     public Rigidbody rb;
     public SpriteRenderer sr;
@@ -44,13 +47,38 @@ public class PlayerController : MonoBehaviour
             Vector3 movement = new Vector3(x, 0, y);
             rb.velocity = movement * moveSpeed;
 
+
+            if (Input.GetKey(KeyCode.LeftArrow))
+            {
+                print("left arrow key is held down");
+                sr.enabled = false;
+                animation_1.SetActive(true);
+            }
+
+            else if (Input.GetKey(KeyCode.RightArrow))
+            {
+                print("right arrow key is held down");
+                sr.enabled = false;
+                animation_1.SetActive(true);
+            }
+            else {
+                sr.enabled = true;
+                animation_1.SetActive(false);
+            }
+            SpriteRenderer anim_sr = animation_1.GetComponent<SpriteRenderer>();
+
             if (x != 0 && x < 0)
             {
                 sr.flipX = false;
+                anim_sr.flipX = true;
+                //sr.enabled = false;
             } 
             else if (x != 0 && x > 0)
             {
                 sr.flipX = true;
+
+                anim_sr.flipX = false;
+                // sr.enabled = false;
             }
         }
         else
