@@ -701,7 +701,7 @@ GameObject:
   - component: {fileID: 113443318}
   - component: {fileID: 113443319}
   m_Layer: 0
-  m_Name: Enemy2
+  m_Name: Enemy1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -716,12 +716,12 @@ Transform:
   m_GameObject: {fileID: 113443317}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -342, y: -5.9960713, z: -161.56}
-  m_LocalScale: {x: 1.6182742, y: 1.6182742, z: 2.2655838}
+  m_LocalPosition: {x: 0.87999725, y: 0.21054995, z: 5.92}
+  m_LocalScale: {x: 0.22655839, y: 0.22655839, z: 0.22655837}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1743994465}
-  m_Father: {fileID: 490692814}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &113443319
 SpriteRenderer:
@@ -2687,7 +2687,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -6.6307983}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &365541510
@@ -3294,7 +3294,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1507912381}
-  - {fileID: 113443318}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &492121619
@@ -5966,6 +5965,50 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 879719848}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &905540947
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 905540949}
+  - component: {fileID: 905540948}
+  m_Layer: 0
+  m_Name: GameController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &905540948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 905540947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e13c509abd877874d91ed3c24fac52c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &905540949
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 905540947}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.45, y: 3.5, z: -19.39}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &932267990
 GameObject:
   m_ObjectHideFlags: 0
@@ -9757,10 +9800,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1897.75, y: 1440}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -9869,19 +9912,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    dialogueLines:
-    - character:
-        name: Bob
-        icon: {fileID: 21300000, guid: 1f6593c8d8062074c8c829a91aca4f6b, type: 3}
-        iconRight: {fileID: 0}
-        useIconRight: 0
-      line: this is my moonlight
-    - character:
-        name: Girl
-        icon: {fileID: 21300000, guid: a5137b5997572f641856a1c7adf08e78, type: 3}
-        iconRight: {fileID: 10917, guid: 0000000000000000f000000000000000, type: 0}
-        useIconRight: 0
-      line: sunshine
+    battleScene: 
+    dialogueLines: []
 --- !u!1 &1488037750
 GameObject:
   m_ObjectHideFlags: 0
@@ -10210,64 +10242,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
+    battleScene: 
     dialogueLines:
     - character:
-        name: Exorcist
-        icon: {fileID: 21300000, guid: e4842c51f4fcbbe41aadf977e37f26bb, type: 3}
-        iconRight: {fileID: 21300000, guid: 0af9d46c019f07e4793196fd56ccdeb7, type: 3}
-        useIconRight: 1
-      line: Doctor!
-    - character:
-        name: Dr Dire
+        name: Dr. Dire
         icon: {fileID: 21300000, guid: 366369a1703c12b40a5bb56205ed9582, type: 3}
         iconRight: {fileID: 21300000, guid: 00c492f0950dc5f4d857279069b1a67b, type: 3}
         useIconRight: 1
-      line: Back so soon? Did you hit your head and forgot how to walk again? Try
-        pressing the arrow key to walk around.
+      line: Hello
     - character:
-        name: Exorcist
+        name: Exrocist
         icon: {fileID: 21300000, guid: e4842c51f4fcbbe41aadf977e37f26bb, type: 3}
         iconRight: {fileID: 21300000, guid: 0af9d46c019f07e4793196fd56ccdeb7, type: 3}
         useIconRight: 1
-      line: 'Uh. I already know how to do that! '
+      line: Hey
     - character:
-        name: Exorcist
-        icon: {fileID: 21300000, guid: e4842c51f4fcbbe41aadf977e37f26bb, type: 3}
-        iconRight: {fileID: 21300000, guid: 0af9d46c019f07e4793196fd56ccdeb7, type: 3}
-        useIconRight: 1
-      line: I was trying to tell you I'm sensing at least one evil spirit nearby!
-    - character:
-        name: Dr Dire
+        name: Dr. Dire
         icon: {fileID: 21300000, guid: 366369a1703c12b40a5bb56205ed9582, type: 3}
         iconRight: {fileID: 21300000, guid: 00c492f0950dc5f4d857279069b1a67b, type: 3}
         useIconRight: 1
-      line: 'No need to warn me. When it comes towards ghosts...I already know. '
-    - character:
-        name: Dr.Dire
-        icon: {fileID: 21300000, guid: 366369a1703c12b40a5bb56205ed9582, type: 3}
-        iconRight: {fileID: 21300000, guid: 00c492f0950dc5f4d857279069b1a67b, type: 3}
-        useIconRight: 1
-      line: ' Don''t walk too close to the nastly looking spirits! Corrupted spirit
-        will see that as a challenge! Take care and watch out. '
-    - character:
-        name: Exorcist
-        icon: {fileID: 21300000, guid: e4842c51f4fcbbe41aadf977e37f26bb, type: 3}
-        iconRight: {fileID: 21300000, guid: 0af9d46c019f07e4793196fd56ccdeb7, type: 3}
-        useIconRight: 1
-      line: I need to watch out for ghosts? It's the unfriendly ghosts that need
-        to watch out for me!
-    - character:
-        name: Exorcist
-        icon: {fileID: 21300000, guid: e4842c51f4fcbbe41aadf977e37f26bb, type: 3}
-        iconRight: {fileID: 21300000, guid: 0af9d46c019f07e4793196fd56ccdeb7, type: 3}
-        useIconRight: 1
-      line: Fighting unrestful spirits is simply my duty! I was born ready!
-    - character:
-        name: Dr.Dire
-        icon: {fileID: 21300000, guid: 366369a1703c12b40a5bb56205ed9582, type: 3}
-        iconRight: {fileID: 21300000, guid: 00c492f0950dc5f4d857279069b1a67b, type: 3}
-        useIconRight: 1
-      line: Hmmm as you wish...
+      line: Bye
 --- !u!65 &1507912378
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12288,7 +12282,7 @@ GameObject:
   - component: {fileID: 1743994464}
   - component: {fileID: 1743994463}
   - component: {fileID: 1743994462}
-  - component: {fileID: 1743994461}
+  - component: {fileID: 1743994466}
   m_Layer: 0
   m_Name: combatCube
   m_TagString: Untagged
@@ -12296,19 +12290,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1743994461
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1743994459}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d35d41818de5e69448596a7f13079e49, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  battleScene: battleScene
 --- !u!65 &1743994462
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12395,6 +12376,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 113443318}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1743994466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1743994459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 692e1c467c59b134891f448fb52d807d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    battleScene: battleScene
+    dialogueLines:
+    - character:
+        name: death
+        icon: {fileID: 21300000, guid: 4e74ab663124d1544ba7723bc0f5a697, type: 3}
+        iconRight: {fileID: 0}
+        useIconRight: 0
+      line: die
 --- !u!1 &1745261765
 GameObject:
   m_ObjectHideFlags: 0
@@ -15311,6 +15313,7 @@ Transform:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 905540949}
   - {fileID: 705507995}
   - {fileID: 1464442459}
   - {fileID: 1188627684}
@@ -15375,6 +15378,7 @@ SceneRoots:
   - {fileID: 710640190}
   - {fileID: 389406307}
   - {fileID: 963460573}
+  - {fileID: 113443318}
   - {fileID: 490692814}
   - {fileID: 1505975593}
   - {fileID: 1552845764}

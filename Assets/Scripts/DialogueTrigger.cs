@@ -16,11 +16,13 @@ public class DialogueLine
     public DialogueCharacter character;
     [TextArea(3, 10)]
     public string line;
+
 }
 
 [System.Serializable]
 public class Dialogue
 {
+    public string battleScene;
     public List<DialogueLine> dialogueLines = new List<DialogueLine>();
 }
 
@@ -30,6 +32,7 @@ public class DialogueTrigger : MonoBehaviour
 
     public void TriggerDialogue()
     {
+        DialogueManager.Instance.SetBattleSceneToLoad(dialogue.battleScene);
         DialogueManager.Instance.StartDialogue(dialogue);
     }
 

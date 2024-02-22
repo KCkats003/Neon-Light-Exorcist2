@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
 using TMPro;
+using System;
+using UnityEngine.SceneManagement;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -15,11 +17,15 @@ public class DialogueManager : MonoBehaviour
     public TextMeshProUGUI characterName;
     public TextMeshProUGUI dialogueArea;
 
+    private string battleSceneToLoad;
+
     private Queue<DialogueLine> lines;
 
     public bool isDialogueActive = false;
 
     public float typingSpeed = 0.2f;
+
+    public Action OnDialogueFinished { get; internal set; }
 
     private void Awake()
     {
@@ -54,7 +60,6 @@ public class DialogueManager : MonoBehaviour
             }
         }
 
-
         DisplayNextDialogueLine();
     }
 
@@ -73,7 +78,7 @@ public class DialogueManager : MonoBehaviour
         if (currentLine.character.useIconRight && currentLine.character.iconRight != null)
         {
             characterIconRight.sprite = currentLine.character.iconRight;
-            characterIconRight.gameObject.SetActive(true); 
+            characterIconRight.gameObject.SetActive(true);
         }
         else
         {
@@ -114,7 +119,16 @@ public class DialogueManager : MonoBehaviour
             }
         }
 
+        if (!string.IsNullOrEmpty(battleSceneToLoad))
+        {
+            SceneManager.LoadScene(battleSceneToLoad, LoadSceneMode.Single);
+        }
 
+    }
+
+    public void SetBattleSceneToLoad(string sceneName)
+    {
+        battleSceneToLoad = sceneName;
     }
 
     void ShowDialogueUI()
@@ -140,3 +154,4 @@ public class DialogueManager : MonoBehaviour
         btn.gameObject.SetActive(false);
     }
 }
+

@@ -3,13 +3,15 @@ using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using UnityEngine;
 
+
 public class combatTransition : MonoBehaviour
 {
+
     public string battleScene;
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider collision)
     {
-        if (other.tag == "Player")
+        if (collision.tag == "Player")
         {
             print("Switching scene to " + battleScene);
             SceneManager.LoadScene(battleScene, LoadSceneMode.Single);
