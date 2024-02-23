@@ -6,20 +6,21 @@ using TMPro;
 
 public class BattleHUD : MonoBehaviour
 {
+    public TextMeshProUGUI nameText;
+    public Slider hpSlider;
 
-	public TextMeshProUGUI nameText;
-	public Slider hpSlider;
+    public void SetHUD(Unit unit)
+    {
+        nameText.text = unit.unitName;
+        hpSlider.maxValue = unit.maxHP;
 
-	public void SetHUD(Unit unit)
-	{
-		nameText.text = unit.unitName;
-		hpSlider.maxValue = unit.maxHP;
-		hpSlider.value = unit.currentHP;
-	}
+        // Get the current health from the unit
+        int currentHP = unit.currentHP;
+        hpSlider.value = currentHP;
+    }
 
-	public void SetHP(int hp)
-	{
-		hpSlider.value = hp;
-	}
-
+    public void SetHP(int hp)
+    {
+        hpSlider.value = hp;
+    }
 }

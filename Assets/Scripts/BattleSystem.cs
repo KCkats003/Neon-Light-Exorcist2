@@ -10,9 +10,17 @@ public class BattleSystem : MonoBehaviour
 {
 
     public GameObject playerPrefab;
+    public GameObject ghostOne;
+    public GameObject ghostTwo;
+    public GameObject ghostThree;
+    public GameObject ghostFour;
     public GameObject enemyPrefab;
 
     public Transform playerBattleStation;
+    public Transform GhostOneStation;
+    public Transform GhostTwoStation;
+    public Transform GhostThreeStation;
+    public Transform GhostFourStation;
     public Transform enemyBattleStation;
 
     Unit playerUnit;
@@ -98,26 +106,32 @@ public class BattleSystem : MonoBehaviour
         {
             state = BattleState.LOST;
             EndBattle();
-        } else
+        }
+        else
         {
-            state= BattleState.PLAYERTURN;
+            state = BattleState.PLAYERTURN;
             PlayerTurn();
         }
     }
 
     void EndBattle()
     {
-        if(state == BattleState.WON)
+        if (state == BattleState.WON)
         {
             //Load the sample scene without this enemy
             print("Switching scene to " + SampleScene);
             SceneManager.LoadScene(SampleScene, LoadSceneMode.Single);
-        } else if (state == BattleState.LOST)
+        }
+        else if (state == BattleState.LOST)
         {
             //Whatever happens when you lose
             print("Switching scene to " + SampleScene);
             SceneManager.LoadScene(SampleScene, LoadSceneMode.Single);
         }
+
+        // Store player's health in GameManager
+        if (Unit.playerMaxHP != 0)
+            GameManager.playerHealth = playerUnit.currentHP;
     }
 
     void PlayerTurn()

@@ -1171,7 +1171,7 @@ MonoBehaviour:
   ghostTwo: {fileID: 0}
   ghostThree: {fileID: 0}
   ghostFour: {fileID: 0}
-  enemyPrefab: {fileID: 1256800142237496660, guid: e94ba1137707ae94d847379ca8bc23e5, type: 3}
+  enemyPrefab: {fileID: 8111093670720263626, guid: 94c1992938ddbdf4ab708349dfd26890, type: 3}
   playerBattleStation: {fileID: 657824490}
   GhostOneStation: {fileID: 0}
   GhostTwoStation: {fileID: 0}

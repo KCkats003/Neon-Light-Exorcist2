@@ -40,4 +40,5 @@ public class TypeChart
       /* BLUE */   new float[] { 2f, 1f, 0.5f},
       /* GREEN */  new float[] { 0.5f, 2f, 1f},
     };
+
 }

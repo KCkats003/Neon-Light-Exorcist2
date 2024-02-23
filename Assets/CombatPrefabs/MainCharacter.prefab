@@ -41,10 +41,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4701305968425426998}
-  - component: {fileID: 2354282679342543614}
+  - component: {fileID: 461548435134139154}
   m_Layer: 0
   m_Name: MainCharacter
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -69,7 +69,7 @@ Transform:
   - {fileID: 824874170025174767}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2354282679342543614
+--- !u!114 &461548435134139154
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -84,7 +84,7 @@ MonoBehaviour:
   unitName: Exrocist
   damage: 5
   maxHP: 50
-  currentHP: 45
+  currentHP: 50
 --- !u!1 &2394697663521653399
 GameObject:
   m_ObjectHideFlags: 0
