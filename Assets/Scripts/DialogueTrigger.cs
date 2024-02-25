@@ -16,7 +16,6 @@ public class DialogueLine
     public DialogueCharacter character;
     [TextArea(3, 10)]
     public string line;
-
 }
 
 [System.Serializable]
@@ -30,17 +29,30 @@ public class DialogueTrigger : MonoBehaviour
 {
     public Dialogue dialogue;
 
-    public void TriggerDialogue()
+    private void OnTriggerEnter(Collider collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            // Save player's position before triggering dialogue
+            SavePlayerPosition();
+
+            // Trigger dialogue
+            TriggerDialogue();
+        }
+    }
+
+    private void SavePlayerPosition()
+    {
+        // Save player's position using PlayerPrefs or other persistent storage
+        PlayerPrefs.SetFloat("PlayerPosX", transform.position.x);
+        PlayerPrefs.SetFloat("PlayerPosY", transform.position.y);
+        PlayerPrefs.SetFloat("PlayerPosZ", transform.position.z);
+        PlayerPrefs.Save();
+    }
+
+    private void TriggerDialogue()
     {
         DialogueManager.Instance.SetBattleSceneToLoad(dialogue.battleScene);
         DialogueManager.Instance.StartDialogue(dialogue);
-    }
-
-    private void OnTriggerEnter(Collider collision)
-    {
-        if (collision.tag == "Player")
-        {
-            TriggerDialogue();
-        }
     }
 }

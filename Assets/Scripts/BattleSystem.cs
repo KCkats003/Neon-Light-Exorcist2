@@ -33,6 +33,12 @@ public class BattleSystem : MonoBehaviour
 
     public string SampleScene;
 
+
+
+
+    //send them back to where they came from coordinates
+    private Vector3 playerSpawnPosition;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -42,6 +48,10 @@ public class BattleSystem : MonoBehaviour
 
     IEnumerator SetupBattle()
     {
+
+        playerSpawnPosition = playerBattleStation.position;
+
+
         GameObject playerGO = Instantiate(playerPrefab, playerBattleStation);
         playerUnit = playerGO.GetComponent<Unit>();
 
@@ -120,7 +130,21 @@ public class BattleSystem : MonoBehaviour
         {
             //Load the sample scene without this enemy
             print("Switching scene to " + SampleScene);
+
+            // Debug log to check if player's spawn position is saved correctly
+            Debug.Log("Player spawn position saved: " + playerSpawnPosition);
+
+            // Load the sample scene without this enemy
+            Debug.Log("Switching scene to " + SampleScene);
+
+            // Save player's spawn position before loading sample scene
+            PlayerPrefs.SetFloat("PlayerSpawnPosX", playerSpawnPosition.x);
+            PlayerPrefs.SetFloat("PlayerSpawnPosY", playerSpawnPosition.y);
+            PlayerPrefs.SetFloat("PlayerSpawnPosZ", playerSpawnPosition.z);
+            PlayerPrefs.Save();
+
             SceneManager.LoadScene(SampleScene, LoadSceneMode.Single);
+
         }
         else if (state == BattleState.LOST)
         {

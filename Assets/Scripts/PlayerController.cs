@@ -54,32 +54,32 @@ public class PlayerController : MonoBehaviour
             {
                 print("left arrow key is held down");
                 sr.enabled = false;
-                animation_1.SetActive(true);
+                //animation_1.SetActive(true);
             }
 
             else if (Input.GetKey(KeyCode.RightArrow))
             {
                 print("right arrow key is held down");
                 sr.enabled = false;
-                animation_1.SetActive(true);
+                //animation_1.SetActive(true);
             }
             else {
                 sr.enabled = true;
-                animation_1.SetActive(false);
+                //animation_1.SetActive(false);
             }
-            SpriteRenderer anim_sr = animation_1.GetComponent<SpriteRenderer>();
+            //SpriteRenderer anim_sr = animation_1.GetComponent<SpriteRenderer>();
 
             if (x != 0 && x < 0)
             {
                 sr.flipX = false;
-                anim_sr.flipX = true;
+                //anim_sr.flipX = true;
                 //sr.enabled = false;
             } 
             else if (x != 0 && x > 0)
             {
                 sr.flipX = true;
 
-                anim_sr.flipX = false;
+                //anim_sr.flipX = false;
                 // sr.enabled = false;
             }
         }

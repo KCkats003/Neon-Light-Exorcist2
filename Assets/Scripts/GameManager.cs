@@ -13,6 +13,6 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        Debug.Log("Player Health: " + playerHealth);
+      Debug.Log("Player Health: " + playerHealth);
     }
 }
