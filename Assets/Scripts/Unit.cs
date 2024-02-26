@@ -24,19 +24,16 @@ public class Unit : MonoBehaviour
         {
             playerMaxHP = maxHP;
 
-            // Check if player's health has been initialized
             if (!healthInitialized)
             {
-                // Set player's health to 50 at the start of the game
+
                 currentHP = 50;
                 GameManager.playerHealth = currentHP;
 
-                // Set the flag to true to indicate that health has been initialized
                 healthInitialized = true;
             }
             else
             {
-                // Player's health has already been initialized, load from PlayerPrefs
                 currentHP = PlayerPrefs.GetInt("PlayerHealth", maxHP);
                 GameManager.playerHealth = currentHP;
             }
@@ -51,14 +48,12 @@ public class Unit : MonoBehaviour
 
             if (currentHP <= 0)
             {
-                // Save player health to PlayerPrefs
                 PlayerPrefs.SetInt("PlayerHealth", maxHP);
                 PlayerPrefs.Save();
                 return true;
             }
             else
             {
-                // Save player health to PlayerPrefs
                 PlayerPrefs.SetInt("PlayerHealth", currentHP);
                 PlayerPrefs.Save();
                 return false;
@@ -66,11 +61,9 @@ public class Unit : MonoBehaviour
         }
         else
         {
-            // Handle damage for enemies or other units
             currentHP -= dmg;
             if (currentHP <= 0)
             {
-                // Handle enemy defeat or unit destruction
             }
             return currentHP <= 0;
         }
@@ -83,7 +76,6 @@ public class Unit : MonoBehaviour
         if (currentHP > maxHP)
             currentHP = maxHP;
 
-        // Save player health to PlayerPrefs
         PlayerPrefs.SetInt("PlayerHealth", currentHP);
         PlayerPrefs.Save();
     }

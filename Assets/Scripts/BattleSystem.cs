@@ -128,20 +128,6 @@ public class BattleSystem : MonoBehaviour
     {
         if (state == BattleState.WON)
         {
-            //Load the sample scene without this enemy
-            print("Switching scene to " + SampleScene);
-
-            // Debug log to check if player's spawn position is saved correctly
-            Debug.Log("Player spawn position saved: " + playerSpawnPosition);
-
-            // Load the sample scene without this enemy
-            Debug.Log("Switching scene to " + SampleScene);
-
-            // Save player's spawn position before loading sample scene
-            PlayerPrefs.SetFloat("PlayerSpawnPosX", playerSpawnPosition.x);
-            PlayerPrefs.SetFloat("PlayerSpawnPosY", playerSpawnPosition.y);
-            PlayerPrefs.SetFloat("PlayerSpawnPosZ", playerSpawnPosition.z);
-            PlayerPrefs.Save();
 
             SceneManager.LoadScene(SampleScene, LoadSceneMode.Single);
 

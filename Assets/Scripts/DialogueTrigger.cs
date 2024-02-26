@@ -28,27 +28,34 @@ public class Dialogue
 public class DialogueTrigger : MonoBehaviour
 {
     public Dialogue dialogue;
+    private bool inRange = false;
+
+
+    private void Update()
+    {
+        if (inRange && Input.GetKeyUp(KeyCode.Space))
+        {
+            TriggerDialogue();
+        }
+    }
 
     private void OnTriggerEnter(Collider collision)
     {
         if (collision.CompareTag("Player"))
         {
-            // Save player's position before triggering dialogue
-            SavePlayerPosition();
 
-            // Trigger dialogue
-            TriggerDialogue();
+            inRange = true;
         }
     }
 
-    private void SavePlayerPosition()
+    private void OnTriggerExit(Collider collision)
     {
-        // Save player's position using PlayerPrefs or other persistent storage
-        PlayerPrefs.SetFloat("PlayerPosX", transform.position.x);
-        PlayerPrefs.SetFloat("PlayerPosY", transform.position.y);
-        PlayerPrefs.SetFloat("PlayerPosZ", transform.position.z);
-        PlayerPrefs.Save();
+        if (collision.CompareTag("Player"))
+        {
+            inRange = false;
+        }
     }
+
 
     private void TriggerDialogue()
     {
