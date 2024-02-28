@@ -20,7 +20,13 @@ public class PlayerController : MonoBehaviour
     {
         rb = gameObject.GetComponent<Rigidbody>();
         //BGMusic
-       // FindObjectOfType<AudioManager>().PlaySound("BGMusic");
+        // FindObjectOfType<AudioManager>().PlaySound("BGMusic");
+
+        // Retrieve playerStartPosition from GameManager
+        Vector3 playerStartPosition = GameManager.playerStartPosition;
+
+        // Set player's position to playerStartPosition
+        transform.position = playerStartPosition;
     }
 
     void Update()
@@ -96,5 +102,4 @@ public class PlayerController : MonoBehaviour
         canMove = move;
     }
 
-    // Triggered when the player collides with another collider
 }

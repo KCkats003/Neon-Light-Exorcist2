@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    public static Vector3 playerStartPosition;
     public static int playerHealth = 50;
+
 
     void Awake()
     {
@@ -13,6 +15,6 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-      Debug.Log("Player Health: " + playerHealth);
+      //Debug.Log("Player Health: " + playerHealth);
     }
 }

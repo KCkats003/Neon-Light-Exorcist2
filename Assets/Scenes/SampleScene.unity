@@ -938,6 +938,124 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &133028041
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 133028042}
+  - component: {fileID: 133028046}
+  - component: {fileID: 133028045}
+  - component: {fileID: 133028044}
+  - component: {fileID: 133028043}
+  m_Layer: 0
+  m_Name: vendingMachine
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &133028042
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 133028041}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.12, y: 0.31, z: 0.29}
+  m_LocalScale: {x: 1.0834833, y: 1.9801893, z: 0.78871}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2061387763}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &133028043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 133028041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb7d5bdc67f8e174ba41841c53780de7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &133028044
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 133028041}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.8468595, y: 0.99999696, z: 1.7510601}
+  m_Center: {x: -0.040694837, y: 0, z: -0.37552923}
+--- !u!23 &133028045
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 133028041}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &133028046
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 133028041}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &151903672
 GameObject:
   m_ObjectHideFlags: 0
@@ -5255,7 +5373,6 @@ GameObject:
   - component: {fileID: 829948095}
   - component: {fileID: 829948094}
   - component: {fileID: 829948092}
-  - component: {fileID: 829948096}
   - component: {fileID: 829948097}
   m_Layer: 0
   m_Name: Enemy2
@@ -5283,8 +5400,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2.78582, y: 3.2049885, z: 1}
-  m_Center: {x: -0.064641, y: 0.37043858, z: 0}
+  m_Size: {x: 3.8310592, y: 3.2049885, z: 2.2853293}
+  m_Center: {x: -0.14394128, y: 0.37043858, z: -0.6426647}
 --- !u!33 &829948094
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -5309,19 +5426,6 @@ Transform:
   - {fileID: 2049916451}
   m_Father: {fileID: 279069169}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &829948096
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 829948091}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d35d41818de5e69448596a7f13079e49, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  battleScene: battleScene2
 --- !u!114 &829948097
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12460,8 +12564,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 8.580027, y: 9.5188265, z: 1}
-  m_Center: {x: 0.8224949, y: 5.904881, z: 0}
+  m_Size: {x: 12.676252, y: 9.518827, z: 7.517447}
+  m_Center: {x: 0.48280874, y: 5.904881, z: -1.2227877}
 --- !u!23 &1743994463
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14973,6 +15077,38 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3781738264603414942, guid: 4d3a562a88b42314ea4cd863d8bd1b2d, type: 3}
   m_PrefabInstance: {fileID: 1842717483}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2061387762
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2061387763}
+  m_Layer: 0
+  m_Name: vendingMachine
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2061387763
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2061387762}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 42.31407, y: 0.614728, z: 26.546494}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 133028042}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &2063959458 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7298127058010635275, guid: f04c63d75e4031640b75086046fc9a34, type: 3}
@@ -15610,3 +15746,4 @@ SceneRoots:
   - {fileID: 490692814}
   - {fileID: 357387645}
   - {fileID: 1141058299}
+  - {fileID: 2061387763}

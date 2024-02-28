@@ -33,12 +33,6 @@ public class BattleSystem : MonoBehaviour
 
     public string SampleScene;
 
-
-
-
-    //send them back to where they came from coordinates
-    private Vector3 playerSpawnPosition;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -48,9 +42,6 @@ public class BattleSystem : MonoBehaviour
 
     IEnumerator SetupBattle()
     {
-
-        playerSpawnPosition = playerBattleStation.position;
-
 
         GameObject playerGO = Instantiate(playerPrefab, playerBattleStation);
         playerUnit = playerGO.GetComponent<Unit>();
@@ -83,7 +74,7 @@ public class BattleSystem : MonoBehaviour
             state = BattleState.ENEMYTURN;
             enemyHUD.SetHP(enemyUnit.currentHP);
 
-            yield return new WaitForSeconds(2f);
+            yield return new WaitForSeconds(1f);
             StartCoroutine(EnemyTurn());
         }
 
@@ -97,7 +88,7 @@ public class BattleSystem : MonoBehaviour
 
         playerHUD.SetHP(playerUnit.currentHP);
 
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(1f);
 
         StartCoroutine(EnemyTurn());
     }
@@ -129,19 +120,20 @@ public class BattleSystem : MonoBehaviour
         if (state == BattleState.WON)
         {
 
-            SceneManager.LoadScene(SampleScene, LoadSceneMode.Single);
+            // Destroy enemy object
+            //Destroy(enemyObject);
 
+            // Load original scene
+            SceneManager.LoadScene(SampleScene, LoadSceneMode.Single);
         }
         else if (state == BattleState.LOST)
         {
-            //Whatever happens when you lose
-            print("Switching scene to " + SampleScene);
+            // Load original scene on loss
             SceneManager.LoadScene(SampleScene, LoadSceneMode.Single);
         }
 
         // Store player's health in GameManager
-        if (Unit.playerMaxHP != 0)
-            GameManager.playerHealth = playerUnit.currentHP;
+        GameManager.playerHealth = playerUnit.currentHP;
     }
 
     void PlayerTurn()

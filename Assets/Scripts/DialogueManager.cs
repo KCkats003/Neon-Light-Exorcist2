@@ -25,6 +25,8 @@ public class DialogueManager : MonoBehaviour
 
     public float typingSpeed = 0.2f;
 
+    private Vector3 playerSpawnPosition;
+
     public Action OnDialogueFinished { get; internal set; }
 
     private void Awake()
@@ -112,6 +114,7 @@ public class DialogueManager : MonoBehaviour
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         if (player != null)
         {
+            playerSpawnPosition = player.transform.position;
             PlayerController playerController = player.GetComponent<PlayerController>();
             if (playerController != null)
             {
@@ -121,6 +124,10 @@ public class DialogueManager : MonoBehaviour
 
         if (!string.IsNullOrEmpty(battleSceneToLoad))
         {
+            GameManager.playerStartPosition = playerSpawnPosition;
+
+            Debug.Log("Location saved at: " + playerSpawnPosition);
+
             SceneManager.LoadScene(battleSceneToLoad, LoadSceneMode.Single);
         }
 
