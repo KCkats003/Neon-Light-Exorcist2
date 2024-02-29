@@ -119,10 +119,6 @@ public class BattleSystem : MonoBehaviour
     {
         if (state == BattleState.WON)
         {
-
-            // Destroy enemy object
-            //Destroy(enemyObject);
-
             // Load original scene
             SceneManager.LoadScene(SampleScene, LoadSceneMode.Single);
         }

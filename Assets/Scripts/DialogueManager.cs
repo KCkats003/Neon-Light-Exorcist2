@@ -124,6 +124,7 @@ public class DialogueManager : MonoBehaviour
 
         if (!string.IsNullOrEmpty(battleSceneToLoad))
         {
+
             GameManager.playerStartPosition = playerSpawnPosition;
 
             Debug.Log("Location saved at: " + playerSpawnPosition);

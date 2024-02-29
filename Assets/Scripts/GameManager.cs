@@ -7,7 +7,6 @@ public class GameManager : MonoBehaviour
     public static Vector3 playerStartPosition;
     public static int playerHealth = 50;
 
-
     void Awake()
     {
         DontDestroyOnLoad(gameObject);
