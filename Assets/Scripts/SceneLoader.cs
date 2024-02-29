@@ -7,5 +7,19 @@ public class SceneLoader : MonoBehaviour
 {
     void Start()
     {
+
+
+
+        foreach (string enemyName in GameManager.enemiesToDestroy)
+        {
+
+            Debug.Log(enemyName);
+
+            GameObject enemyToDestroy = GameObject.Find(enemyName);
+            if (enemyToDestroy != null)
+            {
+                Destroy(enemyToDestroy);
+            }
+        }
     }
 }

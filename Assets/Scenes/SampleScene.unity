@@ -709,6 +709,8 @@ GameObject:
   m_Component:
   - component: {fileID: 113443318}
   - component: {fileID: 113443319}
+  - component: {fileID: 113443321}
+  - component: {fileID: 113443320}
   m_Layer: 0
   m_Name: Death
   m_TagString: Death
@@ -728,8 +730,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.22655839, y: 0.22655839, z: 0.22655837}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1743994465}
+  m_Children: []
   m_Father: {fileID: 279069169}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &113443319
@@ -784,6 +785,48 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &113443320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 113443317}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 692e1c467c59b134891f448fb52d807d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    battleScene: battleScene
+    dialogueLines:
+    - character:
+        name: Death
+        icon: {fileID: 21300000, guid: 4e74ab663124d1544ba7723bc0f5a697, type: 3}
+        iconRight: {fileID: 0}
+        useIconRight: 0
+      line: Die
+--- !u!65 &113443321
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 113443317}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 18.628565, y: 13.999999, z: 8.655017}
+  m_Center: {x: -0.4097922, y: 6.9999995, z: -2.254445}
 --- !u!4 &114112138 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7693993459270431045, guid: fad8fd6c3627967429b9130b2837d776, type: 3}
@@ -2109,7 +2152,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 829948095}
+  - {fileID: 2049916451}
   - {fileID: 113443318}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5406,47 +5449,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2e9761d130ce0154bbfc2cf9b6aaa8bd, type: 3}
---- !u!1 &829948091
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 829948095}
-  - component: {fileID: 829948094}
-  m_Layer: 0
-  m_Name: Enemy
-  m_TagString: Enemy
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!33 &829948094
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 829948091}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &829948095
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 829948091}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.3000026, y: 0.522, z: -9.06}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 2049916451}
-  m_Father: {fileID: 279069169}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &841654570 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3781738264603414942, guid: 4d3a562a88b42314ea4cd863d8bd1b2d, type: 3}
@@ -12525,133 +12527,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1736177777}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1743994459
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1743994465}
-  - component: {fileID: 1743994464}
-  - component: {fileID: 1743994463}
-  - component: {fileID: 1743994462}
-  - component: {fileID: 1743994466}
-  m_Layer: 0
-  m_Name: combatCube
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!65 &1743994462
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1743994459}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 12.676252, y: 9.518827, z: 7.517447}
-  m_Center: {x: 0.48280874, y: 5.904881, z: -1.2227877}
---- !u!23 &1743994463
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1743994459}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: e98f1b0eb23968849accf5491d0a0246, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &1743994464
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1743994459}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &1743994465
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1743994459}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.5448558, y: -3.05, z: 0.3089698}
-  m_LocalScale: {x: 1.6048844, y: 1.6048844, z: 1.6048844}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 113443318}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1743994466
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1743994459}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 692e1c467c59b134891f448fb52d807d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    battleScene: battleScene
-    dialogueLines:
-    - character:
-        name: Death
-        icon: {fileID: 21300000, guid: 4e74ab663124d1544ba7723bc0f5a697, type: 3}
-        iconRight: {fileID: 0}
-        useIconRight: 0
-      line: I am going to reap your soul
 --- !u!1 &1745261765
 GameObject:
   m_ObjectHideFlags: 0
@@ -14828,11 +14703,11 @@ Transform:
   m_GameObject: {fileID: 2049916450}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.123999596, y: -0.95199996, z: -0.23599982}
+  m_LocalPosition: {x: 3.176003, y: -0.42999995, z: -9.2960005}
   m_LocalScale: {x: 0.22218, y: 0.22218, z: 0.22218}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 829948095}
+  m_Father: {fileID: 279069169}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2049916452
 SpriteRenderer:

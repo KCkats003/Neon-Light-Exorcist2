@@ -36,6 +36,9 @@ public class BattleSystem : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
+        Debug.Log(GameManager.objectNameToDestroy);
+
         state = BattleState.START;
         StartCoroutine(SetupBattle());
     }
@@ -119,6 +122,7 @@ public class BattleSystem : MonoBehaviour
     {
         if (state == BattleState.WON)
         {
+            GameManager.AddEnemyToDestroy(GameManager.objectNameToDestroy);
             // Load original scene
             SceneManager.LoadScene(SampleScene, LoadSceneMode.Single);
         }

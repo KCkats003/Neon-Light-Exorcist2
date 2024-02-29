@@ -45,6 +45,8 @@ public class DialogueTrigger : MonoBehaviour
         {
 
             inRange = true;
+
+         
         }
     }
 
@@ -59,6 +61,8 @@ public class DialogueTrigger : MonoBehaviour
 
     private void TriggerDialogue()
     {
+        GameManager.objectNameToDestroy = gameObject.name;
+        //Debug.Log(gameObject.name);
         DialogueManager.Instance.SetBattleSceneToLoad(dialogue.battleScene);
         DialogueManager.Instance.StartDialogue(dialogue);
     }
