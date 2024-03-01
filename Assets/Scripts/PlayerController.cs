@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour
     {
         rb = gameObject.GetComponent<Rigidbody>();
         //BGMusic
-        // FindObjectOfType<AudioManager>().PlaySound("BGMusic");
+        FindObjectOfType<AudioManager>().PlaySound("BGMusic");
 
         // Retrieve playerStartPosition from GameManager
         Vector3 playerStartPosition = GameManager.playerStartPosition;
@@ -67,26 +67,26 @@ public class PlayerController : MonoBehaviour
             {
                 print("right arrow key is held down");
                 sr.enabled = false;
-                //animation_1.SetActive(true);
+                animation_1.SetActive(true);
             }
             else {
                 sr.enabled = true;
-                //animation_1.SetActive(false);
+                animation_1.SetActive(false);
             }
-            //SpriteRenderer anim_sr = animation_1.GetComponent<SpriteRenderer>();
+            SpriteRenderer anim_sr = animation_1.GetComponent<SpriteRenderer>();
 
             if (x != 0 && x < 0)
             {
                 sr.flipX = false;
-                //anim_sr.flipX = true;
-                //sr.enabled = false;
+                anim_sr.flipX = true;
+                sr.enabled = false;
             } 
             else if (x != 0 && x > 0)
             {
                 sr.flipX = true;
 
-                //anim_sr.flipX = false;
-                // sr.enabled = false;
+                anim_sr.flipX = false;
+                sr.enabled = false;
             }
         }
         else
