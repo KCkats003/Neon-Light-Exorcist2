@@ -1181,7 +1181,7 @@ MonoBehaviour:
   playerHUD: {fileID: 1901947084}
   enemyHUD: {fileID: 1059453583}
   state: 0
-  SampleScene: SampleScene
+  SampleScene: Part1Map_v2
 --- !u!4 &895650135
 Transform:
   m_ObjectHideFlags: 0
