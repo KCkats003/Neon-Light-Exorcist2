@@ -28,6 +28,10 @@ public class Dialogue
     //public List<DialogueLine> dialogueLines = new List<DialogueLine>();
     public List<DialogueLine> defaultDialogueLines = new List<DialogueLine>();
     public List<DialogueLine> ghostDefeatedDialogueLines = new List<DialogueLine>();
+    public List<DialogueLine> finalDialogueLines = new List<DialogueLine>();
+    
+    //Triggers final dialogue
+    public bool finalDialogue;
 }
 
 public class DialogueTrigger : MonoBehaviour
@@ -67,9 +71,15 @@ public class DialogueTrigger : MonoBehaviour
         GameManager.objectNameToDestroy = gameObject.name;
 
         // Check game state and trigger appropriate dialogue set
-        if (GameManager.enemiesToDestroy.Contains(dialogue.HauntingGhost))
+        
+        if (dialogue.finalDialogue == true)
+        {
+            DialogueManager.Instance.StartDialogue(dialogue.finalDialogueLines);
+        }
+        else if (GameManager.enemiesToDestroy.Contains(dialogue.HauntingGhost))
         {
             DialogueManager.Instance.StartDialogue(dialogue.ghostDefeatedDialogueLines);
+            dialogue.finalDialogue = true;
         }
         else
         {
