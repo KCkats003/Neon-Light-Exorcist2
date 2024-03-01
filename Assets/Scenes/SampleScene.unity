@@ -10452,7 +10452,6 @@ GameObject:
   - component: {fileID: 1507912380}
   - component: {fileID: 1507912379}
   - component: {fileID: 1507912378}
-  - component: {fileID: 1507912377}
   - component: {fileID: 1507912383}
   - component: {fileID: 1507912382}
   - component: {fileID: 1507912384}
@@ -10463,23 +10462,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1507912377
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1507912376}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 692e1c467c59b134891f448fb52d807d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    battleScene: 
-    HauntingGhost: Death
-    defaultDialogueLines: []
-    ghostDefeatedDialogueLines: []
 --- !u!65 &1507912378
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10622,7 +10604,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     battleScene: 
-    HauntingGhost: Death
+    HauntingGhost: vial
     defaultDialogueLines:
     - character:
         name: First talk
