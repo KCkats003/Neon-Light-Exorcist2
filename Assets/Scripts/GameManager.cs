@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     public static int playerHealth = 50;
     public static string objectNameToDestroy;
     public static List<string> enemiesToDestroy = new List<string>();
+    public static bool nextAct;
 
 
     void Awake()

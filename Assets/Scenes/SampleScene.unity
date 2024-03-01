@@ -799,6 +799,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     battleScene: battleScene
+    HauntingGhost: 
+    finalDialogue: 0
     dialogueLines:
     - character:
         name: Death
@@ -10132,6 +10134,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     battleScene: 
+    HauntingGhost: 
+    finalDialogue: 0
     dialogueLines:
     - character:
         name: Bob
@@ -10463,9 +10467,11 @@ GameObject:
   - component: {fileID: 1507912377}
   - component: {fileID: 1507912383}
   - component: {fileID: 1507912382}
+  - component: {fileID: 1507912384}
+  - component: {fileID: 1507912385}
   m_Layer: 0
-  m_Name: 3D_Talking_cube
-  m_TagString: Untagged
+  m_Name: Scientist
+  m_TagString: Dire
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10484,6 +10490,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     battleScene: 
+    HauntingGhost: Death
+    finalDialogue: 0
     dialogueLines:
     - character:
         name: Exorcist
@@ -10534,8 +10542,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 3.398267, y: 17.12532, z: 1.355011}
-  m_Center: {x: 0.68543375, y: 7.3812094, z: 0.17750524}
+  m_Size: {x: 10.704967, y: 17.12532, z: 8.256496}
+  m_Center: {x: 1.2781143, y: 7.3812094, z: -3.273237}
 --- !u!23 &1507912379
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10643,6 +10651,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1507912376}
   m_CullTransparentMesh: 1
+--- !u!114 &1507912384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1507912376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 692e1c467c59b134891f448fb52d807d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    battleScene: 
+    HauntingGhost: 
+    finalDialogue: 0
+    dialogueLines:
+    - character:
+        name: TEREWREW Rrew
+        icon: {fileID: 0}
+        iconRight: {fileID: 0}
+        useIconRight: 0
+      line: ewq ewq ewqe wqe wq
+--- !u!114 &1507912385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1507912376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 692e1c467c59b134891f448fb52d807d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    battleScene: 
+    HauntingGhost: 
+    finalDialogue: 0
+    dialogueLines:
+    - character:
+        name: test
+        icon: {fileID: 0}
+        iconRight: {fileID: 0}
+        useIconRight: 0
+      line: final statement
 --- !u!1 &1536781083
 GameObject:
   m_ObjectHideFlags: 0
@@ -14775,6 +14829,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     battleScene: battleScene2
+    HauntingGhost: 
+    finalDialogue: 0
     dialogueLines:
     - character:
         name: Vialmancer
