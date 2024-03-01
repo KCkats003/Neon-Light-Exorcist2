@@ -808,6 +808,8 @@ MonoBehaviour:
         useIconRight: 0
       line: fdsafdsaf dsafd sfdsa
     ghostDefeatedDialogueLines: []
+    finalDialogueLines: []
+    finalDialogue: 0
 --- !u!65 &113443321
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10137,6 +10139,8 @@ MonoBehaviour:
     HauntingGhost: 
     defaultDialogueLines: []
     ghostDefeatedDialogueLines: []
+    finalDialogueLines: []
+    finalDialogue: 0
 --- !u!4 &1484210375 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3824607801990530161, guid: 2e9761d130ce0154bbfc2cf9b6aaa8bd, type: 3}
@@ -10604,7 +10608,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     battleScene: 
-    HauntingGhost: vial
+    HauntingGhost: Death
     defaultDialogueLines:
     - character:
         name: First talk
@@ -10625,6 +10629,14 @@ MonoBehaviour:
         iconRight: {fileID: 0}
         useIconRight: 0
       line: dadsad sad sad sad sadsa
+    finalDialogueLines:
+    - character:
+        name: Final Dialogue
+        icon: {fileID: 0}
+        iconRight: {fileID: 0}
+        useIconRight: 0
+      line: fdshjakfh dsajkfh dsajkhf
+    finalDialogue: 0
 --- !u!1 &1536781083
 GameObject:
   m_ObjectHideFlags: 0
@@ -14766,6 +14778,8 @@ MonoBehaviour:
         useIconRight: 0
       line: f dsafd safdsa
     ghostDefeatedDialogueLines: []
+    finalDialogueLines: []
+    finalDialogue: 0
 --- !u!65 &2049916454
 BoxCollider:
   m_ObjectHideFlags: 0

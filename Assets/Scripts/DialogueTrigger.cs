@@ -75,6 +75,15 @@ public class DialogueTrigger : MonoBehaviour
         if (dialogue.finalDialogue == true)
         {
             DialogueManager.Instance.StartDialogue(dialogue.finalDialogueLines);
+
+            //Find tag scientist
+            //if GameManager.enemiesToDestroy.Contains(dialogue.HauntingGhost) == 2 (all the ghosts in act one)
+            //set actI = true
+
+                //if GameManager.enemiesToDestroy.Contains(dialogue.HauntingGhost) == 4 && actI = true 
+                //set actII = true
+
+
         }
         else if (GameManager.enemiesToDestroy.Contains(dialogue.HauntingGhost))
         {
