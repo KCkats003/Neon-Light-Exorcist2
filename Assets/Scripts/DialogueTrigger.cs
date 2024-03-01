@@ -24,9 +24,10 @@ public class Dialogue
     public string battleScene;
 
     public string HauntingGhost;
-    public bool finalDialogue;
 
-    public List<DialogueLine> dialogueLines = new List<DialogueLine>();
+    //public List<DialogueLine> dialogueLines = new List<DialogueLine>();
+    public List<DialogueLine> defaultDialogueLines = new List<DialogueLine>();
+    public List<DialogueLine> ghostDefeatedDialogueLines = new List<DialogueLine>();
 }
 
 public class DialogueTrigger : MonoBehaviour
@@ -34,16 +35,8 @@ public class DialogueTrigger : MonoBehaviour
     public Dialogue dialogue;
     private bool inRange = false;
 
-
     private void Update()
     {
-        if (GameManager.enemiesToDestroy.Contains(dialogue.HauntingGhost))
-        {
-            // If the ghost's name is in the list, set finalDialogue to true
-            dialogue.finalDialogue = true;
-        }
-
-
         if (inRange && Input.GetKeyUp(KeyCode.Space))
         {
             TriggerDialogue();
@@ -57,7 +50,7 @@ public class DialogueTrigger : MonoBehaviour
 
             inRange = true;
 
-         
+
         }
     }
 
@@ -69,31 +62,30 @@ public class DialogueTrigger : MonoBehaviour
         }
     }
 
-
     private void TriggerDialogue()
     {
         GameManager.objectNameToDestroy = gameObject.name;
 
-        /*
-        if (dialogue.finalDialogue == true)
+        // Check game state and trigger appropriate dialogue set
+        if (GameManager.enemiesToDestroy.Contains(dialogue.HauntingGhost))
         {
-            DialogueManager.Instance.StartDialogue(dialogue);
-
+            DialogueManager.Instance.StartDialogue(dialogue.ghostDefeatedDialogueLines);
         }
-        */  
-        
-
-        if (GameManager.enemiesToDestroy.Contains(dialogue.HauntingGhost) && !dialogue.finalDialogue)
+        else
         {
-            DialogueManager.Instance.StartDialogue(dialogue);
+            DialogueManager.Instance.StartDialogue(dialogue.defaultDialogueLines);
+            DialogueManager.Instance.SetBattleSceneToLoad(dialogue.battleScene);
         }
+    }
 
-      
 
-        
-
-        //Debug.Log(gameObject.name);
+    /*
+   private void TriggerDialogue()
+   {
+        GameManager.objectNameToDestroy = gameObject.name;
+        // If HauntingGhost name is not in enemiesToDestroy list, load battle scene without triggering dialogue
         DialogueManager.Instance.SetBattleSceneToLoad(dialogue.battleScene);
         DialogueManager.Instance.StartDialogue(dialogue);
-    }
+   }
+    */
 }

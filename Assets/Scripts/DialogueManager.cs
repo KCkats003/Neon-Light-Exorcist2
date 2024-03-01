@@ -39,7 +39,7 @@ public class DialogueManager : MonoBehaviour
         HideDialogueUI();
     }
 
-    public void StartDialogue(Dialogue dialogue)
+    public void StartDialogue(List<DialogueLine> dialogueLines)
     {
         isDialogueActive = true;
 
@@ -47,7 +47,7 @@ public class DialogueManager : MonoBehaviour
 
         lines.Clear();
 
-        foreach (DialogueLine dialogueLine in dialogue.dialogueLines)
+        foreach (DialogueLine dialogueLine in dialogueLines)
         {
             lines.Enqueue(dialogueLine);
         }

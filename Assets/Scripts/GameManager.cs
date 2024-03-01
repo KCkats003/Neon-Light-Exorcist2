@@ -7,9 +7,9 @@ public class GameManager : MonoBehaviour
     public static Vector3 playerStartPosition;
     public static int playerHealth = 50;
     public static string objectNameToDestroy;
+    public static bool ghostDefeated = false;
     public static List<string> enemiesToDestroy = new List<string>();
     public static bool nextAct;
-
 
     void Awake()
     {

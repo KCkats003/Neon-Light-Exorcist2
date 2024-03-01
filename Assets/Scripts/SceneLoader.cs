@@ -13,7 +13,7 @@ public class SceneLoader : MonoBehaviour
         foreach (string enemyName in GameManager.enemiesToDestroy)
         {
 
-            Debug.Log(enemyName);
+            //Debug.Log("Enemy Name: " + enemyName);
 
             GameObject enemyToDestroy = GameObject.Find(enemyName);
             if (enemyToDestroy != null)
