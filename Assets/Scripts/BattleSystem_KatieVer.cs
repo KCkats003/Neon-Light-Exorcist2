@@ -38,6 +38,10 @@ public class BattleSystem_KatieVer : MonoBehaviour
 public GameObject player;
 private Animator FightAnimator;
 
+    public GameObject playerPlaque;
+
+    public GameObject enemyPlaque;
+
     //  end Katie Additions
 
     // Start is called before the first frame update
@@ -51,6 +55,11 @@ private Animator FightAnimator;
 
         //Katies Animationss
     FightAnimator = player.GetComponent<Animator>();
+
+        playerPlaque.SetActive(false);
+        enemyPlaque.SetActive(false);
+
+
         // end Katie Additions
     }
 
@@ -128,6 +137,10 @@ private Animator FightAnimator;
 
     IEnumerator EnemyTurn()
     {
+
+        playerPlaque.SetActive(false);
+        enemyPlaque.SetActive(true);
+
         yield return new WaitForSeconds(1f);
 
         bool isDead = playerUnit.TakeDamage(enemyUnit.damage);
@@ -170,9 +183,15 @@ private Animator FightAnimator;
         GameManager.playerHealth = playerUnit.currentHP;
     }
 
+
+ 
+
+
+
     void PlayerTurn()
     {
-
+        playerPlaque.SetActive(true);
+        enemyPlaque.SetActive(false);
     }
 
     public void OnAttackButton()
