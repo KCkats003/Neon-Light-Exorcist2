@@ -15,9 +15,6 @@ public class UIManager : MonoBehaviour
             Debug.Log("HIT");
             DataBaseUI.SetActive(true);
         }
-        else{
-            
-        }
     }
     void OnTriggerExit(Collider other){
         DataBaseUI.SetActive(false);
