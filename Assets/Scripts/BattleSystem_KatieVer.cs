@@ -189,12 +189,12 @@ private Animator FightAnimator;
         {
             GameManager.AddEnemyToDestroy(GameManager.objectNameToDestroy);
             // Load original scene
-            SceneManager.LoadScene(Part1Map_v2_KatieFix, LoadSceneMode.Single);
+            SceneManager.LoadScene(SampleScene, LoadSceneMode.Single);
         }
         else if (state == BattleState.LOST)
         {
             // Load original scene on loss
-            SceneManager.LoadScene(Part1Map_v2_KatieFix, LoadSceneMode.Single);
+            SceneManager.LoadScene(SampleScene, LoadSceneMode.Single);
         }
 
         // Store player's health in GameManager
