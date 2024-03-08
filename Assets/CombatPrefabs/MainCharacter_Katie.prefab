@@ -81,7 +81,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9503e6130bdfcaa4485013bc44da8652, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  unitName: Exrocist
+  unitName: The Exorcist
   damage: 5
   maxHP: 50
   currentHP: 50
