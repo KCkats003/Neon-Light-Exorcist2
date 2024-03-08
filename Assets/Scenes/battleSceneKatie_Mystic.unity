@@ -1432,7 +1432,7 @@ MonoBehaviour:
   playerHUD: {fileID: 1901947084}
   enemyHUD: {fileID: 1059453583}
   state: 0
-  SampleScene: Part1Map_v2_KatieFix
+  SampleScene: Part1Map_v2_KatieFix_Update
   player: {fileID: 1438594459}
   playerPlaque: {fileID: 1061315678}
   enemyPlaque: {fileID: 1737468687}
