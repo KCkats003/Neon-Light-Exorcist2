@@ -42,6 +42,19 @@ private Animator FightAnimator;
 
     public GameObject enemyPlaque;
 
+
+    public GameObject effects;
+    private Animator EffectsAnimator;
+
+
+
+    public GameObject enemy;
+    private Animator EnemysAnimator;
+
+
+    public GameObject enemyEffects;
+    private Animator EnemyEffectsAnimator;
+
     //  end Katie Additions
 
     // Start is called before the first frame update
@@ -54,7 +67,11 @@ private Animator FightAnimator;
         StartCoroutine(SetupBattle());
 
         //Katies Animationss
-    FightAnimator = player.GetComponent<Animator>();
+        FightAnimator = player.GetComponent<Animator>();
+    EffectsAnimator = effects.GetComponent<Animator>();
+        EnemysAnimator = enemy.GetComponent<Animator>();
+        EnemyEffectsAnimator = enemyEffects.GetComponent<Animator>();
+
 
         playerPlaque.SetActive(false);
         enemyPlaque.SetActive(false);
@@ -149,6 +166,7 @@ private Animator FightAnimator;
 
         //Katies Animationss
         FightAnimator.SetTrigger("PlayerHurt");
+        EnemyEffectsAnimator.SetTrigger("EnemyAttacks");
         // end Katie Additions
 
         yield return new WaitForSeconds(1f);
@@ -171,12 +189,12 @@ private Animator FightAnimator;
         {
             GameManager.AddEnemyToDestroy(GameManager.objectNameToDestroy);
             // Load original scene
-            SceneManager.LoadScene(SampleScene, LoadSceneMode.Single);
+            SceneManager.LoadScene(Part1Map_v2_KatieFix, LoadSceneMode.Single);
         }
         else if (state == BattleState.LOST)
         {
             // Load original scene on loss
-            SceneManager.LoadScene(SampleScene, LoadSceneMode.Single);
+            SceneManager.LoadScene(Part1Map_v2_KatieFix, LoadSceneMode.Single);
         }
 
         // Store player's health in GameManager
@@ -200,6 +218,8 @@ private Animator FightAnimator;
 
         //Katies Animationss
         FightAnimator.SetTrigger("PlayerAttack");
+        EffectsAnimator.SetTrigger("PlayerHurts");
+        EnemysAnimator.SetTrigger("Hurt");
         // end Katie Additions
         if (state != BattleState.PLAYERTURN)
             return;

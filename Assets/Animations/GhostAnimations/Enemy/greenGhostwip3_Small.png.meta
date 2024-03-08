@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ad074469166670a418ed022f768a660e
+guid: fc6e153ee9f1aeb478419ecc3f2c68a4
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,76 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Ex_AttackScratch_Only-Sheet_0
+      name: greenGhostwip3_Small_0
       rect:
         serializedVersion: 2
-        x: 127
+        x: 0
         y: 0
-        width: 127
-        height: 223
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5e4789ab80d002a4cb786281648ae8f0
-      internalID: 67937747
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ex_AttackScratch_Only-Sheet_1
-      rect:
-        serializedVersion: 2
-        x: 254
-        y: 0
-        width: 127
-        height: 223
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 46d0e73515e2d70488a1edcceb21ec8b
-      internalID: -823022133
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ex_AttackScratch_Only-Sheet_2
-      rect:
-        serializedVersion: 2
-        x: 381
-        y: 0
-        width: 127
-        height: 223
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 04fc7ca5f52fd0e4882457955e9f3ab5
-      internalID: -1700096070
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ex_AttackScratch_Only-Sheet_3
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 0
-        width: 126
-        height: 223
+        width: 180
+        height: 180
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,8 +124,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 643e6fe60d2132043a7fc022cc70a4bb
-      internalID: -849373587
+      spriteID: 11bfeb65e15024844ae1a85fe9c9ddfc
+      internalID: -1560867719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: greenGhostwip3_Small_1
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 0
+        width: 180
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a93d4dce9e2f0cd4d8de98c8a7128471
+      internalID: -424933584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: greenGhostwip3_Small_2
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 0
+        width: 180
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a034d84ed9882e54081189adfb9c369b
+      internalID: -1635715256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: greenGhostwip3_Small_3
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 0
+        width: 180
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba1aed109cfae3441823d132751be42f
+      internalID: -663775564
       vertices: []
       indices: 
       edges: []
@@ -204,10 +204,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Ex_AttackScratch_Only-Sheet_0: 67937747
-      Ex_AttackScratch_Only-Sheet_1: -823022133
-      Ex_AttackScratch_Only-Sheet_2: -1700096070
-      Ex_AttackScratch_Only-Sheet_3: -849373587
+      greenGhostwip3_Small_0: -1560867719
+      greenGhostwip3_Small_1: -424933584
+      greenGhostwip3_Small_2: -1635715256
+      greenGhostwip3_Small_3: -663775564
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

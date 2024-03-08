@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ad074469166670a418ed022f768a660e
+guid: 9469429fb39334c46a0dd5135831da93
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -108,91 +108,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: Ex_AttackScratch_Only-Sheet_0
-      rect:
-        serializedVersion: 2
-        x: 127
-        y: 0
-        width: 127
-        height: 223
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5e4789ab80d002a4cb786281648ae8f0
-      internalID: 67937747
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ex_AttackScratch_Only-Sheet_1
-      rect:
-        serializedVersion: 2
-        x: 254
-        y: 0
-        width: 127
-        height: 223
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 46d0e73515e2d70488a1edcceb21ec8b
-      internalID: -823022133
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ex_AttackScratch_Only-Sheet_2
-      rect:
-        serializedVersion: 2
-        x: 381
-        y: 0
-        width: 127
-        height: 223
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 04fc7ca5f52fd0e4882457955e9f3ab5
-      internalID: -1700096070
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ex_AttackScratch_Only-Sheet_3
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 0
-        width: 126
-        height: 223
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 643e6fe60d2132043a7fc022cc70a4bb
-      internalID: -849373587
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
@@ -203,11 +119,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      Ex_AttackScratch_Only-Sheet_0: 67937747
-      Ex_AttackScratch_Only-Sheet_1: -823022133
-      Ex_AttackScratch_Only-Sheet_2: -1700096070
-      Ex_AttackScratch_Only-Sheet_3: -849373587
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
