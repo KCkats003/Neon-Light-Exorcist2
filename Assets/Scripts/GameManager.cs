@@ -11,6 +11,10 @@ public class GameManager : MonoBehaviour
     public static List<string> enemiesToDestroy = new List<string>();
     public static bool nextAct;
 
+    public static bool actI;
+    public static bool actII;
+    public static bool actIII;
+
     void Awake()
     {
         DontDestroyOnLoad(gameObject);

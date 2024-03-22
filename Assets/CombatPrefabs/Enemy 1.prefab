@@ -98,6 +98,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movement: 1
+  movementSpeed: 0
+  movementAmount: 0
 --- !u!1 &8111093670720263626
 GameObject:
   m_ObjectHideFlags: 0
@@ -147,3 +149,4 @@ MonoBehaviour:
   damage: 5
   maxHP: 15
   currentHP: 15
+  type: 2

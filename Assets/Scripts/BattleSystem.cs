@@ -9,6 +9,8 @@ public enum BattleState { START, PLAYERTURN, ENEMYTURN, WON, LOST }
 public class BattleSystem : MonoBehaviour
 {
 
+    public Ghost Ghost;
+
     public GameObject playerPrefab;
     public GameObject ghostOne;
     public GameObject ghostTwo;
@@ -52,6 +54,12 @@ public class BattleSystem : MonoBehaviour
         GameObject enemyGO = Instantiate(enemyPrefab, enemyBattleStation);
         enemyUnit = enemyGO.GetComponent<Unit>();
 
+        //Loading in the ghosts
+        GameObject ghostOneGo = Instantiate(ghostOne, GhostOneStation);
+        GameObject ghostTwoGo = Instantiate(ghostTwo, GhostTwoStation);
+        GameObject ghostThreeGo = Instantiate(ghostThree, GhostThreeStation);
+        GameObject ghostFourGo = Instantiate(ghostFour, GhostFourStation);
+
         playerHUD.SetHUD(playerUnit);
         enemyHUD.SetHUD(enemyUnit);
 
@@ -60,11 +68,10 @@ public class BattleSystem : MonoBehaviour
         state = BattleState.PLAYERTURN;
         PlayerTurn();
     }
-
-    IEnumerator PlayerAttack()
+    IEnumerator PlayerAttack(int damageAmount)
     {
 
-        bool isDead = enemyUnit.TakeDamage(playerUnit.damage);
+        bool isDead = enemyUnit.TakeDamage(damageAmount);
 
         if (isDead)
         {
@@ -83,9 +90,9 @@ public class BattleSystem : MonoBehaviour
 
     }
 
-    IEnumerator PlayerHeal()
+    IEnumerator PlayerHeal(int healAmount)
     {
-        playerUnit.Heal(5);
+        playerUnit.Heal(healAmount);
 
         state = BattleState.ENEMYTURN;
 
@@ -125,6 +132,9 @@ public class BattleSystem : MonoBehaviour
             GameManager.AddEnemyToDestroy(GameManager.objectNameToDestroy);
             // Load original scene
             SceneManager.LoadScene(SampleScene, LoadSceneMode.Single);
+
+            //I dont know might add the ghost to the inventory IDK
+            GhostManager.Instance.Add(Ghost);
         }
         else if (state == BattleState.LOST)
         {
@@ -141,6 +151,46 @@ public class BattleSystem : MonoBehaviour
 
     }
 
+
+    public void OnAttackButtonRed(int skillAmount)
+    {
+        Debug.Log("Red ATTACK");
+        if (enemyUnit.type == Unit.GhostType.Green)
+        {
+            skillAmount *= 2;
+            Debug.Log("Red is super effective against Green");
+        }
+
+        StartCoroutine(PlayerAttack(skillAmount));
+    }
+
+    public void OnAttackButtonBlue(int skillAmount)
+    {
+        Debug.Log("Blue ATTACK");
+        if (enemyUnit.type == Unit.GhostType.Red)
+        {
+            skillAmount *= 2;
+            Debug.Log("Blue is super effective against red");
+        }
+
+        StartCoroutine(PlayerAttack(skillAmount));
+    }
+
+    public void OnAttackButtonGreen(int skillAmount)
+    {
+        Debug.Log("Green ATTACK");
+        if (enemyUnit.type == Unit.GhostType.Blue)
+        {
+            skillAmount *= 2;
+            Debug.Log("Green is super effective against Blue");
+        }
+
+        StartCoroutine(PlayerAttack(skillAmount));
+    }
+
+
+
+    /*
     public void OnAttackButton()
     {
         if (state != BattleState.PLAYERTURN)
@@ -148,13 +198,14 @@ public class BattleSystem : MonoBehaviour
 
         StartCoroutine(PlayerAttack());
     }
+    */
 
-    public void OnHealButton()
+    public void OnHealButton(int skillAmount)
     {
         if (state != BattleState.PLAYERTURN)
             return;
 
-        StartCoroutine(PlayerHeal());
+        StartCoroutine(PlayerHeal(skillAmount));
     }
 
 }

@@ -9,16 +9,29 @@ public class SceneLoader : MonoBehaviour
     {
 
 
+        Debug.Log("SCENE 2 is: " + GameManager.actII);
 
         foreach (string enemyName in GameManager.enemiesToDestroy)
         {
-
-            //Debug.Log("Enemy Name: " + enemyName);
-
             GameObject enemyToDestroy = GameObject.Find(enemyName);
             if (enemyToDestroy != null)
             {
                 Destroy(enemyToDestroy);
+
+                if (GameManager.enemiesToDestroy.Count == 0)
+                {
+                    GameManager.actI = true;
+                }
+                else if (GameManager.enemiesToDestroy.Count == 2)
+                {
+                    GameManager.actI = false;
+                    GameManager.actII = true;
+                }
+                else
+                {
+                    GameManager.actII = false;
+                    GameManager.actIII = true;
+                }
             }
         }
     }

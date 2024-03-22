@@ -2,43 +2,71 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Ghost", menuName = "Ghost/Create new Ghost")]
 
-public class GhostBase : ScriptableObject
+public class GhostBase : MonoBehaviour 
 {
-    [SerializeField] string name;
 
-    [TextArea]
-    [SerializeField] string description;
-
-    [SerializeField] Sprite bigSprite;
-    [SerializeField] Sprite smallSprite;
-
+    //Ghost Combat info
+    /*
+     * Red > Green
+     * Green > Blue
+     * Blue > Red
+     */
+    public enum GhostType { Red, Blue, Green }
     [SerializeField] GhostType type;
 
+    public enum GhostSkill { Attack, Heal }
+    [SerializeField] GhostSkill skill;
 
     //combat information
-    [SerializeField] int damage;
-    [SerializeField] int maxHP;
-    [SerializeField] int currentHP;
+    [SerializeField] int skillAmount;
 
-}
+    private BattleSystem battleSystem;
+    private Vector3 originalScale;
 
-public enum GhostType
-{
-    Red,
-    Blue,
-    Green,
-}
-
-public class TypeChart
-{
-    float[][] chart =
+    private void Start()
     {
-      //                        RED BLU GRE
-      /* RED */    new float[] { 1f, 0.5f, 2f},
-      /* BLUE */   new float[] { 2f, 1f, 0.5f},
-      /* GREEN */  new float[] { 0.5f, 2f, 1f},
-    };
+        battleSystem = FindObjectOfType<BattleSystem>();
+        originalScale = transform.localScale;
 
+    }
+
+    private void OnMouseEnter()
+    {
+        transform.localScale = originalScale * 1.8f;
+    }
+
+    private void OnMouseExit()
+    {
+        transform.localScale = originalScale;
+    }
+
+    private void OnMouseDown()
+    {
+        if (battleSystem != null)
+        {
+            if (skill == GhostSkill.Attack)
+            {
+                switch (type)
+                {
+                    case GhostType.Red:
+                        battleSystem.OnAttackButtonRed(skillAmount);
+                        break;
+                    case GhostType.Blue:
+                        battleSystem.OnAttackButtonBlue(skillAmount);
+                        break;
+                    case GhostType.Green:
+                        battleSystem.OnAttackButtonGreen(skillAmount);
+                        break;
+                    default:
+                        Debug.LogWarning("Unhandled GhostType in switch statement");
+                        break;
+                }
+            }
+            else if (skill == GhostSkill.Heal)
+            {
+                battleSystem.OnHealButton(skillAmount);
+            }
+        }
+    }
 }

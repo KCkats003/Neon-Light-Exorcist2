@@ -14,6 +14,10 @@ public class Unit : MonoBehaviour
     public int maxHP;
     public int currentHP;
 
+    //What type the ghost is
+    public enum GhostType { Red, Blue, Green }
+    public GhostType type;
+
     public static int playerMaxHP;
 
     private static bool healthInitialized = false;

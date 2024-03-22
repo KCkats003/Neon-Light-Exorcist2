@@ -9,15 +9,23 @@ public class UIManager : MonoBehaviour
     private BoxCollider boxCol;
     [SerializeField]
     private GameObject DataBaseUI;
-    
+
+    public GhostManager ghostManager;
+
+    private void Start()
+    {
+        DataBaseUI.SetActive(false);
+    }
+
     void OnTriggerEnter(Collider other){
         if(other.tag == "Player"){
-            Debug.Log("HIT");
+            //Debug.Log("HIT");
             DataBaseUI.SetActive(true);
+
+            ghostManager.ListItems();
         }
     }
     void OnTriggerExit(Collider other){
         DataBaseUI.SetActive(false);
     }
-    
 }

@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c825b73d948b8234dbf4651dff21c34a, type: 3}
+  m_Name: Cowboy
+  m_EditorClassIdentifier: 
+  id: 5
+  ghostName: Texpain
+  iconMini: {fileID: 21300000, guid: 5d74b749b5be58b4aa82fd74d152a97a, type: 3}
+  iconLarge: {fileID: 21300000, guid: 7ce986537302cd945851fbffd99a58bd, type: 3}
+  type: Red
+  ability: Wild Guns
+  description: A ghost with spectral swagger, haunting the plains with a mischievous
+    grin, a lasso made of mist, and a quick draw that'll spook ya faster than a tumbleweed
+    in a dust storm! Yee-haw!
+  skillAmount: 8

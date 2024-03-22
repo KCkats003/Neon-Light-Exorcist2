@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c825b73d948b8234dbf4651dff21c34a, type: 3}
+  m_Name: Grim
+  m_EditorClassIdentifier: 
+  id: 4
+  ghostName: Grim
+  iconMini: {fileID: 21300000, guid: d9d26fad14718734cacca784b50a1319, type: 3}
+  iconLarge: {fileID: 21300000, guid: 9469429fb39334c46a0dd5135831da93, type: 3}
+  type: Blue
+  ability: Shadow Reap
+  description: With this one on your team your enemy ghost are the closest to death
+    they'll ever be
+  skillAmount: 4

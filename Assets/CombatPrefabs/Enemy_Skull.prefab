@@ -171,3 +171,4 @@ MonoBehaviour:
   damage: 5
   maxHP: 15
   currentHP: 15
+  type: 1

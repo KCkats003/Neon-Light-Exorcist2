@@ -71,7 +71,7 @@ public class PlayerController_Katie : MonoBehaviour
 
             if ((Input.GetKey(KeyCode.LeftArrow)) || (Input.GetKey(KeyCode.A)))
             {
-                print("left arrow key is held down");
+                //print("left arrow key is held down");
                 ExploreAnimator.SetTrigger("WalkSide");
                 // sr.enabled = false;
                 //animation_1.SetActive(true);
@@ -79,14 +79,14 @@ public class PlayerController_Katie : MonoBehaviour
 
             else if ((Input.GetKey(KeyCode.RightArrow)) || (Input.GetKey(KeyCode.D)))
             {
-                print("right arrow key is held down");
+                //print("right arrow key is held down");
                 ExploreAnimator.SetTrigger("WalkSide");
                 // sr.enabled = false;
                 // animation_1.SetActive(true);
             }
             else if ((Input.GetKey(KeyCode.UpArrow)) || (Input.GetKey(KeyCode.W)|| Input.GetKey(KeyCode.DownArrow)) || (Input.GetKey(KeyCode.S))) 
             {
-                print("up or down key is held down");
+                //print("up or down key is held down");
                 ExploreAnimator.SetTrigger("WalkSide");
             }
             else

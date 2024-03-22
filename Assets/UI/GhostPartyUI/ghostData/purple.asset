@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c825b73d948b8234dbf4651dff21c34a, type: 3}
+  m_Name: purple
+  m_EditorClassIdentifier: 
+  id: 3
+  ghostName: Mystic
+  iconMini: {fileID: 21300000, guid: e36e944dc2b707848b2f8ab532441466, type: 3}
+  iconLarge: {fileID: 21300000, guid: 1fb57f60ff81f1740810178bc9e5c8e6, type: 3}
+  type: Blue
+  ability: Aetheric Veil
+  description: When you lay eyes on her you know your heart will be faster increasing
+    blood flow and making you healthier and stronger. She'll never love you back
+    tho.
+  skillAmount: 2
