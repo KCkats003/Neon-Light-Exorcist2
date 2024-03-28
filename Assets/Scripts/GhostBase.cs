@@ -47,6 +47,7 @@ public class GhostBase : MonoBehaviour
         {
             if (skill == GhostSkill.Attack)
             {
+                Debug.Log("YOU CLICKED A GHOST");
                 switch (type)
                 {
                     case GhostType.Red:

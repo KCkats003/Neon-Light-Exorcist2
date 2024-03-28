@@ -26,8 +26,7 @@ public class BattleSystem_KatieVer : MonoBehaviour
     Unit playerUnit;
     Unit enemyUnit;
 
-    public BattleHUD playerHUD;
-    public BattleHUD enemyHUD;
+
 
     public BattleState state;
 
@@ -55,6 +54,13 @@ private Animator FightAnimator;
     public GameObject enemyEffects;
     private Animator EnemyEffectsAnimator;
 
+
+    public GameObject WinScreen;
+    public GameObject LoseScreen;
+
+    public Battle_HUD_Katie playerHUD;
+    public Battle_HUD_Katie enemyHUD;
+
     //  end Katie Additions
 
     // Start is called before the first frame update
@@ -76,7 +82,8 @@ private Animator FightAnimator;
         playerPlaque.SetActive(false);
         enemyPlaque.SetActive(false);
 
-
+        WinScreen.SetActive(false);
+        LoseScreen.SetActive(false);
         // end Katie Additions
     }
 
@@ -124,6 +131,9 @@ private Animator FightAnimator;
         else
         {
 
+            FightAnimator.SetTrigger("PlayerAttack");
+            EffectsAnimator.SetTrigger("PlayerHurts");
+            EnemysAnimator.SetTrigger("Hurt");
 
             state = BattleState.ENEMYTURN;
             enemyHUD.SetHP(enemyUnit.currentHP);
@@ -188,13 +198,20 @@ private Animator FightAnimator;
         if (state == BattleState.WON)
         {
             GameManager.AddEnemyToDestroy(GameManager.objectNameToDestroy);
-            // Load original scene
-            SceneManager.LoadScene(SampleScene, LoadSceneMode.Single);
+
+
+            //katie
+            WinScreen.SetActive(true);
+            //katie
         }
         else if (state == BattleState.LOST)
         {
+
+            //katie
+            LoseScreen.SetActive(true);
+            //katie
             // Load original scene on loss
-            SceneManager.LoadScene(SampleScene, LoadSceneMode.Single);
+            //SceneManager.LoadScene(SampleScene, LoadSceneMode.Single);
         }
 
         // Store player's health in GameManager
@@ -202,8 +219,11 @@ private Animator FightAnimator;
     }
 
 
- 
-
+    //katie animation
+    public void NextScene() {
+        SceneManager.LoadScene(SampleScene, LoadSceneMode.Single);
+    }
+    //end of katie enimation
 
 
     void PlayerTurn()
@@ -217,12 +237,12 @@ private Animator FightAnimator;
 
 
         //Katies Animationss
-        FightAnimator.SetTrigger("PlayerAttack");
-        EffectsAnimator.SetTrigger("PlayerHurts");
-        EnemysAnimator.SetTrigger("Hurt");
+       
         // end Katie Additions
-        if (state != BattleState.PLAYERTURN)
+        if (state != BattleState.PLAYERTURN) 
             return;
+
+            
 
         StartCoroutine(PlayerAttack());
     }
