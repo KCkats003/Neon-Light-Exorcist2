@@ -144,8 +144,9 @@ public class BattleSystem_Integrate : MonoBehaviour
 
     IEnumerator PlayerHeal(int healAmount)
     {
+        FightAnimator.SetTrigger("PlayerHeal");
         playerUnit.Heal(healAmount);
-
+        
         state = BattleState.ENEMYTURN;
 
         playerHUD.SetHP(playerUnit.currentHP);
@@ -287,6 +288,8 @@ public class BattleSystem_Integrate : MonoBehaviour
 
     public void OnHealButton(int skillAmount)
     {
+        
+
         if (state != BattleState.PLAYERTURN)
             return;
 
