@@ -11,8 +11,8 @@ public class GhostClick : MonoBehaviour
     // private Animator FightAnimator;
   private GameObject battleController;
     private BattleSystem_KatieVer battleControllerScript;
-   
 
+    public GameObject ghostInfo;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,9 +24,9 @@ public class GhostClick : MonoBehaviour
 
         battleController = GameObject.FindGameObjectsWithTag("BattleSystem")[0];
         battleControllerScript = battleController.GetComponent<BattleSystem_KatieVer>();
+        ghostInfo.SetActive(false);
 
-      
-      //  battleControllerScript.EnemyTurn();
+        //  battleControllerScript.EnemyTurn();
     }
 
     // Update is called once per frame
@@ -40,6 +40,23 @@ public class GhostClick : MonoBehaviour
         battleControllerScript.OnAttackButton();
        // Debug.Log("AHHHHH");
     }
+
+
+    void OnMouseOver()
+    {
+        //If your mouse hovers over the GameObject with the script attached, output this message
+        ghostInfo.SetActive(true);
+        //Debug.Log("Mouse is over GameObject.");
+    }
+
+    void OnMouseExit()
+    {
+        ghostInfo.SetActive(false);
+        //The mouse is no longer hovering over the GameObject so output this message each frame
+        //Debug.Log("Mouse is no longer on GameObject.");
+    }
+
+
     /*
     public void OnClick(InputAction.CallbackContext context)
     {

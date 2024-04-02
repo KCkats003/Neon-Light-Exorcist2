@@ -5,6 +5,7 @@ using UnityEngine;
 public class AnimateExFight : MonoBehaviour
 {
 
+    //this is used for debugging
     private Animator FightAnimator; 
 
     // Start is called before the first frame update
@@ -21,7 +22,7 @@ public class AnimateExFight : MonoBehaviour
         if (FightAnimator != null) {
             if (Input.GetKeyDown(KeyCode.Space))
             {
-                FightAnimator.SetTrigger("PlayerHurt");
+                FightAnimator.SetTrigger("PlayerHeal");
             }
         }
         

@@ -119,11 +119,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 314b1c18db7188649b1869c38bfa79e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GhostName: Cowboy
-  Description: He may be Texain, but he ain't messin when it came to Buck
-  id: 1
-  iconMini: {fileID: 21300000, guid: 5d74b749b5be58b4aa82fd74d152a97a, type: 3}
-  iconLarge: {fileID: 21300000, guid: 7ce986537302cd945851fbffd99a58bd, type: 3}
   type: 0
   skill: 0
   skillAmount: 3
