@@ -27,12 +27,11 @@ public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IDragHandler, IPo
 
     public void OnDrag(PointerEventData eventData)
     {
-        rectTransform.position = eventData.position + offset;
+        rectTransform.position = eventData.position + offset; //Fixes the grab position of the mouse... I think
     }
 
     public void OnPointerUp(PointerEventData eventData)
     {
-
         if (eventData.pointerCurrentRaycast.isValid)
         {
             GameObject panel = eventData.pointerCurrentRaycast.gameObject;
@@ -44,7 +43,7 @@ public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IDragHandler, IPo
 
                 if (ghostData != null)
                 {
-                    GameManager.instance.AddGhostToParty(ghostData.gameObject);
+                    GameManager.instance.AddGhostToParty(ghostData.gameObject, ghostData);
                 }
                 else
                 {
@@ -53,23 +52,36 @@ public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IDragHandler, IPo
             }
             else
             {
+                // Check if the ghost was previously in the party roster
+                bool wasInParty = GameManager.instance.partyRosterGhosts.Contains(ghostData);
 
                 rectTransform.SetParent(ghostRosterTransform);
-                RemoveGhostFromPartyFromAnyPanel(ghostData.gameObject);
+                RemoveGhostFromPartyFromAnyPanel(ghostData.gameObject, ghostData);
+
+                // If the ghost was previously in the party roster, remove it from the party roster
+                /*
+                if (wasInParty)
+                {
+                    //GameManager.instance.RemoveGhostFromParty(ghostData.gameObject);
+                }
+                */
             }
         }
     }
 
-    private void RemoveGhostFromPartyFromAnyPanel(GameObject ghostObject)
+    private void RemoveGhostFromPartyFromAnyPanel(GameObject ghostObject, Ghost ghost)
     {
-        if (ghostData != null)
+        if (ghost != null)
         {
-            GameManager.instance.RemoveGhostFromParty(ghostObject);
+            Debug.Log("Removing ghost from the party: " + ghost.ghostName);
         }
         else
         {
             Debug.LogWarning("No Ghost data found on the ghost object.");
         }
+
+        GameManager.instance.RemoveGhostFromParty(ghostObject, ghost);
+
     }
 
 
