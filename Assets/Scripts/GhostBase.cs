@@ -2,33 +2,33 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
-public class GhostBase : MonoBehaviour 
+public class GhostBase : MonoBehaviour
 {
 
-    //Ghost Combat info
-    /*
-     * Red > Green
-     * Green > Blue
-     * Blue > Red
-     */
+    public Ghost ghost;
+
+    // Ghost Combat info
+
     public enum GhostType { Red, Blue, Green }
     [SerializeField] GhostType type;
 
     public enum GhostSkill { Attack, Heal }
     [SerializeField] GhostSkill skill;
 
-    //combat information
+    // Combat information
     [SerializeField] int skillAmount;
 
     private BattleSystem battleSystem;
     private Vector3 originalScale;
 
+    // Cooldown variables
+    float cooldownDuration = 1f;
+    private bool isCooldown = false;
+
     private void Start()
     {
         battleSystem = FindObjectOfType<BattleSystem>();
         originalScale = transform.localScale;
-
     }
 
     private void OnMouseEnter()
@@ -42,6 +42,15 @@ public class GhostBase : MonoBehaviour
     }
 
     private void OnMouseDown()
+    {
+        if (!isCooldown && battleSystem.state == BattleState.PLAYERTURN)
+        {
+            StartCoroutine(ActivateCooldown());
+            UseSkill();
+        }
+    }
+
+    private void UseSkill()
     {
         if (battleSystem != null)
         {
@@ -68,5 +77,12 @@ public class GhostBase : MonoBehaviour
                 battleSystem.OnHealButton(skillAmount);
             }
         }
+    }
+
+    private IEnumerator ActivateCooldown()
+    {
+        isCooldown = true;
+        yield return new WaitForSeconds(cooldownDuration);
+        isCooldown = false;
     }
 }

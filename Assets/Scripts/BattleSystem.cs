@@ -35,6 +35,32 @@ public class BattleSystem : MonoBehaviour
 
     public string SampleScene;
 
+
+    //Katies Animationss
+
+    public GameObject player;
+    private Animator FightAnimator;
+
+    public GameObject playerPlaque;
+
+    public GameObject enemyPlaque;
+
+
+    public GameObject effects;
+    private Animator EffectsAnimator;
+
+
+
+    public GameObject enemy;
+    private Animator EnemysAnimator;
+
+
+    public GameObject enemyEffects;
+    private Animator EnemyEffectsAnimator;
+
+    //end Katie Additions
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -43,33 +69,96 @@ public class BattleSystem : MonoBehaviour
 
         state = BattleState.START;
         StartCoroutine(SetupBattle());
+
+        //Katies Animationss
+        FightAnimator = player.GetComponent<Animator>();
+        EffectsAnimator = effects.GetComponent<Animator>();
+        EnemysAnimator = enemy.GetComponent<Animator>();
+        EnemyEffectsAnimator = enemyEffects.GetComponent<Animator>();
+
+
+        playerPlaque.SetActive(false);
+        enemyPlaque.SetActive(false);
+
+
+        // end Katie Additions
     }
 
     IEnumerator SetupBattle()
     {
 
-        GameObject playerGO = Instantiate(playerPrefab, playerBattleStation);
+        //og
+        // GameObject playerGO = Instantiate(playerPrefab, playerBattleStation);
+        // playerUnit = playerGO.GetComponent<Unit>();
+
+        //GameObject enemyGO = Instantiate(enemyPrefab, enemyBattleStation);
+        //enemyUnit = enemyGO.GetComponent<Unit>();
+
+        //new
+        GameObject playerGO = playerPrefab;
         playerUnit = playerGO.GetComponent<Unit>();
 
-        GameObject enemyGO = Instantiate(enemyPrefab, enemyBattleStation);
+        GameObject enemyGO = enemyPrefab;
         enemyUnit = enemyGO.GetComponent<Unit>();
+        //end of new 
 
         //Loading in the ghosts
+        /*
         GameObject ghostOneGo = Instantiate(ghostOne, GhostOneStation);
         GameObject ghostTwoGo = Instantiate(ghostTwo, GhostTwoStation);
         GameObject ghostThreeGo = Instantiate(ghostThree, GhostThreeStation);
         GameObject ghostFourGo = Instantiate(ghostFour, GhostFourStation);
+        */
+        /*
+        GameObject ghostOneGO = Instantiate(GameManager.instance.partyGhosts[0], GhostOneStation);
+        ghostOne = ghostOneGO;
+
+        GameObject ghostTwoGO = Instantiate(GameManager.instance.partyGhosts[1], GhostTwoStation);
+        ghostTwo = ghostTwoGO;
+
+        GameObject ghostThreeGO = Instantiate(GameManager.instance.partyGhosts[2], GhostThreeStation);
+        ghostThree = ghostThreeGO;
+
+        GameObject ghostFourGO = Instantiate(GameManager.instance.partyGhosts[3], GhostFourStation);
+        ghostFour = ghostFourGO;
+        */
+
+        for (int i = 0; i < GameManager.instance.partyGhosts.Count; i++)
+        {
+            GameObject ghostGO = Instantiate(GameManager.instance.partyGhosts[i], GetGhostStation(i));
+            switch (i)
+            {
+                case 0:
+                    ghostOne = ghostGO;
+                    break;
+                case 1:
+                    ghostTwo = ghostGO;
+                    break;
+                case 2:
+                    ghostThree = ghostGO;
+                    break;
+                case 3:
+                    ghostFour = ghostGO;
+                    break;
+            }
+        }
 
         playerHUD.SetHUD(playerUnit);
         enemyHUD.SetHUD(enemyUnit);
 
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(1f);
 
         state = BattleState.PLAYERTURN;
         PlayerTurn();
     }
+
     IEnumerator PlayerAttack(int damageAmount)
     {
+        //Katies Animationss
+        FightAnimator.SetTrigger("PlayerAttack");
+        EffectsAnimator.SetTrigger("PlayerHurts");
+        EnemysAnimator.SetTrigger("Hurt");
+        // end Katie Additions
 
         bool isDead = enemyUnit.TakeDamage(damageAmount);
 
@@ -81,10 +170,12 @@ public class BattleSystem : MonoBehaviour
         }
         else
         {
+
             state = BattleState.ENEMYTURN;
             enemyHUD.SetHP(enemyUnit.currentHP);
 
             yield return new WaitForSeconds(1f);
+
             StartCoroutine(EnemyTurn());
         }
 
@@ -98,18 +189,27 @@ public class BattleSystem : MonoBehaviour
 
         playerHUD.SetHP(playerUnit.currentHP);
 
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(2f);
 
         StartCoroutine(EnemyTurn());
     }
 
     IEnumerator EnemyTurn()
     {
+        playerPlaque.SetActive(false);
+        enemyPlaque.SetActive(true);
+        DisableAllButtons();
+
         yield return new WaitForSeconds(1f);
 
         bool isDead = playerUnit.TakeDamage(enemyUnit.damage);
 
         playerHUD.SetHP(playerUnit.currentHP);
+
+        //Katies Animationss
+        FightAnimator.SetTrigger("PlayerHurt");
+        EnemyEffectsAnimator.SetTrigger("EnemyAttacks");
+        // end Katie Additions
 
         yield return new WaitForSeconds(1f);
 
@@ -148,7 +248,9 @@ public class BattleSystem : MonoBehaviour
 
     void PlayerTurn()
     {
-
+        playerPlaque.SetActive(true);
+        enemyPlaque.SetActive(false);
+        EnableAllButtons();
     }
 
 
@@ -208,4 +310,38 @@ public class BattleSystem : MonoBehaviour
         StartCoroutine(PlayerHeal(skillAmount));
     }
 
+    void EnableAllButtons()
+    {
+        SetGhostColliders(true);
+    }
+
+    void DisableAllButtons()
+    {
+        SetGhostColliders(false);
+    }
+
+    void SetGhostColliders(bool isActive)
+    {
+        ghostOne.GetComponent<BoxCollider>().enabled = isActive;
+        ghostTwo.GetComponent<BoxCollider>().enabled = isActive;
+        ghostThree.GetComponent<BoxCollider>().enabled = isActive;
+        ghostFour.GetComponent<BoxCollider>().enabled = isActive;
+    }
+
+    Transform GetGhostStation(int index)
+    {
+        switch (index)
+        {
+            case 0:
+                return GhostOneStation;
+            case 1:
+                return GhostTwoStation;
+            case 2:
+                return GhostThreeStation;
+            case 3:
+                return GhostFourStation;
+            default:
+                return null;
+        }
+    }
 }

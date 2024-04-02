@@ -15,9 +15,10 @@ MonoBehaviour:
   id: 6
   ghostName: Cascade
   iconMini: {fileID: 21300000, guid: b7ad5c7089cb7a44a951ad86aa275264, type: 3}
-  iconLarge: {fileID: 0}
+  iconLarge: {fileID: 21300000, guid: 79c32214767e7784aa8545f5d10e0007, type: 3}
   type: Blue
   ability: Aqua Mend
   description: A ghost made completely of empathy using her tears to heal your wounds.
     Was she doing the haunting or was she getting haunted?
   skillAmount: 4
+  gameObject: {fileID: 3092856095103773033, guid: cea2d2fae92309044a7aa4f17621b59d, type: 3}

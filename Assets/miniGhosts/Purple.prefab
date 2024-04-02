@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5207348432782748690}
   - component: {fileID: 6324903081387247487}
   - component: {fileID: -2251029395791273570}
+  - component: {fileID: -6392983146691892424}
   m_Layer: 0
   m_Name: Purple
   m_TagString: Untagged
@@ -97,11 +98,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 314b1c18db7188649b1869c38bfa79e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GhostName: Mystic
-  Description: She'll never love anyone just suck their soul out... sorry Ben
-  id: 4
-  iconMini: {fileID: 21300000, guid: e36e944dc2b707848b2f8ab532441466, type: 3}
-  iconLarge: {fileID: 21300000, guid: 1fb57f60ff81f1740810178bc9e5c8e6, type: 3}
   type: 1
   skill: 1
   skillAmount: 2
+--- !u!65 &-6392983146691892424
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2789021692345451965}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 9, y: 9, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}

@@ -4,6 +4,22 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
+/*
+ * What is left to do for this thing
+ * 
+ * I need to get the party roster which holds the Ghosts the player
+ * has put into their party
+ * 
+ * I then need to determine what Ghost that is and then tie that to the combat
+ * prefab
+ * 
+ * I could on the Ghost script attach the GhostBase script
+ * then assign that to the battleScene
+ * 
+ */
+
+
+
 public class GhostManager : MonoBehaviour
 {
     public static GhostManager Instance;
@@ -13,6 +29,7 @@ public class GhostManager : MonoBehaviour
     public GameObject miniGhost;
     public GameObject uiPrefab;
     public Transform overviewLocation;
+    public Transform partyRoster;
 
     private GameObject currentOverviewInstance;
 
@@ -28,22 +45,27 @@ public class GhostManager : MonoBehaviour
 
     public void ListItems()
     {
-        Debug.Log("Listing Ghosts...");
 
         DestroyCurrentOverview();
 
-        //Makes it so there is only one of each ghost
         foreach (Transform ghost in ghostRoster)
         {
             Destroy(ghost.gameObject);
         }
 
-        foreach (var ghost in Ghosts) {
+        foreach (var ghost in Ghosts)
+        {
 
             GameObject obj = Instantiate(miniGhost, ghostRoster);
 
             var ghostButton = obj.GetComponent<Button>();
             var ghostData = ghost;
+
+            var dragAndDrop = obj.GetComponent<DragAndDrop>();
+            if (dragAndDrop != null)
+            {
+                dragAndDrop.ghostData = ghost;
+            }
 
             ghostButton.onClick.AddListener(() =>
             {
@@ -54,12 +76,10 @@ public class GhostManager : MonoBehaviour
             var ghostName = obj.transform.Find("ghostName").GetComponent<TextMeshProUGUI>();
             var ghostIconMini = obj.transform.Find("iconMini").GetComponent<Image>();
 
-            Debug.Log(ghost.ghostName);
-
             ghostName.text = ghost.ghostName;
             ghostIconMini.sprite = ghost.iconMini;
 
-            
+
         }
     }
 
@@ -75,7 +95,6 @@ public class GhostManager : MonoBehaviour
         var abilityName = uiInstance.transform.Find("ghostAbilityInfo").GetComponent<TextMeshProUGUI>();
         var skillAmount = uiInstance.transform.Find("ghostSkillAmountInfo").GetComponent<TextMeshProUGUI>();
         var ghostDescription = uiInstance.transform.Find("ghostDescriptionInfo").GetComponent<TextMeshProUGUI>();
-
         var ghostIconMini = uiInstance.transform.Find("miniIcon").GetComponent<Image>();
         var ghostIconLarge = uiInstance.transform.Find("largeIcon").GetComponent<Image>();
 
@@ -97,5 +116,22 @@ public class GhostManager : MonoBehaviour
         {
             Destroy(currentOverviewInstance);
         }
+    }
+
+    public List<Ghost> GetPartyGhosts()
+    {
+        List<Ghost> partyGhosts = new List<Ghost>();
+
+        foreach (Transform ghostTransform in partyRoster)
+        {
+            Ghost ghost = ghostTransform.GetComponent<Ghost>();
+            if (ghost != null && Ghosts.Contains(ghost))
+            {
+                partyGhosts.Add(ghost);
+                Debug.Log("Ghost in party roster: " + ghost.ghostName);
+            }
+        }
+
+        return partyGhosts;
     }
 }

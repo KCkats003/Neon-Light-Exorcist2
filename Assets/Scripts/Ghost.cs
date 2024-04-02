@@ -19,4 +19,7 @@ public class Ghost : ScriptableObject
     [TextArea(3, 10)]
     public string description;
     public string skillAmount;
+
+    public GameObject gameObject;
 }
+

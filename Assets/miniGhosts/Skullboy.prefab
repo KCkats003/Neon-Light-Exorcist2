@@ -119,11 +119,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 314b1c18db7188649b1869c38bfa79e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GhostName: Grim
-  Description: Collector of unclaimed souls. Discovered him haunts Ms. Grandma.
-  id: 5
-  iconMini: {fileID: 21300000, guid: d9d26fad14718734cacca784b50a1319, type: 3}
-  iconLarge: {fileID: 21300000, guid: 9469429fb39334c46a0dd5135831da93, type: 3}
   type: 1
   skill: 0
   skillAmount: 6

@@ -8,6 +8,7 @@ TagManager:
   - Death
   - Dire
   - BattleSystem
+  - PartyMemberPanel
   layers:
   - Default
   - TransparentFX
