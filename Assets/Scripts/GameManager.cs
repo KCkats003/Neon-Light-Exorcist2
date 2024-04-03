@@ -17,10 +17,9 @@ public class GameManager : MonoBehaviour
     public static bool actII;
     public static bool actIII;
 
+    public List<Ghost> partyRosterGhosts = new List<Ghost>(); //This is for the UI
+    public List<GameObject> partyGhosts = new List<GameObject>(); //These are the ones that show up in combat
 
-    //The gameobject will store the ghosts going into combat, while Ghost will store info for the UI
-    public List<GameObject> partyGhosts = new List<GameObject>();
-    public List<Ghost> partyGhostsData = new List<Ghost>();
 
     void Awake()
     {
@@ -34,7 +33,11 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-
+        //Debug.Log("Ghosts in Party Roster:");
+        foreach (Ghost ghost in partyRosterGhosts)
+        {
+            //Debug.Log("- " + ghost.ghostName);
+        }
     }
 
     public static void DestroyObjectInSampleScene()
@@ -52,21 +55,15 @@ public class GameManager : MonoBehaviour
         enemiesToDestroy.Add(enemyName);
     }
 
-    public void AddGhostToParty(GameObject ghostObject)
+    public void AddGhostToParty(GameObject ghostObject, Ghost ghost)
     {
-        partyGhosts.Add(ghostObject);
+        partyGhosts.Add(ghostObject); //for combat
+        partyRosterGhosts.Add(ghost); //for UI
     }
 
-    public void RemoveGhostFromParty(GameObject ghostObject)
+    public void RemoveGhostFromParty(GameObject ghostObject, Ghost ghost)
     {
-        Ghost ghostData = ghostObject.GetComponent<Ghost>();
-        if (ghostData != null)
-        {
-            if (partyGhosts.Contains(ghostObject))
-            {
-                partyGhosts.Remove(ghostObject);
-                Debug.Log("Removed ghost from party: " + ghostData.ghostName);
-            }
-        }
+        partyGhosts.Remove(ghostObject); //for combat
+        partyRosterGhosts.Remove(ghost); //for UI
     }
 }

@@ -19,7 +19,7 @@ public class tempGhostMove : MonoBehaviour
         StartPos = transform.position;
         if (movementAmount == 0.0f)
         {
-            movementAmount = 1.2f;
+            movementAmount = 0.2f;
         }
 
         if (movementSpeed == 0.0f)
@@ -28,6 +28,20 @@ public class tempGhostMove : MonoBehaviour
         }
 
     }
+
+    //Emily's Archive
+    /**
+     *    if (movementAmount == 0.0f)
+        {
+            movementAmount = 1.2f;
+        }
+
+        if (movementSpeed == 0.0f)
+        {
+            movementSpeed = 0.15f;
+        }
+     * **/
+
 
     // Update is called once per frame
     void Update()
@@ -95,11 +109,11 @@ public class tempGhostMove : MonoBehaviour
 
 
 
-        if (transform.position.y > (StartPos.y + movementAmount))
+        if (transform.position.y > (StartPos.y + movementAmount- 1.03))
         {
             movement = false;
         }
-        else if (transform.position.y < (StartPos.y - movementAmount))
+        else if (transform.position.y < (StartPos.y - movementAmount -1.03))
         {
             movement = true;
         }
