@@ -5,10 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
-    path: Assets/Scenes/OLD/SampleScene.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/battleScene.unity
     guid: 66e84c85f21b6214f804a34692eb3c85
   - enabled: 1
@@ -17,14 +14,14 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/OLD/Part1Map_v2.unity
     guid: 355d1f5597199db47b746b61f0fb4968
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/battleScene3.unity
     guid: 5e63d677d054b41438afeac3834c345e
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/battleScene4.unity
     guid: 1a9351faf17816644b7b471a775f62e9
   - enabled: 1
-    path: Assets/Scenes/Lab.unity
+    path: Assets/Scenes/GameActs/Lab.unity
     guid: 090e704af7685ce41914347632fb16de
   - enabled: 1
     path: Assets/Scenes/Part1Map_v2_KatieFix.unity
@@ -44,4 +41,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Part1Map_v2_KatieFix_Update.unity
     guid: 9fb537b9f5f342c449a22eb0cc44cd97
+  - enabled: 1
+    path: Assets/Scenes/GameActs/battleSceneAndrew.unity
+    guid: 75386ba356c2bf34d80b15d5dffa343b
+  - enabled: 1
+    path: Assets/Scenes/GameActs/Tutorial.unity
+    guid: d595aac2728f42e4ebc1be66d27eec3d
+  - enabled: 1
+    path: Assets/Scenes/GameActs/battleSceneAndrew 1.unity
+    guid: 596523195fad2fa488e97140345dbc89
   m_configObjects: {}

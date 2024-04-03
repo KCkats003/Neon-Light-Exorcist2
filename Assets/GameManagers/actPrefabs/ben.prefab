@@ -1,0 +1,343 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7710385123407176429
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 220893177690227337}
+  - component: {fileID: 5815929160656107376}
+  - component: {fileID: 7963127812547149085}
+  - component: {fileID: 8472875620996091657}
+  m_Layer: 0
+  m_Name: ben
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &220893177690227337
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7710385123407176429}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 14.53, y: -0.07585287, z: -59.26}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &5815929160656107376
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7710385123407176429}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: dbf70649e3c75c342bc6255f42838c29, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 8.3632765, y: 21.33}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!65 &7963127812547149085
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7710385123407176429}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 31.014023, y: 21.330002, z: 1.855587}
+  m_Center: {x: -1.6926956, y: 10.665001, z: -0.040348053}
+--- !u!114 &8472875620996091657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7710385123407176429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 692e1c467c59b134891f448fb52d807d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    battleScene: 
+    HauntingGhost: purple
+    defaultDialogueLines:
+    - character:
+        name: Exorcist
+        icon: {fileID: 21300000, guid: e4842c51f4fcbbe41aadf977e37f26bb, type: 3}
+        iconRight: {fileID: 21300000, guid: a85216d9f77a6ab408b9359788ed2f3b, type: 3}
+        useIconRight: 1
+      line: Hey
+    - character:
+        name: Exorcist
+        icon: {fileID: 21300000, guid: e4842c51f4fcbbe41aadf977e37f26bb, type: 3}
+        iconRight: {fileID: 21300000, guid: a85216d9f77a6ab408b9359788ed2f3b, type: 3}
+        useIconRight: 1
+      line: Hey
+    - character:
+        name: Ben A. Loan
+        icon: {fileID: 21300000, guid: 366369a1703c12b40a5bb56205ed9582, type: 3}
+        iconRight: {fileID: 21300000, guid: a85216d9f77a6ab408b9359788ed2f3b, type: 3}
+        useIconRight: 1
+      line: Hello cutie :3
+    - character:
+        name: Exorcist
+        icon: {fileID: 21300000, guid: e4842c51f4fcbbe41aadf977e37f26bb, type: 3}
+        iconRight: {fileID: 21300000, guid: a85216d9f77a6ab408b9359788ed2f3b, type: 3}
+        useIconRight: 1
+      line: Excuse me?
+    - character:
+        name: Ben A. Loan
+        icon: {fileID: 21300000, guid: 366369a1703c12b40a5bb56205ed9582, type: 3}
+        iconRight: {fileID: 21300000, guid: a85216d9f77a6ab408b9359788ed2f3b, type: 3}
+        useIconRight: 1
+      line: My name is Ben A. Loan. A for awesome ehehe!
+    - character:
+        name: Exorcist
+        icon: {fileID: 21300000, guid: e4842c51f4fcbbe41aadf977e37f26bb, type: 3}
+        iconRight: {fileID: 21300000, guid: a85216d9f77a6ab408b9359788ed2f3b, type: 3}
+        useIconRight: 1
+      line: "Oh cool\u2026 so are you all alone out here?"
+    - character:
+        name: Ben A. Loan
+        icon: {fileID: 21300000, guid: 366369a1703c12b40a5bb56205ed9582, type: 3}
+        iconRight: {fileID: 21300000, guid: a85216d9f77a6ab408b9359788ed2f3b, type: 3}
+        useIconRight: 1
+      line: Nope hehe, for the first time EVER I am not!
+    - character:
+        name: Exorcist
+        icon: {fileID: 21300000, guid: e4842c51f4fcbbe41aadf977e37f26bb, type: 3}
+        iconRight: {fileID: 21300000, guid: a85216d9f77a6ab408b9359788ed2f3b, type: 3}
+        useIconRight: 1
+      line: Is that why you look so happy?
+    - character:
+        name: Ben A. Loan
+        icon: {fileID: 21300000, guid: 366369a1703c12b40a5bb56205ed9582, type: 3}
+        iconRight: {fileID: 21300000, guid: a85216d9f77a6ab408b9359788ed2f3b, type: 3}
+        useIconRight: 1
+      line: "You guessed it XD Ever since my ghostly lil sugar plum rainbow drop
+        cherrie pie shmoopie kinz came into my life, it\u2019s never been the same"
+    - character:
+        name: Exorcist
+        icon: {fileID: 21300000, guid: e4842c51f4fcbbe41aadf977e37f26bb, type: 3}
+        iconRight: {fileID: 21300000, guid: a85216d9f77a6ab408b9359788ed2f3b, type: 3}
+        useIconRight: 1
+      line: '*How did he make that sound with his mouth* Did you say ghost?'
+    - character:
+        name: Ben A. Loan
+        icon: {fileID: 21300000, guid: 366369a1703c12b40a5bb56205ed9582, type: 3}
+        iconRight: {fileID: 21300000, guid: a85216d9f77a6ab408b9359788ed2f3b, type: 3}
+        useIconRight: 1
+      line: "Let\u2019s not look into the finer details, all that matters is I proved
+        my mom wrong, I won\u2019t die alone like she said!\r\n"
+    - character:
+        name: Ben A. Loan
+        icon: {fileID: 21300000, guid: 366369a1703c12b40a5bb56205ed9582, type: 3}
+        iconRight: {fileID: 21300000, guid: a85216d9f77a6ab408b9359788ed2f3b, type: 3}
+        useIconRight: 1
+      line: "I mean there was that time I died\u2026 and I was alone\u2026 but that
+        doesn\u2019t count because I was resuscitated "
+    ghostDefeatedDialogueLines:
+    - character:
+        name: Exorcist
+        icon: {fileID: 21300000, guid: e4842c51f4fcbbe41aadf977e37f26bb, type: 3}
+        iconRight: {fileID: 21300000, guid: a85216d9f77a6ab408b9359788ed2f3b, type: 3}
+        useIconRight: 1
+      line: "Hey Ben! I got rid of the ghost for y\u2019a!"
+    - character:
+        name: Ben A. Loan
+        icon: {fileID: 21300000, guid: 366369a1703c12b40a5bb56205ed9582, type: 3}
+        iconRight: {fileID: 21300000, guid: a85216d9f77a6ab408b9359788ed2f3b, type: 3}
+        useIconRight: 1
+      line: "you did WHAT!!!!! HOW DARE YOU! DO YOU KNOW HOW LONG I\u2019VE WAITED
+        FOR THIS MOMENT!!?? AND YOU JUST TOOK AWAY MY KITTEN LIKE THAT!"
+    - character:
+        name: Exorcist
+        icon: {fileID: 21300000, guid: e4842c51f4fcbbe41aadf977e37f26bb, type: 3}
+        iconRight: {fileID: 21300000, guid: a85216d9f77a6ab408b9359788ed2f3b, type: 3}
+        useIconRight: 1
+      line: But Ben..!
+    - character:
+        name: Ben A. Loan
+        icon: {fileID: 21300000, guid: 366369a1703c12b40a5bb56205ed9582, type: 3}
+        iconRight: {fileID: 21300000, guid: a85216d9f77a6ab408b9359788ed2f3b, type: 3}
+        useIconRight: 1
+      line: NO, NO BUTTS I JUST WANT MY LIL PURPLE HAUNTING RAY OF DEATH BACK!
+    - character:
+        name: Exorcist
+        icon: {fileID: 21300000, guid: e4842c51f4fcbbe41aadf977e37f26bb, type: 3}
+        iconRight: {fileID: 21300000, guid: a85216d9f77a6ab408b9359788ed2f3b, type: 3}
+        useIconRight: 1
+      line: "Sorry Ben she\u2019s with me now\r\n"
+    - character:
+        name: Ben A. Loan
+        icon: {fileID: 21300000, guid: 366369a1703c12b40a5bb56205ed9582, type: 3}
+        iconRight: {fileID: 21300000, guid: a85216d9f77a6ab408b9359788ed2f3b, type: 3}
+        useIconRight: 1
+      line: " \u2026 \u2026"
+    - character:
+        name: Ben A. Loan
+        icon: {fileID: 21300000, guid: 366369a1703c12b40a5bb56205ed9582, type: 3}
+        iconRight: {fileID: 21300000, guid: a85216d9f77a6ab408b9359788ed2f3b, type: 3}
+        useIconRight: 1
+      line: " \u2026 \u2026"
+    - character:
+        name: Ben A. Loan
+        icon: {fileID: 21300000, guid: 366369a1703c12b40a5bb56205ed9582, type: 3}
+        iconRight: {fileID: 21300000, guid: a85216d9f77a6ab408b9359788ed2f3b, type: 3}
+        useIconRight: 1
+      line: "I\u2019m alone again\u2026"
+    - character:
+        name: Exorcist
+        icon: {fileID: 21300000, guid: e4842c51f4fcbbe41aadf977e37f26bb, type: 3}
+        iconRight: {fileID: 21300000, guid: a85216d9f77a6ab408b9359788ed2f3b, type: 3}
+        useIconRight: 1
+      line: I think I should be going
+    - character:
+        name: Ben A. Loan
+        icon: {fileID: 21300000, guid: 366369a1703c12b40a5bb56205ed9582, type: 3}
+        iconRight: {fileID: 21300000, guid: a85216d9f77a6ab408b9359788ed2f3b, type: 3}
+        useIconRight: 1
+      line: "\u266B\u2669 You ruined my life cause you caught my wife \u266C\u266A"
+    finalDialogueLines:
+    - character:
+        name: Ben A. Loan
+        icon: {fileID: 21300000, guid: 366369a1703c12b40a5bb56205ed9582, type: 3}
+        iconRight: {fileID: 21300000, guid: a85216d9f77a6ab408b9359788ed2f3b, type: 3}
+        useIconRight: 1
+      line: " Oh, it\u2019s you, the girlfriend stealer"
+    - character:
+        name: Exorcist
+        icon: {fileID: 21300000, guid: e4842c51f4fcbbe41aadf977e37f26bb, type: 3}
+        iconRight: {fileID: 21300000, guid: a85216d9f77a6ab408b9359788ed2f3b, type: 3}
+        useIconRight: 1
+      line: Ya sorry about that man
+    - character:
+        name: Ben A. Loan
+        icon: {fileID: 21300000, guid: 366369a1703c12b40a5bb56205ed9582, type: 3}
+        iconRight: {fileID: 21300000, guid: a85216d9f77a6ab408b9359788ed2f3b, type: 3}
+        useIconRight: 1
+      line: You know cutie, I know a way you could make it up to me
+    - character:
+        name: Exorcist
+        icon: {fileID: 21300000, guid: e4842c51f4fcbbe41aadf977e37f26bb, type: 3}
+        iconRight: {fileID: 21300000, guid: a85216d9f77a6ab408b9359788ed2f3b, type: 3}
+        useIconRight: 1
+      line: Uhh how?
+    - character:
+        name: Ben A. Loan
+        icon: {fileID: 21300000, guid: 366369a1703c12b40a5bb56205ed9582, type: 3}
+        iconRight: {fileID: 21300000, guid: a85216d9f77a6ab408b9359788ed2f3b, type: 3}
+        useIconRight: 1
+      line: If you went on a date with me EHEHEH!
+    - character:
+        name: Exorcist
+        icon: {fileID: 21300000, guid: e4842c51f4fcbbe41aadf977e37f26bb, type: 3}
+        iconRight: {fileID: 21300000, guid: a85216d9f77a6ab408b9359788ed2f3b, type: 3}
+        useIconRight: 1
+      line: "Sorry you\u2019re not my type\u2026 and I have a partner... And I\u2019m
+        not dating right now\u2026 And I\u2019m from elsewhere\u2026 But maybe we
+        could just be friends?\r\n"
+    - character:
+        name: Ben A. Loan
+        icon: {fileID: 21300000, guid: 366369a1703c12b40a5bb56205ed9582, type: 3}
+        iconRight: {fileID: 21300000, guid: a85216d9f77a6ab408b9359788ed2f3b, type: 3}
+        useIconRight: 1
+      line: " Ahhh no worries, that\u2019s what they all say. Besides, I\u2019m waiting
+        for my one true love\r\n"
+    - character:
+        name: Exorcist
+        icon: {fileID: 21300000, guid: e4842c51f4fcbbe41aadf977e37f26bb, type: 3}
+        iconRight: {fileID: 21300000, guid: a85216d9f77a6ab408b9359788ed2f3b, type: 3}
+        useIconRight: 1
+      line: "You\u2019re one true love?"
+    - character:
+        name: Ben A. Loan
+        icon: {fileID: 21300000, guid: 366369a1703c12b40a5bb56205ed9582, type: 3}
+        iconRight: {fileID: 21300000, guid: a85216d9f77a6ab408b9359788ed2f3b, type: 3}
+        useIconRight: 1
+      line: "Ahhh yes Gertrude\u2026 My Gertrude Fitzsgibbons, she\u2019s so beautiful,
+        the first time I saw her my heart skipped a beat and caused me to flat line.
+        It was so worth it though, the angels in the afterlife didn\u2019t even compare
+        to her beauty"
+    - character:
+        name: Exorcist
+        icon: {fileID: 21300000, guid: e4842c51f4fcbbe41aadf977e37f26bb, type: 3}
+        iconRight: {fileID: 21300000, guid: a85216d9f77a6ab408b9359788ed2f3b, type: 3}
+        useIconRight: 1
+      line: Wow she sounds like something
+    - character:
+        name: Ben A. Loan
+        icon: {fileID: 21300000, guid: 366369a1703c12b40a5bb56205ed9582, type: 3}
+        iconRight: {fileID: 21300000, guid: a85216d9f77a6ab408b9359788ed2f3b, type: 3}
+        useIconRight: 1
+      line: "She really was, but now she\u2019s some big-time actress, singer and
+        model in the big city and doesn\u2019t pay attention to me anymore"
+    - character:
+        name: Exorcist
+        icon: {fileID: 21300000, guid: e4842c51f4fcbbe41aadf977e37f26bb, type: 3}
+        iconRight: {fileID: 21300000, guid: a85216d9f77a6ab408b9359788ed2f3b, type: 3}
+        useIconRight: 1
+      line: "Keep your head up King, I\u2019m sure she\u2019ll come back sometime"
+    finalDialogue: 0

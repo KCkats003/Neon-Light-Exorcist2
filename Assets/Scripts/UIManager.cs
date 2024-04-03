@@ -19,9 +19,7 @@ public class UIManager : MonoBehaviour
 
     void OnTriggerEnter(Collider other){
         if(other.tag == "Player"){
-            //Debug.Log("HIT");
             DataBaseUI.SetActive(true);
-
             ghostManager.ListItems();
         }
     }

@@ -22,3 +22,4 @@ MonoBehaviour:
     grin, a lasso made of mist, and a quick draw that'll spook ya faster than a tumbleweed
     in a dust storm! Yee-haw!
   skillAmount: 8
+  gameObject: {fileID: 5836910687152915272, guid: cddd35024b4d85c4a86713b462a79765, type: 3}

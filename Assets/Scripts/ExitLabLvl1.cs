@@ -18,8 +18,7 @@ public class ExitLabLvl1 : MonoBehaviour
     }
     void OnTriggerEnter(Collider other){
         if(other.tag == "Player"){
-            Debug.Log("LAB");
-           SceneManager.LoadScene("Part1Map_v2_KatieFix");
+           SceneManager.LoadScene("Tutorial");
         }
     }
 }
