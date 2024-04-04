@@ -84,10 +84,15 @@ public class PlayerController_Katie : MonoBehaviour
                 // sr.enabled = false;
                 // animation_1.SetActive(true);
             }
-            else if ((Input.GetKey(KeyCode.UpArrow)) || (Input.GetKey(KeyCode.W)|| Input.GetKey(KeyCode.DownArrow)) || (Input.GetKey(KeyCode.S))) 
+            else if ((Input.GetKey(KeyCode.UpArrow)) || (Input.GetKey(KeyCode.W)) )
             {
                 //print("up or down key is held down");
-                ExploreAnimator.SetTrigger("WalkSide");
+                ExploreAnimator.SetTrigger("WalkBack");
+            }
+
+            else if ((Input.GetKey(KeyCode.DownArrow)) || (Input.GetKey(KeyCode.S)))
+                {
+                ExploreAnimator.SetTrigger("WalkFront");
             }
             else
             {

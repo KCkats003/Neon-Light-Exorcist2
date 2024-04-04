@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2295,6 +2295,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 539bd67135f58be4fb0c3a365e635da6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  partyRosterGhosts: []
+  partyGhosts: []
 --- !u!1 &888924351
 GameObject:
   m_ObjectHideFlags: 0
@@ -2451,9 +2453,9 @@ MonoBehaviour:
   Ghost: {fileID: 11400000, guid: 2f60154e258986344b0450f83987ff61, type: 2}
   playerPrefab: {fileID: 361492668}
   ghostOne: {fileID: 5836910687152915272, guid: 66ecbf22e8089e34eb4462d34d8ba151, type: 3}
-  ghostTwo: {fileID: 5836910687152915272, guid: 66ecbf22e8089e34eb4462d34d8ba151, type: 3}
-  ghostThree: {fileID: 5836910687152915272, guid: 66ecbf22e8089e34eb4462d34d8ba151, type: 3}
-  ghostFour: {fileID: 5836910687152915272, guid: 66ecbf22e8089e34eb4462d34d8ba151, type: 3}
+  ghostTwo: {fileID: 5836910687152915272, guid: 1a89c1f41a40f2b4084146a6c0ef249c, type: 3}
+  ghostThree: {fileID: 5836910687152915272, guid: 6fea4ffcc1f060e429b4c8bff56abd1f, type: 3}
+  ghostFour: {fileID: 5836910687152915272, guid: 0b895437cd5668d4293ae85469f28233, type: 3}
   enemyPrefab: {fileID: 2129187775}
   playerBattleStation: {fileID: 657824490}
   GhostOneStation: {fileID: 1801309416}
