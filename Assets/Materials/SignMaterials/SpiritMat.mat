@@ -9,7 +9,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: SpiritMat
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
-  m_Parent: {fileID: 2100000, guid: c6c6a52c93d55264889afee7637ae509, type: 2}
+  m_Parent: {fileID: 2100000, guid: 08c71ee2c2598a042ab0f231b4cae710, type: 2}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
   - _EMISSION

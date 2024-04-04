@@ -47,7 +47,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameActs/Tutorial.unity
     guid: d595aac2728f42e4ebc1be66d27eec3d
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/GameActs/battleSceneAndrew 1.unity
     guid: 596523195fad2fa488e97140345dbc89
   m_configObjects: {}
