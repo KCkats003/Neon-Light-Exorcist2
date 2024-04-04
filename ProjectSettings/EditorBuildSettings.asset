@@ -39,7 +39,7 @@ EditorBuildSettings:
     path: Assets/Scenes/battleSceneKatie_Skull.unity
     guid: b25cfa3c670b0eb4295f30d67086d6a0
   - enabled: 1
-    path: Assets/Scenes/Part1Map_v2_KatieFix_Update.unity
+    path: Assets/Scenes/Part1Map_v2_KatieFix_Update Animated.unity
     guid: 9fb537b9f5f342c449a22eb0cc44cd97
   - enabled: 1
     path: Assets/Scenes/GameActs/battleSceneAndrew.unity
