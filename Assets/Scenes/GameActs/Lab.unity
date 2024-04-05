@@ -14271,7 +14271,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     battleScene: 
-    nextActScene: Part1Map_v2
+    nextActScene: TEST_Part1 WIP
     HauntingGhost: 
     defaultDialogueLines:
     - character:

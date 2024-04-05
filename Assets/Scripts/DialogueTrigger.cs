@@ -90,25 +90,22 @@ public class DialogueTrigger : MonoBehaviour
             DialogueManager.Instance.StartDialogue(dialogue.defaultDialogueLines);
 
 
-            if (GameManager.actI)
+            if (GameManager.actI && dialogue.battleScene == "")
                 {
                 Debug.Log("THIS CODE IS RUNNING");
                 DialogueManager.Instance.SetBattleSceneToLoad(dialogue.nextActScene);
                 }
-                else if (GameManager.actII == true)
+                else if (GameManager.actII == true && dialogue.battleScene == "")
                 {
                     DialogueManager.Instance.SetBattleSceneToLoad(dialogue.nextActScene);
                 }
-                else if (GameManager.actIII == true)
+                else if (GameManager.actIII == true && dialogue.battleScene == "")
                 {
                     DialogueManager.Instance.SetBattleSceneToLoad(dialogue.nextActScene);
-                } else
-                {
-
+                } else {
                 DialogueManager.Instance.SetBattleSceneToLoad(dialogue.battleScene);
-
                 GameManager.instance.ShowGhost(dialogue.HauntingGhost);
-                  }
+                }
 
 
             /*
