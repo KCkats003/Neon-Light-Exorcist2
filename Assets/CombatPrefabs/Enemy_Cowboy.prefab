@@ -168,6 +168,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   unitName: Cowboy
-  damage: 5
-  maxHP: 15
-  currentHP: 15
+  damage: 20
+  maxHP: 200
+  currentHP: 200
+  type: 0

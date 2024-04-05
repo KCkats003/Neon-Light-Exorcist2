@@ -167,8 +167,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9503e6130bdfcaa4485013bc44da8652, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  unitName: Blaze
-  damage: 5
-  maxHP: 15
-  currentHP: 15
-  type: 0
+  unitName: Electro
+  damage: 25
+  maxHP: 300
+  currentHP: 300
+  type: 2

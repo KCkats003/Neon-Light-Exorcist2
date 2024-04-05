@@ -21,5 +21,5 @@ MonoBehaviour:
   description: When you lay eyes on her you know your heart will be faster increasing
     blood flow and making you healthier and stronger. She'll never love you back
     tho.
-  skillAmount: 2
+  skillAmount: 20
   gameObject: {fileID: 5836910687152915272, guid: 3bf92c1f74b201b45803e749cafc11dd, type: 3}

@@ -20,5 +20,5 @@ MonoBehaviour:
   ability: Shadow Reap
   description: With this one on your team your enemy ghost are the closest to death
     they'll ever be
-  skillAmount: 4
+  skillAmount: 15
   gameObject: {fileID: 5836910687152915272, guid: d88e075f7135fd9459cd7feabeab4097, type: 3}
