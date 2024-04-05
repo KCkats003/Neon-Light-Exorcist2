@@ -20,4 +20,4 @@ MonoBehaviour:
   ability: Inferno
   description: This guy is not cute he is hot.
   skillAmount: 2
-  gameObject: {fileID: 5206679218461107055, guid: a57b50fcd1963e544b1ad236f0693a6e, type: 3}
+  gameObject: {fileID: 5836910687152915272, guid: 6fea4ffcc1f060e429b4c8bff56abd1f, type: 3}
