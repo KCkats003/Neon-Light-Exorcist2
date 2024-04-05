@@ -757,6 +757,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47c53f2cf36ee1144a27cd99dc9fa615, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ghostInfo: {fileID: 0}
 --- !u!4 &698882788
 Transform:
   m_ObjectHideFlags: 0
@@ -922,11 +923,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 539bd67135f58be4fb0c3a365e635da6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  partyRosterGhosts: []
   partyGhosts: []
-  GhostOneStation: {fileID: 1701201387}
-  GhostTwoStation: {fileID: 1410080875}
-  GhostThreeStation: {fileID: 790106219}
-  GhostFourStation: {fileID: 522414440}
 --- !u!1 &825419034
 GameObject:
   m_ObjectHideFlags: 0
@@ -1137,7 +1135,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fdb20d4e3a62c741a32ebd73d9b2121, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Ghost: {fileID: 0}
+  Ghost: {fileID: 11400000, guid: 79c72f6fc13eb014b827b0b6537ed540, type: 2}
   playerPrefab: {fileID: 2072500273731921867, guid: d356b5a8d3c4ec449abcb659b428bfa6, type: 3}
   ghostOne: {fileID: 825419034}
   ghostTwo: {fileID: 825419034}
@@ -1160,6 +1158,63 @@ MonoBehaviour:
   effects: {fileID: 1925374670}
   enemy: {fileID: 870420865}
   enemyEffects: {fileID: 888924351}
+--- !u!1001 &910345999
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 820286377507443267, guid: 4d98bf33f19361442a80e83ac11c9da5, type: 3}
+      propertyPath: m_Name
+      value: GhostManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 5014213330254566807, guid: 4d98bf33f19361442a80e83ac11c9da5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 744.21454
+      objectReference: {fileID: 0}
+    - target: {fileID: 5014213330254566807, guid: 4d98bf33f19361442a80e83ac11c9da5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 489.22452
+      objectReference: {fileID: 0}
+    - target: {fileID: 5014213330254566807, guid: 4d98bf33f19361442a80e83ac11c9da5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3949.4202
+      objectReference: {fileID: 0}
+    - target: {fileID: 5014213330254566807, guid: 4d98bf33f19361442a80e83ac11c9da5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5014213330254566807, guid: 4d98bf33f19361442a80e83ac11c9da5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5014213330254566807, guid: 4d98bf33f19361442a80e83ac11c9da5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5014213330254566807, guid: 4d98bf33f19361442a80e83ac11c9da5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5014213330254566807, guid: 4d98bf33f19361442a80e83ac11c9da5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5014213330254566807, guid: 4d98bf33f19361442a80e83ac11c9da5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5014213330254566807, guid: 4d98bf33f19361442a80e83ac11c9da5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4d98bf33f19361442a80e83ac11c9da5, type: 3}
 --- !u!1 &911639288
 GameObject:
   m_ObjectHideFlags: 0
@@ -2013,6 +2068,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 530899277}
     m_Modifications:
+    - target: {fileID: 1927653760658548674, guid: 45f4de1728c55ec42ad996b6e6f0d66d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.64
+      objectReference: {fileID: 0}
     - target: {fileID: 8111093670720263626, guid: 45f4de1728c55ec42ad996b6e6f0d66d, type: 3}
       propertyPath: m_Name
       value: Enemy_Potion
@@ -3385,3 +3444,4 @@ SceneRoots:
   - {fileID: 1036743837}
   - {fileID: 1631194150}
   - {fileID: 825419035}
+  - {fileID: 910345999}
