@@ -80,20 +80,24 @@ public class DialogueTrigger : MonoBehaviour
             //if GameManager.enemiesToDestroy.Contains(dialogue.HauntingGhost) == 2 (all the ghosts in act one)
             //set actI = true
 
-                //if GameManager.enemiesToDestroy.Contains(dialogue.HauntingGhost) == 4 && actI = true 
-                //set actII = true
-
+            //if GameManager.enemiesToDestroy.Contains(dialogue.HauntingGhost) == 4 && actI = true 
+            //set actII = true
+           
 
         }
         else if (GameManager.enemiesToDestroy.Contains(dialogue.HauntingGhost))
         {
             DialogueManager.Instance.StartDialogue(dialogue.ghostDefeatedDialogueLines);
             dialogue.finalDialogue = true;
+
+     
         }
         else
         {
             DialogueManager.Instance.StartDialogue(dialogue.defaultDialogueLines);
             DialogueManager.Instance.SetBattleSceneToLoad(dialogue.battleScene);
+
+            GameManager.instance.ShowGhost(dialogue.HauntingGhost);
         }
     }
 

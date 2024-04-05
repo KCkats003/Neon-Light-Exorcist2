@@ -9,6 +9,7 @@ TagManager:
   - Dire
   - BattleSystem
   - PartyMemberPanel
+  - Ghost
   layers:
   - Default
   - TransparentFX

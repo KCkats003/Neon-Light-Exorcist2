@@ -58,10 +58,10 @@ public class GhostManager : MonoBehaviour
         }
 
         // Instantiate remaining ghosts from Ghosts list into the ghostRoster
-        foreach (var ghost in Ghosts)
+        foreach (var ghost in GameManager.instance.defeatedGhosts)
         {
             // Check if the ghost is not already instantiated
-            if (!GameManager.instance.partyRosterGhosts.Contains(ghost) && !IsGhostInstantiated(ghost, ghostRoster))
+            if (!IsGhostInstantiated(ghost, partyRoster) && !IsGhostInstantiated(ghost, ghostRoster))
             {
                 InstantiateGhostButton(ghost, ghostRoster);
             }
