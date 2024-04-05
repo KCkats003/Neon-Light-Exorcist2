@@ -23,7 +23,7 @@ public class DialogueManager : MonoBehaviour
 
     public bool isDialogueActive = false;
 
-    public float typingSpeed = 0.2f;
+    public float typingSpeed = 0.5f;
 
     private Vector3 playerSpawnPosition;
 

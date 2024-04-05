@@ -23,6 +23,8 @@ public class Dialogue
 {
     public string battleScene;
 
+    public string nextActScene;
+
     public string HauntingGhost;
 
     //public List<DialogueLine> dialogueLines = new List<DialogueLine>();
@@ -70,18 +72,9 @@ public class DialogueTrigger : MonoBehaviour
     {
         GameManager.objectNameToDestroy = gameObject.name;
 
-        // Check game state and trigger appropriate dialogue set
-        
         if (dialogue.finalDialogue == true)
         {
             DialogueManager.Instance.StartDialogue(dialogue.finalDialogueLines);
-
-            //Find tag scientist
-            //if GameManager.enemiesToDestroy.Contains(dialogue.HauntingGhost) == 2 (all the ghosts in act one)
-            //set actI = true
-
-            //if GameManager.enemiesToDestroy.Contains(dialogue.HauntingGhost) == 4 && actI = true 
-            //set actII = true
            
 
         }
@@ -95,20 +88,45 @@ public class DialogueTrigger : MonoBehaviour
         else
         {
             DialogueManager.Instance.StartDialogue(dialogue.defaultDialogueLines);
-            DialogueManager.Instance.SetBattleSceneToLoad(dialogue.battleScene);
 
-            GameManager.instance.ShowGhost(dialogue.HauntingGhost);
+
+            if (GameManager.actI)
+                {
+                Debug.Log("THIS CODE IS RUNNING");
+                DialogueManager.Instance.SetBattleSceneToLoad(dialogue.nextActScene);
+                }
+                else if (GameManager.actII == true)
+                {
+                    DialogueManager.Instance.SetBattleSceneToLoad(dialogue.nextActScene);
+                }
+                else if (GameManager.actIII == true)
+                {
+                    DialogueManager.Instance.SetBattleSceneToLoad(dialogue.nextActScene);
+                } else
+                {
+
+                DialogueManager.Instance.SetBattleSceneToLoad(dialogue.battleScene);
+
+                GameManager.instance.ShowGhost(dialogue.HauntingGhost);
+                  }
+
+
+            /*
+            GameObject player = GameObject.FindGameObjectWithTag("Player");
+            if (GameManager.actI = true && player.CompareTag("scientist"))
+            {
+                DialogueManager.Instance.SetBattleSceneToLoad(dialogue.nextActScene);
+            }
+            else if (GameManager.actII = true && player.CompareTag("scientist"))
+            {
+                DialogueManager.Instance.SetBattleSceneToLoad(dialogue.nextActScene);
+            } else if (GameManager.actIII = true && player.CompareTag("scientist"))
+            {
+                DialogueManager.Instance.SetBattleSceneToLoad(dialogue.nextActScene);
+            }
+            */
+
+
         }
     }
-
-
-    /*
-   private void TriggerDialogue()
-   {
-        GameManager.objectNameToDestroy = gameObject.name;
-        // If HauntingGhost name is not in enemiesToDestroy list, load battle scene without triggering dialogue
-        DialogueManager.Instance.SetBattleSceneToLoad(dialogue.battleScene);
-        DialogueManager.Instance.StartDialogue(dialogue);
-   }
-    */
 }
