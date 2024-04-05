@@ -10,6 +10,7 @@ TagManager:
   - BattleSystem
   - PartyMemberPanel
   - Ghost
+  - scientist
   layers:
   - Default
   - TransparentFX

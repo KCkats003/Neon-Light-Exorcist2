@@ -7893,7 +7893,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   partyRosterGhosts: []
   partyGhosts: []
-  defeatedGhosts: []
+  defeatedGhosts:
+  - {fileID: 11400000, guid: 663a79169e8b6654b8152177487ad7d8, type: 2}
 --- !u!4 &741202538
 Transform:
   m_ObjectHideFlags: 0
@@ -13768,6 +13769,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     battleScene: 
+    nextActScene: 
     HauntingGhost: 
     defaultDialogueLines: []
     ghostDefeatedDialogueLines: []
@@ -14250,7 +14252,7 @@ GameObject:
   - component: {fileID: 1507912382}
   m_Layer: 0
   m_Name: 3D_Talking_cube
-  m_TagString: Untagged
+  m_TagString: scientist
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14269,8 +14271,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     battleScene: 
+    nextActScene: Part1Map_v2
     HauntingGhost: 
-    defaultDialogueLines: []
+    defaultDialogueLines:
+    - character:
+        name: Dr. Dire
+        icon: {fileID: 0}
+        iconRight: {fileID: 0}
+        useIconRight: 0
+      line: Let's go to the next zone
     ghostDefeatedDialogueLines: []
     finalDialogueLines: []
     finalDialogue: 0
@@ -14293,8 +14302,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 3.398267, y: 17.12532, z: 1.355011}
-  m_Center: {x: 0.68543375, y: 7.3812094, z: 0.17750524}
+  m_Size: {x: 11.188243, y: 17.12532, z: 10.154243}
+  m_Center: {x: 0.59076285, y: 7.3812103, z: -4.22211}
 --- !u!23 &1507912379
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20135,7 +20144,7 @@ PrefabInstance:
       objectReference: {fileID: 2128058756}
     - target: {fileID: 275373132243531284, guid: 4d98bf33f19361442a80e83ac11c9da5, type: 3}
       propertyPath: Ghosts.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 275373132243531284, guid: 4d98bf33f19361442a80e83ac11c9da5, type: 3}
       propertyPath: Ghosts.Array.data[0]
