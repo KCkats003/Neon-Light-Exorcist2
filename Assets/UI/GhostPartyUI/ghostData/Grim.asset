@@ -21,4 +21,4 @@ MonoBehaviour:
   description: With this one on your team your enemy ghost are the closest to death
     they'll ever be
   skillAmount: 4
-  gameObject: {fileID: 4394715779577443816, guid: 20ea5d6f33aa4f24caddfd14f4679215, type: 3}
+  gameObject: {fileID: 5836910687152915272, guid: d88e075f7135fd9459cd7feabeab4097, type: 3}

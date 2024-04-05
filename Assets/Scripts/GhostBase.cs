@@ -18,7 +18,7 @@ public class GhostBase : MonoBehaviour
     // Combat information
     [SerializeField] int skillAmount;
 
-    private BattleSystem battleSystem;
+    private BattleSystem_Integrate2 battleSystem;
     private Vector3 originalScale;
 
     // Cooldown variables
@@ -27,13 +27,13 @@ public class GhostBase : MonoBehaviour
 
     private void Start()
     {
-        battleSystem = FindObjectOfType<BattleSystem>();
+        battleSystem = FindObjectOfType<BattleSystem_Integrate2>();
         originalScale = transform.localScale;
     }
 
     private void OnMouseEnter()
     {
-        transform.localScale = originalScale * 1.8f;
+        transform.localScale = originalScale * 1.3f;
     }
 
     private void OnMouseExit()

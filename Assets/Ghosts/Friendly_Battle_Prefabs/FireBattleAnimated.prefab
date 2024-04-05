@@ -119,9 +119,9 @@ Transform:
   m_GameObject: {fileID: 765956286436907769}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 11.14, z: 0}
-  m_LocalScale: {x: 1.5445, y: 1.5445, z: 1.5445}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: 0, y: 5.04, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 6194896315887275791}
   - {fileID: 841342670245414585}
@@ -237,7 +237,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1805345143168521678}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.18}
+  m_LocalPosition: {x: 0, y: 0, z: -0.16}
   m_LocalScale: {x: 0.2434, y: 0.2434, z: 0.2434}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -245,7 +245,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.05, y: 1.17}
+  m_AnchoredPosition: {x: 0.05, y: 1.34}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!23 &387270271091985922
@@ -394,7 +394,7 @@ GameObject:
   - component: {fileID: -3140705323051852237}
   - component: {fileID: 8966767382186577830}
   - component: {fileID: 3475221300409845853}
-  - component: {fileID: 874427260126387289}
+  - component: {fileID: 8004533292003907725}
   m_Layer: 0
   m_Name: FireBattleAnimated
   m_TagString: Untagged
@@ -469,7 +469,7 @@ MonoBehaviour:
   movement: 1
   movementSpeed: 0.1
   movementAmount: 0.1
---- !u!114 &874427260126387289
+--- !u!114 &8004533292003907725
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -478,12 +478,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 5836910687152915272}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ae74f86f0718f84e9ccf8baa0102cf4, type: 3}
+  m_Script: {fileID: 11500000, guid: 314b1c18db7188649b1869c38bfa79e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ghost: {fileID: 0}
   type: 0
   skill: 0
-  skillAmount: 0
+  skillAmount: 8
 --- !u!1 &8514339276915165966
 GameObject:
   m_ObjectHideFlags: 0
@@ -512,7 +513,7 @@ Transform:
   m_GameObject: {fileID: 8514339276915165966}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 5.6, z: 0}
+  m_LocalPosition: {x: 0, y: 1.2, z: 0}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_ConstrainProportionsScale: 1
   m_Children: []
