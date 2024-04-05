@@ -1694,7 +1694,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 10 attack damage
+  m_text: 15 attack damage
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6105064547f9e8d4c81bc29169453263, type: 2}
   m_sharedMaterial: {fileID: -6585754002680750933, guid: 6105064547f9e8d4c81bc29169453263, type: 2}
@@ -1892,6 +1892,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   partyRosterGhosts: []
   partyGhosts: []
+  defeatedGhosts: []
 --- !u!1 &888924351
 GameObject:
   m_ObjectHideFlags: 0

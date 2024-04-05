@@ -1704,7 +1704,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 10 attack damage
+  m_text: 15 attack damage
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6105064547f9e8d4c81bc29169453263, type: 2}
   m_sharedMaterial: {fileID: -6585754002680750933, guid: 6105064547f9e8d4c81bc29169453263, type: 2}
@@ -1902,6 +1902,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   partyRosterGhosts: []
   partyGhosts: []
+  defeatedGhosts: []
 --- !u!1 &888924351
 GameObject:
   m_ObjectHideFlags: 0
@@ -2514,7 +2515,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: eb467e2aee41d124486d4ddf53093c1d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d9d26fad14718734cacca784b50a1319, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4831,7 +4832,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Cowboy
+  m_text: Grimm
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6105064547f9e8d4c81bc29169453263, type: 2}
   m_sharedMaterial: {fileID: -6585754002680750933, guid: 6105064547f9e8d4c81bc29169453263, type: 2}
