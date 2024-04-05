@@ -62,4 +62,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TEST_Part1 WIP.unity
     guid: 7695d507cf362e4428180e8236c0054b
+  - enabled: 1
+    path: Assets/Scenes/battleScene_Skull.unity
+    guid: ba96dd5016f6ea2448c8d1a7c6ce028b
+  - enabled: 1
+    path: Assets/Scenes/battleScene_Green.unity
+    guid: 9d25c5eccf0dd8f4d92198cfa74c5054
+  - enabled: 1
+    path: Assets/Scenes/battleScene_Cowboy.unity
+    guid: 06325d0002cff86408c8435a794fd937
+  - enabled: 1
+    path: Assets/Scenes/battleScene_Mystic.unity
+    guid: 007b085c0d4d50445875d24dcafa94d0
   m_configObjects: {}

@@ -121,6 +121,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     battleScene: 
+    nextActScene: 
     HauntingGhost: purple
     defaultDialogueLines:
     - character:

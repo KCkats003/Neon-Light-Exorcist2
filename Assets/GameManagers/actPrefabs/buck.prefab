@@ -122,6 +122,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     battleScene: 
+    nextActScene: 
     HauntingGhost: Cowboy
     defaultDialogueLines:
     - character:
