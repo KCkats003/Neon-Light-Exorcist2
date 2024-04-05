@@ -119,9 +119,9 @@ Transform:
   m_GameObject: {fileID: 765956286436907769}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 11.14, z: 0}
-  m_LocalScale: {x: 1.5445, y: 1.5445, z: 1.5445}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: 0, y: 5.6800003, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 6194896315887275791}
   - {fileID: 841342670245414585}
@@ -394,7 +394,8 @@ GameObject:
   - component: {fileID: -3140705323051852237}
   - component: {fileID: 8966767382186577830}
   - component: {fileID: 3475221300409845853}
-  - component: {fileID: 874427260126387289}
+  - component: {fileID: -1596240350039044041}
+  - component: {fileID: 6447767852284141496}
   m_Layer: 0
   m_Name: ElectricityBattleAnimated
   m_TagString: Untagged
@@ -469,7 +470,7 @@ MonoBehaviour:
   movement: 1
   movementSpeed: 0.1
   movementAmount: 0.1
---- !u!114 &874427260126387289
+--- !u!114 &-1596240350039044041
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -478,12 +479,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 5836910687152915272}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ae74f86f0718f84e9ccf8baa0102cf4, type: 3}
+  m_Script: {fileID: 11500000, guid: 47c53f2cf36ee1144a27cd99dc9fa615, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  type: 0
+  ghostInfo: {fileID: 0}
+--- !u!114 &6447767852284141496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5836910687152915272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 314b1c18db7188649b1869c38bfa79e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ghost: {fileID: 0}
+  type: 2
   skill: 0
-  skillAmount: 0
+  skillAmount: 5
 --- !u!1 &8514339276915165966
 GameObject:
   m_ObjectHideFlags: 0
@@ -512,7 +527,7 @@ Transform:
   m_GameObject: {fileID: 8514339276915165966}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 5.6, z: 0}
+  m_LocalPosition: {x: 0, y: 0.14, z: 0}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_ConstrainProportionsScale: 1
   m_Children: []
