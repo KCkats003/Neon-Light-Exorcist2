@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public class GhostBase_KatieVer : MonoBehaviour 
+public class GhostBase_KatieVer : MonoBehaviour
 {
 
     //Ghost Combat info
