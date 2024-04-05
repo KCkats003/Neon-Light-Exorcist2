@@ -21,5 +21,5 @@ MonoBehaviour:
   description: A ghost with spectral swagger, haunting the plains with a mischievous
     grin, a lasso made of mist, and a quick draw that'll spook ya faster than a tumbleweed
     in a dust storm! Yee-haw!
-  skillAmount: 8
+  skillAmount: 15
   gameObject: {fileID: 5836910687152915272, guid: 66ecbf22e8089e34eb4462d34d8ba151, type: 3}

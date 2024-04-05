@@ -310,7 +310,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 10pt Attack
+  m_text: 15pt Attack
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6105064547f9e8d4c81bc29169453263, type: 2}
   m_sharedMaterial: {fileID: -6585754002680750933, guid: 6105064547f9e8d4c81bc29169453263, type: 2}
@@ -484,7 +484,7 @@ MonoBehaviour:
   ghost: {fileID: 0}
   type: 1
   skill: 0
-  skillAmount: 6
+  skillAmount: 15
 --- !u!1 &8514339276915165966
 GameObject:
   m_ObjectHideFlags: 0

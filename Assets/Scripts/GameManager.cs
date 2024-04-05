@@ -20,6 +20,7 @@ public class GameManager : MonoBehaviour
     public List<Ghost> partyRosterGhosts = new List<Ghost>(); //This is for the UI
     public List<GameObject> partyGhosts = new List<GameObject>(); //These are the ones that show up in combat
 
+    public List<Ghost> defeatedGhosts = new List<Ghost>(); //for the ghosts you captured
 
     void Awake()
     {
@@ -29,6 +30,30 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
 
         DontDestroyOnLoad(gameObject);
+
+        HideAllGhosts();
+
+        Ghost initialDefeatedGhost = new Ghost();
+    }
+
+    void HideAllGhosts()
+    {
+        GameObject[] ghosts = GameObject.FindGameObjectsWithTag("Ghost");
+        foreach (GameObject ghost in ghosts)
+        {
+            ghost.GetComponent<Renderer>().enabled = false;
+            ghost.GetComponent<BoxCollider>().enabled = false;
+
+        }
+    }
+
+    public void ShowGhost(string ghostName)
+    {
+        GameObject ghostToActivate = GameObject.Find(ghostName);
+
+        ghostToActivate.GetComponent<Renderer>().enabled = true;
+        ghostToActivate.GetComponent<BoxCollider>().enabled = true;
+
     }
 
     void Update()
@@ -65,5 +90,10 @@ public class GameManager : MonoBehaviour
     {
         partyGhosts.Remove(ghostObject); //for combat
         partyRosterGhosts.Remove(ghost); //for UI
+    }
+
+    public void AddDefeatedGhost(Ghost ghost)
+    {
+        defeatedGhosts.Add(ghost);
     }
 }

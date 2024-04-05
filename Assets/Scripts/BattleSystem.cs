@@ -166,7 +166,7 @@ public class BattleSystem : MonoBehaviour
         {
             state = BattleState.WON;
             enemyHUD.SetHP(enemyUnit.currentHP = 0);
-            EndBattle();
+            EndBattle(Ghost);
         }
         else
         {
@@ -216,7 +216,7 @@ public class BattleSystem : MonoBehaviour
         if (isDead)
         {
             state = BattleState.LOST;
-            EndBattle();
+            EndBattle(Ghost); //HERE added the Ghost
         }
         else
         {
@@ -225,7 +225,7 @@ public class BattleSystem : MonoBehaviour
         }
     }
 
-    void EndBattle()
+    void EndBattle(Ghost ghost) //This line got the Ghost ghost to send the data
     {
         if (state == BattleState.WON)
         {
@@ -233,8 +233,8 @@ public class BattleSystem : MonoBehaviour
             // Load original scene
             SceneManager.LoadScene(SampleScene, LoadSceneMode.Single);
 
-            //I dont know might add the ghost to the inventory IDK
-            GhostManager.Instance.Add(Ghost);
+            // Add the defeated ghost to the GameManager's defeatedGhosts list
+            GameManager.instance.AddDefeatedGhost(ghost); //ADDED this here
         }
         else if (state == BattleState.LOST)
         {
@@ -245,6 +245,7 @@ public class BattleSystem : MonoBehaviour
         // Store player's health in GameManager
         GameManager.playerHealth = playerUnit.currentHP;
     }
+
 
     void PlayerTurn()
     {
