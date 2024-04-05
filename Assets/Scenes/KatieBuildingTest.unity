@@ -156,6 +156,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     battleScene: 
+    nextActScene: 
     HauntingGhost: Cowboy
     defaultDialogueLines:
     - character:
@@ -1023,6 +1024,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     battleScene: battleScene3
+    nextActScene: 
     HauntingGhost: 
     defaultDialogueLines: []
     ghostDefeatedDialogueLines: []
@@ -3244,6 +3246,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   partyRosterGhosts: []
   partyGhosts: []
+  defeatedGhosts: []
 --- !u!4 &741202538
 Transform:
   m_ObjectHideFlags: 0
@@ -6644,6 +6647,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     battleScene: 
+    nextActScene: 
     HauntingGhost: 
     defaultDialogueLines: []
     ghostDefeatedDialogueLines: []
@@ -7000,6 +7004,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     battleScene: 
+    nextActScene: 
     HauntingGhost: 
     defaultDialogueLines: []
     ghostDefeatedDialogueLines: []
@@ -8467,6 +8472,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     battleScene: battleScene4
+    nextActScene: 
     HauntingGhost: 
     defaultDialogueLines: []
     ghostDefeatedDialogueLines: []
@@ -8660,6 +8666,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     battleScene: 
+    nextActScene: 
     HauntingGhost: purple
     defaultDialogueLines:
     - character:
@@ -9456,6 +9463,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ab66669f3b8f4af4d95ba4c67356125f, type: 3}
+--- !u!1001 &5009836316930313132
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3373325046286878804, guid: 9fe5a6dfa0c16f54b8b9b1216108f26a, type: 3}
+      propertyPath: m_Name
+      value: TalkSign
+      objectReference: {fileID: 0}
+    - target: {fileID: 3904683592840635019, guid: 9fe5a6dfa0c16f54b8b9b1216108f26a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3904683592840635019, guid: 9fe5a6dfa0c16f54b8b9b1216108f26a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3904683592840635019, guid: 9fe5a6dfa0c16f54b8b9b1216108f26a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 11.27
+      objectReference: {fileID: 0}
+    - target: {fileID: 3904683592840635019, guid: 9fe5a6dfa0c16f54b8b9b1216108f26a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3904683592840635019, guid: 9fe5a6dfa0c16f54b8b9b1216108f26a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3904683592840635019, guid: 9fe5a6dfa0c16f54b8b9b1216108f26a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3904683592840635019, guid: 9fe5a6dfa0c16f54b8b9b1216108f26a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3904683592840635019, guid: 9fe5a6dfa0c16f54b8b9b1216108f26a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3904683592840635019, guid: 9fe5a6dfa0c16f54b8b9b1216108f26a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3904683592840635019, guid: 9fe5a6dfa0c16f54b8b9b1216108f26a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9fe5a6dfa0c16f54b8b9b1216108f26a, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -9498,4 +9562,5 @@ SceneRoots:
   - {fileID: 1343260566}
   - {fileID: 389022870}
   - {fileID: 1015277959}
+  - {fileID: 5009836316930313132}
   - {fileID: 1112820341}

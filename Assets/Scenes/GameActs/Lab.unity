@@ -14275,11 +14275,232 @@ MonoBehaviour:
     HauntingGhost: 
     defaultDialogueLines:
     - character:
+        name: Exrocist
+        icon: {fileID: 21300000, guid: e4842c51f4fcbbe41aadf977e37f26bb, type: 3}
+        iconRight: {fileID: 21300000, guid: 0af9d46c019f07e4793196fd56ccdeb7, type: 3}
+        useIconRight: 1
+      line: "What is it that\u2019s so important"
+    - character:
         name: Dr. Dire
-        icon: {fileID: 0}
-        iconRight: {fileID: 0}
-        useIconRight: 0
-      line: Let's go to the next zone
+        icon: {fileID: 21300000, guid: 366369a1703c12b40a5bb56205ed9582, type: 3}
+        iconRight: {fileID: 21300000, guid: 00c492f0950dc5f4d857279069b1a67b, type: 3}
+        useIconRight: 1
+      line: "Are you unaware of the events that transpired!? It\u2019s not safe out
+        there"
+    - character:
+        name: Exorcist
+        icon: {fileID: 21300000, guid: e4842c51f4fcbbe41aadf977e37f26bb, type: 3}
+        iconRight: {fileID: 21300000, guid: 0af9d46c019f07e4793196fd56ccdeb7, type: 3}
+        useIconRight: 1
+      line: What events?
+    - character:
+        name: Dr. Dire
+        icon: {fileID: 21300000, guid: 366369a1703c12b40a5bb56205ed9582, type: 3}
+        iconRight: {fileID: 21300000, guid: 00c492f0950dc5f4d857279069b1a67b, type: 3}
+        useIconRight: 1
+      line: 'Well the Vanishing nonetheless! This catastrophic event has taken all
+        the citizens from this town and replaced them with ghastly ghouls, nasty
+        lil things you should see them
+
+'
+    - character:
+        name: Exorcist
+        icon: {fileID: 21300000, guid: e4842c51f4fcbbe41aadf977e37f26bb, type: 3}
+        iconRight: {fileID: 21300000, guid: 0af9d46c019f07e4793196fd56ccdeb7, type: 3}
+        useIconRight: 1
+      line: "So\u2026 how am I here"
+    - character:
+        name: Dr. Dire
+        icon: {fileID: 21300000, guid: 366369a1703c12b40a5bb56205ed9582, type: 3}
+        iconRight: {fileID: 21300000, guid: 00c492f0950dc5f4d857279069b1a67b, type: 3}
+        useIconRight: 1
+      line: "Well that\u2019s the question huh! I have a working theory called Bridge..
+        Uh- Theory a little redundant I\u2019ll have to work on that.. Maybe the
+        Bridge Bang or Bridge Relativity or or Bridge Slate"
+    - character:
+        name: Exorcist
+        icon: {fileID: 21300000, guid: e4842c51f4fcbbe41aadf977e37f26bb, type: 3}
+        iconRight: {fileID: 21300000, guid: 0af9d46c019f07e4793196fd56ccdeb7, type: 3}
+        useIconRight: 1
+      line: "Hey focus!! What\u2019s the uh\u2026 Bridge.. Theory"
+    - character:
+        name: Dr. Dire
+        icon: {fileID: 21300000, guid: 366369a1703c12b40a5bb56205ed9582, type: 3}
+        iconRight: {fileID: 21300000, guid: 00c492f0950dc5f4d857279069b1a67b, type: 3}
+        useIconRight: 1
+      line: Well simple really, there are two worlds ours and the world we pass into.
+        My theory is that the wall between both split open and made a bridge between
+        both our realms switching people with ghosts and vice versa.
+    - character:
+        name: Exorcist
+        icon: {fileID: 21300000, guid: e4842c51f4fcbbe41aadf977e37f26bb, type: 3}
+        iconRight: {fileID: 21300000, guid: 0af9d46c019f07e4793196fd56ccdeb7, type: 3}
+        useIconRight: 1
+      line: "And I\u2019m here because\u2026"
+    - character:
+        name: Dr. Dire
+        icon: {fileID: 21300000, guid: 366369a1703c12b40a5bb56205ed9582, type: 3}
+        iconRight: {fileID: 21300000, guid: 00c492f0950dc5f4d857279069b1a67b, type: 3}
+        useIconRight: 1
+      line: "Oh ya you\u2019re here because you\u2019ve been able to cross over to
+        both\u2026 in a near death experience your soul has passed to the other world
+        and come back to you"
+    - character:
+        name: Exorcist
+        icon: {fileID: 21300000, guid: e4842c51f4fcbbe41aadf977e37f26bb, type: 3}
+        iconRight: {fileID: 21300000, guid: 0af9d46c019f07e4793196fd56ccdeb7, type: 3}
+        useIconRight: 1
+      line: "So my family\u2026 they\u2019re.. they\u2019re gone\u2026?"
+    - character:
+        name: Dr. Dire
+        icon: {fileID: 21300000, guid: 366369a1703c12b40a5bb56205ed9582, type: 3}
+        iconRight: {fileID: 21300000, guid: 00c492f0950dc5f4d857279069b1a67b, type: 3}
+        useIconRight: 1
+      line: ' Family Shmamily you know this works out well'
+    - character:
+        name: Exorcist
+        icon: {fileID: 21300000, guid: e4842c51f4fcbbe41aadf977e37f26bb, type: 3}
+        iconRight: {fileID: 21300000, guid: 0af9d46c019f07e4793196fd56ccdeb7, type: 3}
+        useIconRight: 1
+      line: "\u2026."
+    - character:
+        name: Dr. Dire
+        icon: {fileID: 21300000, guid: 366369a1703c12b40a5bb56205ed9582, type: 3}
+        iconRight: {fileID: 21300000, guid: 00c492f0950dc5f4d857279069b1a67b, type: 3}
+        useIconRight: 1
+      line: "Oh cheer up this is good you help me and I\u2019ll help you"
+    - character:
+        name: Exorcist
+        icon: {fileID: 21300000, guid: e4842c51f4fcbbe41aadf977e37f26bb, type: 3}
+        iconRight: {fileID: 21300000, guid: 0af9d46c019f07e4793196fd56ccdeb7, type: 3}
+        useIconRight: 1
+      line: How
+    - character:
+        name: Dr. Dire
+        icon: {fileID: 21300000, guid: 366369a1703c12b40a5bb56205ed9582, type: 3}
+        iconRight: {fileID: 21300000, guid: 00c492f0950dc5f4d857279069b1a67b, type: 3}
+        useIconRight: 1
+      line: "Well I need to know more about these\u2026 entities around us I need
+        to collect them"
+    - character:
+        name: Exorcist
+        icon: {fileID: 21300000, guid: e4842c51f4fcbbe41aadf977e37f26bb, type: 3}
+        iconRight: {fileID: 21300000, guid: 0af9d46c019f07e4793196fd56ccdeb7, type: 3}
+        useIconRight: 1
+      line: Ok you got legs
+    - character:
+        name: Exorcist
+        icon: {fileID: 21300000, guid: e4842c51f4fcbbe41aadf977e37f26bb, type: 3}
+        iconRight: {fileID: 21300000, guid: 00c492f0950dc5f4d857279069b1a67b, type: 3}
+        useIconRight: 1
+      line: Ok you got legs
+    - character:
+        name: Dr. Dire
+        icon: {fileID: 21300000, guid: 366369a1703c12b40a5bb56205ed9582, type: 3}
+        iconRight: {fileID: 21300000, guid: 00c492f0950dc5f4d857279069b1a67b, type: 3}
+        useIconRight: 1
+      line: Barely
+    - character:
+        name: Exrocist
+        icon: {fileID: 21300000, guid: e4842c51f4fcbbe41aadf977e37f26bb, type: 3}
+        iconRight: {fileID: 21300000, guid: 0af9d46c019f07e4793196fd56ccdeb7, type: 3}
+        useIconRight: 1
+      line: What?
+    - character:
+        name: Dr. Dire
+        icon: {fileID: 21300000, guid: 366369a1703c12b40a5bb56205ed9582, type: 3}
+        iconRight: {fileID: 21300000, guid: 00c492f0950dc5f4d857279069b1a67b, type: 3}
+        useIconRight: 1
+      line: 'I mean uh berry '
+    - character:
+        name: Exorcist
+        icon: {fileID: 21300000, guid: e4842c51f4fcbbe41aadf977e37f26bb, type: 3}
+        iconRight: {fileID: 21300000, guid: 0af9d46c019f07e4793196fd56ccdeb7, type: 3}
+        useIconRight: 1
+      line: Berry??
+    - character:
+        name: Dr. Dire
+        icon: {fileID: 21300000, guid: 366369a1703c12b40a5bb56205ed9582, type: 3}
+        iconRight: {fileID: 21300000, guid: 00c492f0950dc5f4d857279069b1a67b, type: 3}
+        useIconRight: 1
+      line: "Berry\u2026. GLAD TO HAVE YOU ON THE TEAM! \u2090\u2095\u2090\u2095\u2090
+        \u209C\u2095\u2090\u209C w\u2090\u209B c\u2097\u2092\u209B\u2091 Anyway it\u2019s
+        quite simple, you get ME ghost I get YOU family"
+    - character:
+        name: Exorcist
+        icon: {fileID: 21300000, guid: e4842c51f4fcbbe41aadf977e37f26bb, type: 3}
+        iconRight: {fileID: 21300000, guid: 0af9d46c019f07e4793196fd56ccdeb7, type: 3}
+        useIconRight: 1
+      line: Allrightttt, how can I get you ghosts
+    - character:
+        name: Dr. Dire
+        icon: {fileID: 21300000, guid: 366369a1703c12b40a5bb56205ed9582, type: 3}
+        iconRight: {fileID: 21300000, guid: 00c492f0950dc5f4d857279069b1a67b, type: 3}
+        useIconRight: 1
+      line: Oh oh ya! As fortuitous circumstance would have it I found this strangler
+        in my propeller I was able to do some test and realized once beaten they
+        become quit submissive actually even friendly
+    - character:
+        name: Exorcist
+        icon: {fileID: 21300000, guid: e4842c51f4fcbbe41aadf977e37f26bb, type: 3}
+        iconRight: {fileID: 21300000, guid: 0af9d46c019f07e4793196fd56ccdeb7, type: 3}
+        useIconRight: 1
+      line: Friendly?
+    - character:
+        name: Dr. Dire
+        icon: {fileID: 21300000, guid: 366369a1703c12b40a5bb56205ed9582, type: 3}
+        iconRight: {fileID: 21300000, guid: 00c492f0950dc5f4d857279069b1a67b, type: 3}
+        useIconRight: 1
+      line: Hmm yes indeed it will join forces with if you just add it to your group
+    - character:
+        name: Exorcist
+        icon: {fileID: 21300000, guid: e4842c51f4fcbbe41aadf977e37f26bb, type: 3}
+        iconRight: {fileID: 21300000, guid: 0af9d46c019f07e4793196fd56ccdeb7, type: 3}
+        useIconRight: 1
+      line: How can I do that?
+    - character:
+        name: Dr. Dire
+        icon: {fileID: 21300000, guid: 366369a1703c12b40a5bb56205ed9582, type: 3}
+        iconRight: {fileID: 21300000, guid: 00c492f0950dc5f4d857279069b1a67b, type: 3}
+        useIconRight: 1
+      line: "Well\u2026 you can view it in my The Bio-Organic Oscillatory Omnidirectional
+        Omni-moduleor or just BOOO for short. Once you view it you can equip it to
+        your party and it will follow you around the world\r\n"
+    - character:
+        name: Exorcist
+        icon: {fileID: 21300000, guid: e4842c51f4fcbbe41aadf977e37f26bb, type: 3}
+        iconRight: {fileID: 21300000, guid: 0af9d46c019f07e4793196fd56ccdeb7, type: 3}
+        useIconRight: 1
+      line: Why do I even need it
+    - character:
+        name: Dr. Dire
+        icon: {fileID: 21300000, guid: 366369a1703c12b40a5bb56205ed9582, type: 3}
+        iconRight: {fileID: 21300000, guid: 00c492f0950dc5f4d857279069b1a67b, type: 3}
+        useIconRight: 1
+      line: "Well to fight other ghosts you simpleton\u2026 How else could you fight
+        a ghosts your attacks would go straight through it.. sheesh"
+    - character:
+        name: Dr. Dire
+        icon: {fileID: 21300000, guid: 366369a1703c12b40a5bb56205ed9582, type: 3}
+        iconRight: {fileID: 21300000, guid: 2bd1a7b50792dbf48925b3b83278528f, type: 3}
+        useIconRight: 1
+      line: "When you fight other ghosts and win they will submit and join your party
+        and I can do more research. But be vigilant because some ghosts are stronger
+        than others and some with different purposes like healing, fighting and uh..
+        That\u2019s it."
+    - character:
+        name: Exorcist
+        icon: {fileID: 21300000, guid: e4842c51f4fcbbe41aadf977e37f26bb, type: 3}
+        iconRight: {fileID: 21300000, guid: 0af9d46c019f07e4793196fd56ccdeb7, type: 3}
+        useIconRight: 1
+      line: okay..
+    - character:
+        name: Dr. Dire
+        icon: {fileID: 21300000, guid: 366369a1703c12b40a5bb56205ed9582, type: 3}
+        iconRight: {fileID: 21300000, guid: 00c492f0950dc5f4d857279069b1a67b, type: 3}
+        useIconRight: 1
+      line: "Well go on now!! We\u2019re wasting time! Collect all the ghosts you
+        can and we\u2019ll move to the city where the ghosts are stronger.. Go hurry "
     ghostDefeatedDialogueLines: []
     finalDialogueLines: []
     finalDialogue: 0
