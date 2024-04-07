@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1367,6 +1367,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 657824490}
     m_Modifications:
+    - target: {fileID: 461548435134139154, guid: c947390fe43b5e04ca50fd1d7cbf048e, type: 3}
+      propertyPath: maxHP
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 461548435134139154, guid: c947390fe43b5e04ca50fd1d7cbf048e, type: 3}
+      propertyPath: currentHP
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 2072500273731921867, guid: c947390fe43b5e04ca50fd1d7cbf048e, type: 3}
       propertyPath: m_Name
       value: MainCharacter_Katie_NoGhostVer
@@ -5354,6 +5362,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 530899277}
     m_Modifications:
+    - target: {fileID: 5850994643493354057, guid: 95a339ce0d3504d439d26efc4a576c90, type: 3}
+      propertyPath: maxHP
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 5850994643493354057, guid: 95a339ce0d3504d439d26efc4a576c90, type: 3}
+      propertyPath: currentHP
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 8111093670720263626, guid: 95a339ce0d3504d439d26efc4a576c90, type: 3}
       propertyPath: m_Name
       value: Enemy_Blaze

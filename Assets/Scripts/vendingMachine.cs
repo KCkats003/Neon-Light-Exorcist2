@@ -34,10 +34,20 @@ public class vendingMachine : MonoBehaviour
 
     private void IncreasePlayerHealth()
     {
-        GameManager.playerHealth += 10;
+
+        if (GameManager.playerHealth < 100)
+        {
+            GameManager.playerHealth = 100;
+            Debug.Log("Player Health increased to: " + GameManager.playerHealth);
+
+            FindObjectOfType<SceneLoader>().updateHealth();
+        }
+
+        /*
+        GameManager.playerHealth += 40;
         Debug.Log("Player Health increased to: " + GameManager.playerHealth);
 
-        PlayerPrefs.SetInt("PlayerHealth", GameManager.playerHealth);
-        PlayerPrefs.Save();
+        FindObjectOfType<SceneLoader>().updateHealth();
+        */
     }
 }

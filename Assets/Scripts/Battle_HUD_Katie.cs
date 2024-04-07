@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
@@ -12,16 +11,28 @@ public class Battle_HUD_Katie : MonoBehaviour
     public TextMeshProUGUI maxHealthText;
     public Slider hpSlider;
 
+    int currentHP;
+
     public void SetHUD(Unit unit)
     {
         nameText.text = unit.unitName;
         hpSlider.maxValue = unit.maxHP;
 
         // Get the current health from the unit
-        int currentHP = unit.currentHP;
+        if (CompareTag("Player"))
+        {
+            // Initialize player's health
+            currentHP = GameManager.playerHealth;
+        } else
+        {
+            currentHP = unit.currentHP;
+        }
+
+        currentHealthText.text = currentHP.ToString();
+
         hpSlider.value = currentHP;
         maxHealthText.text = unit.maxHP.ToString();
-        currentHealthText.text = unit.maxHP.ToString();
+        //currentHealthText.text = unit.maxHP.ToString();
 
     }
 

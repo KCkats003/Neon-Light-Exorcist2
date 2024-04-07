@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -8163,13 +8163,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 539bd67135f58be4fb0c3a365e635da6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  partyRosterGhosts:
-  - {fileID: 11400000, guid: 79c72f6fc13eb014b827b0b6537ed540, type: 2}
-  - {fileID: 11400000, guid: 2fa4303f687cb6c40ba3218a6e3ee95b, type: 2}
-  - {fileID: 11400000, guid: 79c72f6fc13eb014b827b0b6537ed540, type: 2}
-  - {fileID: 11400000, guid: 5ca3fe7da7f94534393314474da33c57, type: 2}
+  partyRosterGhosts: []
   partyGhosts: []
-  defeatedGhosts: []
+  defeatedGhosts:
+  - {fileID: 11400000, guid: 663a79169e8b6654b8152177487ad7d8, type: 2}
 --- !u!4 &741202538
 Transform:
   m_ObjectHideFlags: 0

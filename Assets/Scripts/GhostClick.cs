@@ -37,7 +37,7 @@ public class GhostClick : MonoBehaviour
     void OnMouseDown()
     {
        // FightAnimator.SetTrigger("PlayerAttack");
-        battleControllerScript.OnAttackButton();
+        //battleControllerScript.OnAttackButton();
        // Debug.Log("AHHHHH");
     }
 

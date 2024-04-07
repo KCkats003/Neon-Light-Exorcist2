@@ -8,10 +8,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/battleScene.unity
     guid: 66e84c85f21b6214f804a34692eb3c85
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/battleScene2.unity
     guid: f48730f854402544eac5853fd562e0bc
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/OLD/Part1Map_v2.unity
     guid: 355d1f5597199db47b746b61f0fb4968
   - enabled: 0
@@ -20,28 +20,28 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/battleScene4.unity
     guid: 1a9351faf17816644b7b471a775f62e9
-  - enabled: 1
-    path: Assets/Scenes/GameActs/Lab.unity
+  - enabled: 0
+    path: Assets/Scenes/OLD/Lab.unity
     guid: 090e704af7685ce41914347632fb16de
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Part1Map_v2_KatieFix.unity
     guid: 41227e8a2f4cd064b9f1519e05792ca2
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/OLD2/battleSceneKatie_Cowboy.unity
     guid: 72bf166000abe314696946fcc9b80ebd
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/OLD2/battleSceneKatie_Mystic.unity
     guid: 522e7e72913c3224ea1de69bcb984323
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/OLD2/battleSceneKatie_Potion.unity
     guid: c89a47b21bbee6f4e8ae79a809c8f1f7
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/OLD2/battleSceneKatie_Skull.unity
     guid: b25cfa3c670b0eb4295f30d67086d6a0
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Part1Map_v2_KatieFix_Update Animated.unity
     guid: 9fb537b9f5f342c449a22eb0cc44cd97
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/GameActs/battleSceneAndrew.unity
     guid: 75386ba356c2bf34d80b15d5dffa343b
   - enabled: 1
@@ -80,4 +80,22 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Lab_Act1.unity
     guid: a4099a31721377e44ba0ac95e88e7af6
+  - enabled: 1
+    path: Assets/Scenes/GameActs/ACTI.unity
+    guid: 39570c5af155bf943bc1bc355e72e45b
+  - enabled: 1
+    path: Assets/Scenes/GameActs/Tutorial_Lab.unity
+    guid: 1034479d1890f64499187a9bcb7a57f7
+  - enabled: 1
+    path: Assets/Scenes/GameActs/ACTI_Lab.unity
+    guid: 138b253b10b5f3249b0e4f3c60da8aba
+  - enabled: 1
+    path: Assets/Scenes/GameActs/ACTII.unity
+    guid: 3ae934f6ce1cc1548b5055621c7c4c38
+  - enabled: 1
+    path: Assets/Scenes/GameActs/ACTII_Lab.unity
+    guid: f8dfd1d7e61a3764d9374e691bb64355
+  - enabled: 1
+    path: Assets/Scenes/GameActs/ACTIII.unity
+    guid: 75da0ce22791b63448d5eb61812c1c2b
   m_configObjects: {}

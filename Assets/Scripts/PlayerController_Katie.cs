@@ -23,23 +23,24 @@ public class PlayerController_Katie : MonoBehaviour
     private Animator ExploreAnimator;
 
 
+    private Vector3 initialSpawnPosition;
+
     private void Start()
     {
         rb = gameObject.GetComponent<Rigidbody>();
         //BGMusic
         FindObjectOfType<AudioManager>().PlaySound("BGMusic");
 
+        ExploreAnimator = player.GetComponent<Animator>();
+
+        // SpriteRenderer anim_sr = animation_1.GetComponent<SpriteRenderer>();
+        ExploreSpriteRenderer = player.GetComponent<SpriteRenderer>();
+
         // Retrieve playerStartPosition from GameManager
         Vector3 playerStartPosition = GameManager.playerStartPosition;
 
         // Set player's position to playerStartPosition
         transform.position = playerStartPosition;
-
-
-        ExploreAnimator = player.GetComponent<Animator>();
-
-        // SpriteRenderer anim_sr = animation_1.GetComponent<SpriteRenderer>();
-        ExploreSpriteRenderer = player.GetComponent<SpriteRenderer>();
     }
 
     void Update()

@@ -1,0 +1,304 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5917463387494321779
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7587199419693873333}
+  - component: {fileID: 4629282281908667607}
+  - component: {fileID: 7708804097080197889}
+  - component: {fileID: 981112568190089846}
+  - component: {fileID: 868984778830924038}
+  m_Layer: 0
+  m_Name: saul
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7587199419693873333
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5917463387494321779}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 39.61, y: 0.04, z: 32.99}
+  m_LocalScale: {x: 0.11, y: 0.11, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &4629282281908667607
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5917463387494321779}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 4eea766c67ed75a48a33822d23269bc1, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 5.3799996, y: 21.775177}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!65 &7708804097080197889
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5917463387494321779}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 25.939709, y: 21.775177, z: 1.599741}
+  m_Center: {x: 2.1116657, y: 10.8875885, z: 0.1733427}
+--- !u!114 &981112568190089846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5917463387494321779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 692e1c467c59b134891f448fb52d807d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actScenes:
+    actSceneOne: 
+    actSceneTwo: 
+    actSceneThree: 
+  dialogue:
+    battleScene: 
+    HauntingGhost: Electro
+    defaultDialogueLines:
+    - character:
+        name: The Magnificent Saul
+        icon: {fileID: 21300000, guid: 4e91d8d60bcd719409a1d6678ca90cc4, type: 3}
+        iconRight: {fileID: 21300000, guid: 7c31f521df0a69e48ab53df026aca554, type: 3}
+        useIconRight: 1
+      line: '*murmure murmure murmure*'
+    - character:
+        name: Exorcist
+        icon: {fileID: 21300000, guid: cfb207429ded30940ac159851de0f6c1, type: 3}
+        iconRight: {fileID: 21300000, guid: 6d687c9198c2e1c4fa6b9ee389e9e36d, type: 3}
+        useIconRight: 1
+      line: uhh hello?
+    - character:
+        name: The Magnificent Saul
+        icon: {fileID: 21300000, guid: 4e91d8d60bcd719409a1d6678ca90cc4, type: 3}
+        iconRight: {fileID: 21300000, guid: 7c31f521df0a69e48ab53df026aca554, type: 3}
+        useIconRight: 1
+      line: '*murmure murmure murmure*'
+    - character:
+        name: Exorcist
+        icon: {fileID: 21300000, guid: cfb207429ded30940ac159851de0f6c1, type: 3}
+        iconRight: {fileID: 21300000, guid: 6d687c9198c2e1c4fa6b9ee389e9e36d, type: 3}
+        useIconRight: 1
+      line: hello!!??
+    - character:
+        name: The Magnificent Saul
+        icon: {fileID: 21300000, guid: 4e91d8d60bcd719409a1d6678ca90cc4, type: 3}
+        iconRight: {fileID: 21300000, guid: 7c31f521df0a69e48ab53df026aca554, type: 3}
+        useIconRight: 1
+      line: '*murmure murmure*'
+    - character:
+        name: Exorcist
+        icon: {fileID: 21300000, guid: cfb207429ded30940ac159851de0f6c1, type: 3}
+        iconRight: {fileID: 21300000, guid: 6d687c9198c2e1c4fa6b9ee389e9e36d, type: 3}
+        useIconRight: 1
+      line: I SAID HELLO!!!!!!!!!??
+    - character:
+        name: The Magnificent Saul
+        icon: {fileID: 21300000, guid: 4e91d8d60bcd719409a1d6678ca90cc4, type: 3}
+        iconRight: {fileID: 21300000, guid: 7c31f521df0a69e48ab53df026aca554, type: 3}
+        useIconRight: 1
+      line: "Boys and girls, ladies and uhh\u2026 ladies, gather 'round for a spectacle
+        that defies the laws of logic and embraces the art of mishap! Hold onto your
+        hats and prepare to be mystified by the one, the only, The Magnificent Saul!!\r"
+    - character:
+        name: Exorcist
+        icon: {fileID: 21300000, guid: cfb207429ded30940ac159851de0f6c1, type: 3}
+        iconRight: {fileID: 21300000, guid: 6d687c9198c2e1c4fa6b9ee389e9e36d, type: 3}
+        useIconRight: 1
+      line: . . .
+    - character:
+        name: Rhonda
+        icon: {fileID: 21300000, guid: 4e91d8d60bcd719409a1d6678ca90cc4, type: 3}
+        iconRight: {fileID: 21300000, guid: 5805d4898f197514582db17ce355a60e, type: 3}
+        useIconRight: 1
+      line: . . .
+    - character:
+        name: The Magnificent Saul
+        icon: {fileID: 21300000, guid: 4e91d8d60bcd719409a1d6678ca90cc4, type: 3}
+        iconRight: {fileID: 21300000, guid: 7c31f521df0a69e48ab53df026aca554, type: 3}
+        useIconRight: 1
+      line: '*Cough Cough* This is where you clap *Cough Cough*'
+    - character:
+        name: The Magnificent Saul
+        icon: {fileID: 21300000, guid: cfb207429ded30940ac159851de0f6c1, type: 3}
+        iconRight: {fileID: 21300000, guid: 6d687c9198c2e1c4fa6b9ee389e9e36d, type: 3}
+        useIconRight: 1
+      line: "Oh! *CLAP CLAP*\r"
+    - character:
+        name: The Magnificent Saul
+        icon: {fileID: 21300000, guid: 4e91d8d60bcd719409a1d6678ca90cc4, type: 3}
+        iconRight: {fileID: 21300000, guid: 7c31f521df0a69e48ab53df026aca554, type: 3}
+        useIconRight: 1
+      line: "Now tell me, young girl, are you here to get back all the citizens after
+        my trick of a lifetime\r\n\r"
+    - character:
+        name: The Magnificent Saul
+        icon: {fileID: 21300000, guid: cfb207429ded30940ac159851de0f6c1, type: 3}
+        iconRight: {fileID: 21300000, guid: 6d687c9198c2e1c4fa6b9ee389e9e36d, type: 3}
+        useIconRight: 1
+      line: 'What do you mean?
+
+'
+    - character:
+        name: The Magnificent Saul
+        icon: {fileID: 21300000, guid: 4e91d8d60bcd719409a1d6678ca90cc4, type: 3}
+        iconRight: {fileID: 21300000, guid: 7c31f521df0a69e48ab53df026aca554, type: 3}
+        useIconRight: 1
+      line: 'WHAT! You mean you haven''t heard? I the GREAT Saul made the whole city
+        disappear in the greatest disappearing act of all time!!
+
+'
+    - character:
+        name: The Magnificent Saul
+        icon: {fileID: 21300000, guid: cfb207429ded30940ac159851de0f6c1, type: 3}
+        iconRight: {fileID: 21300000, guid: 6d687c9198c2e1c4fa6b9ee389e9e36d, type: 3}
+        useIconRight: 1
+      line: 'You think you caused this?
+
+'
+    - character:
+        name: The Magnificent Saul
+        icon: {fileID: 21300000, guid: 4e91d8d60bcd719409a1d6678ca90cc4, type: 3}
+        iconRight: {fileID: 21300000, guid: 7c31f521df0a69e48ab53df026aca554, type: 3}
+        useIconRight: 1
+      line: "What do you mean think I DID! Only the greatest magician of all time
+        could accomplish such task! Tell em Rhonda! \r\n"
+    - character:
+        name: Rhonda
+        icon: {fileID: 21300000, guid: 4e91d8d60bcd719409a1d6678ca90cc4, type: 3}
+        iconRight: {fileID: 21300000, guid: 537f1d47a31cb7f4790e58ade1c96ddb, type: 3}
+        useIconRight: 1
+      line: "\u2026..\r\r"
+    - character:
+        name: Rhonda
+        icon: {fileID: 21300000, guid: 4e91d8d60bcd719409a1d6678ca90cc4, type: 3}
+        iconRight: {fileID: 21300000, guid: 537f1d47a31cb7f4790e58ade1c96ddb, type: 3}
+        useIconRight: 1
+      line: "\u2026..\u2026."
+    - character:
+        name: The Magnificent Saul
+        icon: {fileID: 21300000, guid: 4e91d8d60bcd719409a1d6678ca90cc4, type: 3}
+        iconRight: {fileID: 21300000, guid: 7c31f521df0a69e48ab53df026aca554, type: 3}
+        useIconRight: 1
+      line: "She doesn\u2019t speak \r\n"
+    - character:
+        name: Rhonda
+        icon: {fileID: 21300000, guid: 4e91d8d60bcd719409a1d6678ca90cc4, type: 3}
+        iconRight: {fileID: 21300000, guid: 537f1d47a31cb7f4790e58ade1c96ddb, type: 3}
+        useIconRight: 1
+      line: "I do he-\r"
+    - character:
+        name: The Magnificent Saul
+        icon: {fileID: 21300000, guid: 4e91d8d60bcd719409a1d6678ca90cc4, type: 3}
+        iconRight: {fileID: 21300000, guid: 7c31f521df0a69e48ab53df026aca554, type: 3}
+        useIconRight: 1
+      line: "Back to me\r\n\r"
+    - character:
+        name: The Magnificent Saul
+        icon: {fileID: 21300000, guid: 4e91d8d60bcd719409a1d6678ca90cc4, type: 3}
+        iconRight: {fileID: 21300000, guid: 7c31f521df0a69e48ab53df026aca554, type: 3}
+        useIconRight: 1
+      line: "As I wave my wand watch as I unfold the tears of time and summon a creature
+        from beyond the time and fold! \r\n"
+    - character:
+        name: The Magnificent Saul
+        icon: {fileID: 21300000, guid: 4e91d8d60bcd719409a1d6678ca90cc4, type: 3}
+        iconRight: {fileID: 21300000, guid: 7c31f521df0a69e48ab53df026aca554, type: 3}
+        useIconRight: 1
+      line: Behold!
+    ghostDefeatedDialogueLines: []
+    finalDialogueLines: []
+    finalDialogue: 0
+--- !u!95 &868984778830924038
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5917463387494321779}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 278ca8698433d3f4eb1013b5382b2227, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

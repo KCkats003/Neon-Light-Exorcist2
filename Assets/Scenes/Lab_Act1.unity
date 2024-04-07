@@ -7890,7 +7890,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   partyRosterGhosts: []
   partyGhosts: []
-  defeatedGhosts: []
+  defeatedGhosts:
+  - {fileID: 11400000, guid: 663a79169e8b6654b8152177487ad7d8, type: 2}
 --- !u!4 &741202538
 Transform:
   m_ObjectHideFlags: 0

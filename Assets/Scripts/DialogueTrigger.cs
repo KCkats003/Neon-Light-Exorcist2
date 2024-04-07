@@ -19,11 +19,17 @@ public class DialogueLine
 }
 
 [System.Serializable]
+public class ActScenes
+{
+    public string actSceneOne;
+    public string actSceneTwo;
+    public string actSceneThree;
+}
+
+[System.Serializable]
 public class Dialogue
 {
     public string battleScene;
-
-    public string nextActScene;
 
     public string HauntingGhost;
 
@@ -38,6 +44,7 @@ public class Dialogue
 
 public class DialogueTrigger : MonoBehaviour
 {
+    public ActScenes actScenes;
     public Dialogue dialogue;
     private bool inRange = false;
 
@@ -90,23 +97,25 @@ public class DialogueTrigger : MonoBehaviour
             DialogueManager.Instance.StartDialogue(dialogue.defaultDialogueLines);
 
 
-            if (GameManager.actI && dialogue.battleScene == "")
+                if (GameManager.actI == true && dialogue.battleScene == "")
                 {
-                Debug.Log("THIS CODE IS RUNNING");
-                DialogueManager.Instance.SetBattleSceneToLoad(dialogue.nextActScene);
+                DialogueManager.Instance.SetBattleSceneToLoad(actScenes.actSceneOne);
                 }
                 else if (GameManager.actII == true && dialogue.battleScene == "")
                 {
-                    DialogueManager.Instance.SetBattleSceneToLoad(dialogue.nextActScene);
+                    DialogueManager.Instance.SetBattleSceneToLoad(actScenes.actSceneTwo);
                 }
                 else if (GameManager.actIII == true && dialogue.battleScene == "")
                 {
-                    DialogueManager.Instance.SetBattleSceneToLoad(dialogue.nextActScene);
+                    DialogueManager.Instance.SetBattleSceneToLoad(actScenes.actSceneThree);
                 } else {
                 DialogueManager.Instance.SetBattleSceneToLoad(dialogue.battleScene);
-                GameManager.instance.ShowGhost(dialogue.HauntingGhost);
+                
                 }
 
+            if (dialogue.HauntingGhost != "") { 
+            GameManager.instance.ShowGhost(dialogue.HauntingGhost);
+            }
 
             /*
             GameObject player = GameObject.FindGameObjectWithTag("Player");

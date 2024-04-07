@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -134,6 +134,10 @@ PrefabInstance:
     - target: {fileID: 1927653760658548674, guid: f8c832378ea560f44a09869afb3d9840, type: 3}
       propertyPath: m_LocalPosition.y
       value: -29.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5850994643493354057, guid: f8c832378ea560f44a09869afb3d9840, type: 3}
+      propertyPath: currentHP
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 8111093670720263626, guid: f8c832378ea560f44a09869afb3d9840, type: 3}
       propertyPath: m_Name
@@ -1440,6 +1444,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 657824490}
     m_Modifications:
+    - target: {fileID: 461548435134139154, guid: c947390fe43b5e04ca50fd1d7cbf048e, type: 3}
+      propertyPath: maxHP
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 461548435134139154, guid: c947390fe43b5e04ca50fd1d7cbf048e, type: 3}
+      propertyPath: currentHP
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 2072500273731921867, guid: c947390fe43b5e04ca50fd1d7cbf048e, type: 3}
       propertyPath: m_Name
       value: MainCharacter_Katie_NoGhostVer
@@ -1514,7 +1526,7 @@ Transform:
   m_GameObject: {fileID: 530899276}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.6, y: 1.65, z: -13.38}
+  m_LocalPosition: {x: 4.6, y: 2.79, z: -13.38}
   m_LocalScale: {x: 0.57881325, y: 0.57881325, z: 0.57881325}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1890,8 +1902,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 539bd67135f58be4fb0c3a365e635da6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  partyRosterGhosts: []
-  partyGhosts: []
+  partyRosterGhosts:
+  - {fileID: 11400000, guid: 663a79169e8b6654b8152177487ad7d8, type: 2}
+  partyGhosts:
+  - {fileID: 5836910687152915272, guid: f614691b6f2a17347a6958fc0856d233, type: 3}
   defeatedGhosts: []
 --- !u!1 &888924351
 GameObject:
@@ -2031,7 +2045,6 @@ Transform:
   m_Children:
   - {fileID: 1061315679}
   - {fileID: 1737468688}
-  - {fileID: 1381856542}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &895650137
@@ -2052,7 +2065,7 @@ MonoBehaviour:
   ghostTwo: {fileID: 0}
   ghostThree: {fileID: 0}
   ghostFour: {fileID: 0}
-  enemyPrefab: {fileID: 8111093670720263626, guid: 45f4de1728c55ec42ad996b6e6f0d66d, type: 3}
+  enemyPrefab: {fileID: 8111093670720263626, guid: f8c832378ea560f44a09869afb3d9840, type: 3}
   playerBattleStation: {fileID: 657824490}
   GhostOneStation: {fileID: 1801309416}
   GhostTwoStation: {fileID: 931933743}
@@ -2062,7 +2075,7 @@ MonoBehaviour:
   playerHUD: {fileID: 1901947085}
   enemyHUD: {fileID: 1059453583}
   state: 0
-  SampleScene: Part1Map_v2_KatieFix_Update
+  SampleScene: ACTI
   player: {fileID: 553574457}
   playerPlaque: {fileID: 1061315678}
   enemyPlaque: {fileID: 1737468687}
@@ -3679,7 +3692,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -41.4, y: 41}
+  m_AnchoredPosition: {x: -10.1, y: 41}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1345883986
@@ -3765,7 +3778,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 133.58105, w: 0}
+  m_margin: {x: 0, y: 0, z: 45.808533, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -3844,37 +3857,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e00809e4013583147a81250a28d777ed, type: 3}
---- !u!1 &1381856540
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1381856542}
-  m_Layer: 0
-  m_Name: Battle System (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1381856542
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1381856540}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 895650135}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1385546887
 GameObject:
   m_ObjectHideFlags: 0
@@ -4276,7 +4258,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -129, y: 41}
+  m_AnchoredPosition: {x: -136.1, y: 41}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1577868472
@@ -4362,7 +4344,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 133.58105, w: 0}
+  m_margin: {x: 0, y: 0, z: 71.217316, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -4621,7 +4603,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -70.3, y: 41}
+  m_AnchoredPosition: {x: -42.8, y: 41}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1654445432

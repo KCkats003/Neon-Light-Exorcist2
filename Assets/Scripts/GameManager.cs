@@ -2,16 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
 
     public static Vector3 playerStartPosition;
-    public static int playerHealth = 50;
+    public static int playerHealth = 100;
+
     public static string objectNameToDestroy;
     public static bool ghostDefeated = false;
     public static List<string> enemiesToDestroy = new List<string>();
     public static bool nextAct;
+
+    public static bool healthSet;
 
     public static bool actI;
     public static bool actII;
@@ -21,6 +25,8 @@ public class GameManager : MonoBehaviour
     public List<GameObject> partyGhosts = new List<GameObject>(); //These are the ones that show up in combat
 
     public List<Ghost> defeatedGhosts = new List<Ghost>(); //for the ghosts you captured
+
+
 
     void Awake()
     {
@@ -34,6 +40,7 @@ public class GameManager : MonoBehaviour
         HideAllGhosts();
 
         Ghost initialDefeatedGhost = new Ghost();
+
     }
 
     void HideAllGhosts()
@@ -58,12 +65,16 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        //Debug.Log("Ghosts in Party Roster:");
-        foreach (Ghost ghost in partyRosterGhosts)
-        {
-            //Debug.Log("- " + ghost.ghostName);
-        }
+        //Debug.Log("Health amount: " + playerHealth);
     }
+
+    private void Start()
+    {
+        playerStartPosition = transform.position;
+        Debug.Log("Player Start Position: " + playerStartPosition);
+        // Other initialization code here
+    }
+
 
     public static void DestroyObjectInSampleScene()
     {
@@ -95,5 +106,10 @@ public class GameManager : MonoBehaviour
     public void AddDefeatedGhost(Ghost ghost)
     {
         defeatedGhosts.Add(ghost);
+    }
+
+    public void SetPlayerPosition(Vector3 position)
+    {
+        playerStartPosition = position;
     }
 }

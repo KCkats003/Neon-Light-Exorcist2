@@ -1,0 +1,277 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1076073905453076687
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 779744422097256587}
+  - component: {fileID: 6339093561466261850}
+  - component: {fileID: 165373666464000483}
+  - component: {fileID: 2648850592704003351}
+  - component: {fileID: 3391849362659259510}
+  m_Layer: 0
+  m_Name: MissGrandma
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &779744422097256587
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1076073905453076687}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 66, y: 0.352, z: 48}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &6339093561466261850
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1076073905453076687}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 1f9ce6aa2c629da4cabd066d8c9c2ab4, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 9, y: 17.5}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!95 &165373666464000483
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1076073905453076687}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f063f92970eb66641ab35c3b9142d0d4, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!65 &2648850592704003351
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1076073905453076687}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 21.599155, y: 23.909998, z: 13.6}
+  m_Center: {x: 0.751946, y: 8.75, z: 0}
+--- !u!114 &3391849362659259510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1076073905453076687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 692e1c467c59b134891f448fb52d807d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    battleScene: 
+    nextActScene: 
+    HauntingGhost: Grim
+    defaultDialogueLines:
+    - character:
+        name: Ms. Grandma
+        icon: {fileID: 21300000, guid: 4e91d8d60bcd719409a1d6678ca90cc4, type: 3}
+        iconRight: {fileID: 21300000, guid: 5794eee7c230b564ebef2315cb8bbcb1, type: 3}
+        useIconRight: 1
+      line: Hello there Darling
+    - character:
+        name: Exorcist
+        icon: {fileID: 21300000, guid: cfb207429ded30940ac159851de0f6c1, type: 3}
+        iconRight: {fileID: 21300000, guid: de4905a9f9ff46e4e868b41d7f9f5dda, type: 3}
+        useIconRight: 1
+      line: "Hello ma\u2019am"
+    - character:
+        name: Ms. Grandma
+        icon: {fileID: 21300000, guid: 4e91d8d60bcd719409a1d6678ca90cc4, type: 3}
+        iconRight: {fileID: 21300000, guid: 5794eee7c230b564ebef2315cb8bbcb1, type: 3}
+        useIconRight: 1
+      line: Oh please just call me Ms. Grandma
+    - character:
+        name: Exorcist
+        icon: {fileID: 21300000, guid: cfb207429ded30940ac159851de0f6c1, type: 3}
+        iconRight: {fileID: 21300000, guid: de4905a9f9ff46e4e868b41d7f9f5dda, type: 3}
+        useIconRight: 1
+      line: It is a pleasure to meet you Ms. Grandma
+    - character:
+        name: Ms. Grandma
+        icon: {fileID: 21300000, guid: 4e91d8d60bcd719409a1d6678ca90cc4, type: 3}
+        iconRight: {fileID: 21300000, guid: 5794eee7c230b564ebef2315cb8bbcb1, type: 3}
+        useIconRight: 1
+      line: Oh, that pleasure is all mine! You were raised so well, unlike that white-livered
+        ghost of death!
+    - character:
+        name: Exorcist
+        icon: {fileID: 21300000, guid: cfb207429ded30940ac159851de0f6c1, type: 3}
+        iconRight: {fileID: 21300000, guid: de4905a9f9ff46e4e868b41d7f9f5dda, type: 3}
+        useIconRight: 1
+      line: Excuse me! Did you say death ghost
+    - character:
+        name: Ms. Grandma
+        icon: {fileID: 21300000, guid: 4e91d8d60bcd719409a1d6678ca90cc4, type: 3}
+        iconRight: {fileID: 21300000, guid: 5794eee7c230b564ebef2315cb8bbcb1, type: 3}
+        useIconRight: 1
+      line: "Why yes sweet child. I was just in my shop selling my cozy paraphernalia\r                                
+        as I\u2019ve been doing for the past century when this scoundrel ghost popped
+        in\r\n"
+    - character:
+        name: Exorcist
+        icon: {fileID: 21300000, guid: cfb207429ded30940ac159851de0f6c1, type: 3}
+        iconRight: {fileID: 21300000, guid: de4905a9f9ff46e4e868b41d7f9f5dda, type: 3}
+        useIconRight: 1
+      line: "Don\u2019t you worry, I\u2019ll take care of that hooligan for y\u2019a!"
+    - character:
+        name: Ms. Grandma
+        icon: {fileID: 21300000, guid: 4e91d8d60bcd719409a1d6678ca90cc4, type: 3}
+        iconRight: {fileID: 21300000, guid: 5794eee7c230b564ebef2315cb8bbcb1, type: 3}
+        useIconRight: 1
+      line: "Why aren\u2019t you the sweetest you remind me of my husband's second
+        cousin\u2019s nephew, what a sweet girl\u2026 a shame she died fighting those
+        spirits. I\u2019m sure your fate will be different"
+    ghostDefeatedDialogueLines:
+    - character:
+        name: Ms. Grandma
+        icon: {fileID: 21300000, guid: 4e91d8d60bcd719409a1d6678ca90cc4, type: 3}
+        iconRight: {fileID: 21300000, guid: 5794eee7c230b564ebef2315cb8bbcb1, type: 3}
+        useIconRight: 1
+      line: "Wow! Aren\u2019t you just a talented fighter, I used to know some great
+        ones back in my day when I used to be the local mafia number-one pillow supplier"
+    - character:
+        name: Exorcist
+        icon: {fileID: 21300000, guid: cfb207429ded30940ac159851de0f6c1, type: 3}
+        iconRight: {fileID: 21300000, guid: de4905a9f9ff46e4e868b41d7f9f5dda, type: 3}
+        useIconRight: 1
+      line: Oh aha, thanks!
+    finalDialogueLines:
+    - character:
+        name: Exorcist
+        icon: {fileID: 21300000, guid: cfb207429ded30940ac159851de0f6c1, type: 3}
+        iconRight: {fileID: 21300000, guid: de4905a9f9ff46e4e868b41d7f9f5dda, type: 3}
+        useIconRight: 1
+      line: " How are you doing, Ms. Grandma? Hopefully, all these spirits aren\u2019t
+        giving you a scare"
+    - character:
+        name: Ms. Grandma
+        icon: {fileID: 21300000, guid: 4e91d8d60bcd719409a1d6678ca90cc4, type: 3}
+        iconRight: {fileID: 21300000, guid: 5794eee7c230b564ebef2315cb8bbcb1, type: 3}
+        useIconRight: 1
+      line: "Well, when you\u2019ve been sitting on death's door for 25 years, you
+        get acquainted with ghouls like them."
+    - character:
+        name: Exorcist
+        icon: {fileID: 21300000, guid: cfb207429ded30940ac159851de0f6c1, type: 3}
+        iconRight: {fileID: 21300000, guid: de4905a9f9ff46e4e868b41d7f9f5dda, type: 3}
+        useIconRight: 1
+      line: How old are you exactly?
+    - character:
+        name: Ms. Grandma
+        icon: {fileID: 21300000, guid: 4e91d8d60bcd719409a1d6678ca90cc4, type: 3}
+        iconRight: {fileID: 21300000, guid: 5794eee7c230b564ebef2315cb8bbcb1, type: 3}
+        useIconRight: 1
+      line: " Excuse me young lady, where are those manners you should never ask
+        a lady their age! Besides, I\u2019m only 45!"
+    - character:
+        name: Exorcist
+        icon: {fileID: 21300000, guid: cfb207429ded30940ac159851de0f6c1, type: 3}
+        iconRight: {fileID: 21300000, guid: de4905a9f9ff46e4e868b41d7f9f5dda, type: 3}
+        useIconRight: 1
+      line: "Ahaha rightttt\u2026 righttt"
+    - character:
+        name: Ms. Grandma
+        icon: {fileID: 21300000, guid: 4e91d8d60bcd719409a1d6678ca90cc4, type: 3}
+        iconRight: {fileID: 21300000, guid: 5794eee7c230b564ebef2315cb8bbcb1, type: 3}
+        useIconRight: 1
+      line: "Well, I have had a couple of death scares in the past years, but I am
+        resilient. Just 3 years ago, I got very cozy in our best-selling reclining
+        chair, 65% off by the way, and I died momentarily! Luckily, my great-great-great-great-grandson
+        was there to get me to the hospital. \r\n"
+    - character:
+        name: Exorcist
+        icon: {fileID: 21300000, guid: cfb207429ded30940ac159851de0f6c1, type: 3}
+        iconRight: {fileID: 21300000, guid: de4905a9f9ff46e4e868b41d7f9f5dda, type: 3}
+        useIconRight: 1
+      line: Wow that must have been a cozy chair
+    - character:
+        name: Ms. Grandma
+        icon: {fileID: 21300000, guid: 4e91d8d60bcd719409a1d6678ca90cc4, type: 3}
+        iconRight: {fileID: 21300000, guid: 5794eee7c230b564ebef2315cb8bbcb1, type: 3}
+        useIconRight: 1
+      line: "It\u2019s a bestseller for a reason, dearie"
+    finalDialogue: 0

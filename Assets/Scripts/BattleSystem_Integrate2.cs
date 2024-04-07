@@ -131,8 +131,13 @@ public class BattleSystem_Integrate2 : MonoBehaviour
         ghostFour = ghostFourGO;
         */
 
+        Debug.Log(GameManager.instance.partyGhosts.Count);
+
         for (int i = 0; i < GameManager.instance.partyGhosts.Count; i++)
         {
+
+            Debug.Log(GameManager.instance.partyGhosts.Count);
+
             GameObject ghostGO = Instantiate(GameManager.instance.partyGhosts[i], GetGhostStation(i));
             switch (i)
             {
@@ -165,16 +170,18 @@ public class BattleSystem_Integrate2 : MonoBehaviour
         //Katies Animationss
         FightAnimator.SetTrigger("PlayerAttack");
         EffectsAnimator.SetTrigger("PlayerHurts");
-        EnemysAnimator.SetTrigger("Hurt");
+        //EnemysAnimator.SetTrigger("Hurt"); !!!!!!!!!!!!!!This commented out because some ghosts dont have!!!!!!!!!!!!!!!!!!!
         // end Katie Additions
 
         bool isDead = enemyUnit.TakeDamage(damageAmount);
 
         if (isDead)
         {
+            GameManager.playerHealth = playerUnit.currentHP;
+
             state = BattleState.WON;
             enemyHUD.SetHP(enemyUnit.currentHP = 0);
-            EndBattle();
+            EndBattle(Ghost);
         }
         else
         {
@@ -226,7 +233,7 @@ public class BattleSystem_Integrate2 : MonoBehaviour
         if (isDead)
         {
             state = BattleState.LOST;
-            EndBattle();
+            EndBattle(Ghost);
         }
         else
         {
@@ -235,19 +242,23 @@ public class BattleSystem_Integrate2 : MonoBehaviour
         }
     }
 
-    void EndBattle()
+    void EndBattle(Ghost ghost)
     {
         if (state == BattleState.WON)
         {
+
+            GameManager.playerHealth = playerUnit.currentHP;
+
+
             GameManager.AddEnemyToDestroy(GameManager.objectNameToDestroy);
             // Load original scene
             SceneManager.LoadScene(SampleScene, LoadSceneMode.Single);
 
-            //I dont know might add the ghost to the inventory IDK
-            GhostManager.Instance.Add(Ghost);
+            // Add the defeated ghost to the GameManager's defeatedGhosts list
+            GameManager.instance.AddDefeatedGhost(ghost); //ADDED this here
 
             //WIN SCREEN
-           WinScreen.SetActive(true);
+            WinScreen.SetActive(true);
 
         }
         else if (state == BattleState.LOST)
@@ -259,19 +270,10 @@ public class BattleSystem_Integrate2 : MonoBehaviour
             //
             LoseScreen.SetActive(true);
         }
-
-        // Store player's health in GameManager
-        GameManager.playerHealth = playerUnit.currentHP;
     }
 
 
     //katie animation
-
-    public void NextScene()
-    {
-        SceneManager.LoadScene(SampleScene, LoadSceneMode.Single);
-
-    }
 
     //end of katie enimation
 
@@ -362,10 +364,18 @@ public class BattleSystem_Integrate2 : MonoBehaviour
 
     void SetGhostColliders(bool isActive)
     {
-        ghostOne.GetComponent<BoxCollider>().enabled = isActive;
-        ghostTwo.GetComponent<BoxCollider>().enabled = isActive;
-        ghostThree.GetComponent<BoxCollider>().enabled = isActive;
-        ghostFour.GetComponent<BoxCollider>().enabled = isActive;
+
+            if (ghostOne != null)
+                ghostOne.GetComponent<BoxCollider>().enabled = isActive;
+
+            if (ghostTwo != null)
+                ghostTwo.GetComponent<BoxCollider>().enabled = isActive;
+
+            if (ghostThree != null)
+                ghostThree.GetComponent<BoxCollider>().enabled = isActive;
+
+            if (ghostFour != null)
+                ghostFour.GetComponent<BoxCollider>().enabled = isActive;
     }
 
     Transform GetGhostStation(int index)
