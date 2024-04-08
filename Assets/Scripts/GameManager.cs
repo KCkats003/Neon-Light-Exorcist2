@@ -71,7 +71,6 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         playerStartPosition = transform.position;
-        Debug.Log("Player Start Position: " + playerStartPosition);
         // Other initialization code here
     }
 

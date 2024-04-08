@@ -394,4 +394,10 @@ public class BattleSystem_Integrate2 : MonoBehaviour
                 return null;
         }
     }
+
+    public void FleeBattle()
+    {
+        // Load the sample scene
+        SceneManager.LoadScene(SampleScene, LoadSceneMode.Single);
+    }
 }

@@ -170,5 +170,7 @@ public class DialogueManager : MonoBehaviour
         textBox.gameObject.SetActive(false);
         btn.gameObject.SetActive(false);
     }
+
+
 }
 
