@@ -170,7 +170,8 @@ public class BattleSystem_Integrate2 : MonoBehaviour
         //Katies Animationss
         FightAnimator.SetTrigger("PlayerAttack");
         EffectsAnimator.SetTrigger("PlayerHurts");
-        //EnemysAnimator.SetTrigger("Hurt"); !!!!!!!!!!!!!!This commented out because some ghosts dont have!!!!!!!!!!!!!!!!!!!
+        EnemysAnimator.SetTrigger("Hurt");
+        
         // end Katie Additions
 
         bool isDead = enemyUnit.TakeDamage(damageAmount);
