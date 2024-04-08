@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.3731193, g: 0.38073996, b: 0.35872698, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2007,7 +2007,7 @@ MonoBehaviour:
   playerHUD: {fileID: 1901947085}
   enemyHUD: {fileID: 1059453583}
   state: 0
-  SampleScene: Part1Map_v2_KatieFix_Update
+  SampleScene: ACTIII
   player: {fileID: 553574457}
   playerPlaque: {fileID: 1061315678}
   enemyPlaque: {fileID: 1737468687}

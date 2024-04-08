@@ -170,7 +170,7 @@ public class BattleSystem_Integrate2 : MonoBehaviour
         //Katies Animationss
         FightAnimator.SetTrigger("PlayerAttack");
         EffectsAnimator.SetTrigger("PlayerHurts");
-        EnemysAnimator.SetTrigger("Hurt");
+        //EnemysAnimator.SetTrigger("Hurt");
         
         // end Katie Additions
 
