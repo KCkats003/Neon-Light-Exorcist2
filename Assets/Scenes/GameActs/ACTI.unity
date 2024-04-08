@@ -4146,7 +4146,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3608933937169964927, guid: b1e8fab4c717ced4ebf8d884afd55dd6, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: AdvanceDialogue
+      value: DisplayNextDialogueLine
       objectReference: {fileID: 0}
     - target: {fileID: 3608933937169964927, guid: b1e8fab4c717ced4ebf8d884afd55dd6, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
