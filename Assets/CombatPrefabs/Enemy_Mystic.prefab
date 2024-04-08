@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6671939839630235521}
   - component: {fileID: 3739512799022725136}
   m_Layer: 0
-  m_Name: vial
+  m_Name: Mystic
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

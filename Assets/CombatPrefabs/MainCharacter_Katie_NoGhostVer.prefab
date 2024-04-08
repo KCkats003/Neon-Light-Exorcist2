@@ -61,7 +61,6 @@ GameObject:
   - component: {fileID: 5985515730172061748}
   - component: {fileID: 2398356834892321063}
   - component: {fileID: 4697420854589210107}
-  - component: {fileID: 5866006921342698247}
   m_Layer: 0
   m_Name: Ex_Idle_Sheet_Small_0
   m_TagString: Player
@@ -157,15 +156,3 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &5866006921342698247
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2450417405455878140}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b969b4c185ae4074aab38052f783d175, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

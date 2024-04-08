@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1706,6 +1706,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 750585018}
   m_CullTransparentMesh: 1
+--- !u!1 &798302180 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6480432567562658343, guid: 4765a2f63f6dd1d478441f61fbb2f776, type: 3}
+  m_PrefabInstance: {fileID: 2098915450}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &815080148
 GameObject:
   m_ObjectHideFlags: 0
@@ -2004,7 +2009,7 @@ MonoBehaviour:
   playerPlaque: {fileID: 1061315678}
   enemyPlaque: {fileID: 1737468687}
   effects: {fileID: 1925374670}
-  enemy: {fileID: 2098915452}
+  enemy: {fileID: 798302180}
   enemyEffects: {fileID: 888924351}
   WinScreen: {fileID: 1095379191}
   LoseScreen: {fileID: 1671022830}
