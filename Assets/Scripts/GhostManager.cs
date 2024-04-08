@@ -102,6 +102,12 @@ public class GhostManager : MonoBehaviour
 
         ghostName.text = ghost.ghostName;
         ghostIconMini.sprite = ghost.iconMini;
+
+        // Parent the instantiated ghost to the correct panel
+        obj.transform.SetParent(parent);
+
+        // Reset the local position to zero to snap it to the panel
+        obj.transform.localPosition = Vector3.zero;
     }
 
 

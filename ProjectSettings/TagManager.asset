@@ -11,6 +11,7 @@ TagManager:
   - PartyMemberPanel
   - Ghost
   - scientist
+  - partyRoster
   layers:
   - Default
   - TransparentFX

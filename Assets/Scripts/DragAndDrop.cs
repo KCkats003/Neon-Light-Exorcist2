@@ -9,6 +9,7 @@ public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IDragHandler, IPo
     private Canvas canvas;
     private Vector2 offset;
     private Transform ghostRosterTransform;
+    private Transform partyRosterTransform;
 
     // Reference to the Ghost associated with this draggable button
     public Ghost ghostData;
@@ -18,6 +19,7 @@ public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IDragHandler, IPo
         rectTransform = GetComponent<RectTransform>();
         canvas = GetComponentInParent<Canvas>();
         ghostRosterTransform = GameObject.Find("ghostRoster").transform;
+        partyRosterTransform = GameObject.Find("partyRoster").transform; // Assuming "partyRoster" is the name of the target party roster transform
     }
 
     public void OnPointerDown(PointerEventData eventData)
@@ -27,18 +29,18 @@ public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IDragHandler, IPo
 
     public void OnDrag(PointerEventData eventData)
     {
-        rectTransform.position = eventData.position + offset; //Fixes the grab position of the mouse... I think
+        rectTransform.position = eventData.position + offset;
     }
 
     public void OnPointerUp(PointerEventData eventData)
     {
         if (eventData.pointerCurrentRaycast.isValid)
         {
-            GameObject panel = eventData.pointerCurrentRaycast.gameObject;
+            Transform targetTransform = eventData.pointerCurrentRaycast.gameObject.transform;
 
-            if (panel.CompareTag("PartyMemberPanel"))
+            if (targetTransform == partyRosterTransform) // Check if the target transform is the party roster transform
             {
-                rectTransform.SetParent(panel.transform);
+                rectTransform.SetParent(targetTransform);
                 rectTransform.localPosition = Vector3.zero;
 
                 if (ghostData != null)
@@ -50,39 +52,20 @@ public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IDragHandler, IPo
                     Debug.LogWarning("No Ghost data found on the dropped ghost object.");
                 }
             }
+            else if (targetTransform == ghostRosterTransform) // Check if the target transform is the ghost roster transform
+            {
+                rectTransform.SetParent(targetTransform);
+                rectTransform.localPosition = Vector3.zero;
+
+                // Remove the ghost from the party roster
+                GameManager.instance.RemoveGhostFromParty(ghostData.gameObject, ghostData);
+            }
             else
             {
-                // Check if the ghost was previously in the party roster
-                bool wasInParty = GameManager.instance.partyRosterGhosts.Contains(ghostData);
-
-                rectTransform.SetParent(ghostRosterTransform);
-                RemoveGhostFromPartyFromAnyPanel(ghostData.gameObject, ghostData);
-
-                // If the ghost was previously in the party roster, remove it from the party roster
-                /*
-                if (wasInParty)
-                {
-                    //GameManager.instance.RemoveGhostFromParty(ghostData.gameObject);
-                }
-                */
+                // Revert the ghost to its original position if dropped on neither roster
+                rectTransform.SetParent(ghostRosterTransform); // Or any default parent
+                rectTransform.localPosition = Vector3.zero;
             }
         }
     }
-
-    private void RemoveGhostFromPartyFromAnyPanel(GameObject ghostObject, Ghost ghost)
-    {
-        if (ghost != null)
-        {
-            Debug.Log("Removing ghost from the party: " + ghost.ghostName);
-        }
-        else
-        {
-            Debug.LogWarning("No Ghost data found on the ghost object.");
-        }
-
-        GameManager.instance.RemoveGhostFromParty(ghostObject, ghost);
-
-    }
-
-
 }
