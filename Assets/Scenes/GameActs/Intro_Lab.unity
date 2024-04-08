@@ -2680,7 +2680,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 32.99998, y: -149.8}
+  m_AnchoredPosition: {x: 32.99998, y: -116}
   m_SizeDelta: {x: 600, y: 219.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &234199836
@@ -6812,7 +6812,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 184.79999, y: -201.90001}
+  m_AnchoredPosition: {x: 242.1, y: -230.7}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &592014932
@@ -14456,8 +14456,8 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 365541509}
   - {fileID: 2142559463}
+  - {fileID: 365541509}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -15661,7 +15661,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6099827303293334895, guid: ffbdef1aa937ca34ab1326949535f7a4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.02
+      value: 0.985
       objectReference: {fileID: 0}
     - target: {fileID: 6099827303293334895, guid: ffbdef1aa937ca34ab1326949535f7a4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -15701,7 +15701,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7792822680772854113, guid: ffbdef1aa937ca34ab1326949535f7a4, type: 3}
       propertyPath: dialogue.defaultDialogueLines.Array.size
-      value: 25
+      value: 26
       objectReference: {fileID: 0}
     - target: {fileID: 7792822680772854113, guid: ffbdef1aa937ca34ab1326949535f7a4, type: 3}
       propertyPath: dialogue.defaultDialogueLines.Array.data[0].line
@@ -15823,17 +15823,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7792822680772854113, guid: ffbdef1aa937ca34ab1326949535f7a4, type: 3}
       propertyPath: dialogue.defaultDialogueLines.Array.data[23].line
-      value: "Thanks again, doctor! \r\n"
-      objectReference: {fileID: 0}
-    - target: {fileID: 7792822680772854113, guid: ffbdef1aa937ca34ab1326949535f7a4, type: 3}
-      propertyPath: dialogue.defaultDialogueLines.Array.data[24].line
       value: "Enough talking! Let\u2019s go! The people of Neo-Wisteria City need
         me!\r\n"
       objectReference: {fileID: 0}
     - target: {fileID: 7792822680772854113, guid: ffbdef1aa937ca34ab1326949535f7a4, type: 3}
+      propertyPath: dialogue.defaultDialogueLines.Array.data[24].line
+      value: "Thanks again, doctor! \r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7792822680772854113, guid: ffbdef1aa937ca34ab1326949535f7a4, type: 3}
       propertyPath: dialogue.defaultDialogueLines.Array.data[25].line
-      value: "I sense an enemy ghost nearby. After you check out the inventory, why
-        don\u2019t you meet me outside? I have some more tips for you!\r\n"
+      value: "Enough talking! Let\u2019s go! The people of Neo-Wisteria City need
+        me!\r\n"
       objectReference: {fileID: 0}
     - target: {fileID: 7792822680772854113, guid: ffbdef1aa937ca34ab1326949535f7a4, type: 3}
       propertyPath: dialogue.defaultDialogueLines.Array.data[26].line
@@ -16046,10 +16046,10 @@ PrefabInstance:
     - target: {fileID: 7792822680772854113, guid: ffbdef1aa937ca34ab1326949535f7a4, type: 3}
       propertyPath: dialogue.defaultDialogueLines.Array.data[25].character.icon
       value: 
-      objectReference: {fileID: 21300000, guid: 4e91d8d60bcd719409a1d6678ca90cc4, type: 3}
+      objectReference: {fileID: 21300000, guid: cfb207429ded30940ac159851de0f6c1, type: 3}
     - target: {fileID: 7792822680772854113, guid: ffbdef1aa937ca34ab1326949535f7a4, type: 3}
       propertyPath: dialogue.defaultDialogueLines.Array.data[25].character.name
-      value: Doctor
+      value: Exorcist
       objectReference: {fileID: 0}
     - target: {fileID: 7792822680772854113, guid: ffbdef1aa937ca34ab1326949535f7a4, type: 3}
       propertyPath: dialogue.defaultDialogueLines.Array.data[26].character.icon
@@ -16170,7 +16170,7 @@ PrefabInstance:
     - target: {fileID: 7792822680772854113, guid: ffbdef1aa937ca34ab1326949535f7a4, type: 3}
       propertyPath: dialogue.defaultDialogueLines.Array.data[25].character.iconRight
       value: 
-      objectReference: {fileID: 21300000, guid: 2bd1a7b50792dbf48925b3b83278528f, type: 3}
+      objectReference: {fileID: 21300000, guid: 92b703d946d3d804bba85e84c3b47830, type: 3}
     - target: {fileID: 7792822680772854113, guid: ffbdef1aa937ca34ab1326949535f7a4, type: 3}
       propertyPath: dialogue.defaultDialogueLines.Array.data[26].character.iconRight
       value: 
@@ -16277,6 +16277,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7792822680772854113, guid: ffbdef1aa937ca34ab1326949535f7a4, type: 3}
       propertyPath: dialogue.defaultDialogueLines.Array.data[24].character.useIconRight
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7792822680772854113, guid: ffbdef1aa937ca34ab1326949535f7a4, type: 3}
+      propertyPath: dialogue.defaultDialogueLines.Array.data[25].character.useIconRight
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8741902363790742615, guid: ffbdef1aa937ca34ab1326949535f7a4, type: 3}
@@ -16857,7 +16861,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 43.999935, y: -67}
+  m_AnchoredPosition: {x: 43.999935, y: -33.199986}
   m_SizeDelta: {x: 600, y: 43.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1697009418
@@ -21094,7 +21098,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5000050837787235293, guid: 7749993ccb903c14ebf6ea5a9b5af483, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.2
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 5000050837787235293, guid: 7749993ccb903c14ebf6ea5a9b5af483, type: 3}
       propertyPath: m_LocalPosition.z
