@@ -7,6 +7,7 @@ public class GhostBase : MonoBehaviour
 
     public Ghost ghost;
 
+
     // Ghost Combat info
 
     public enum GhostType { Red, Blue, Green }
@@ -61,12 +62,15 @@ public class GhostBase : MonoBehaviour
                 {
                     case GhostType.Red:
                         battleSystem.OnAttackButtonRed(skillAmount);
+                     
                         break;
                     case GhostType.Blue:
                         battleSystem.OnAttackButtonBlue(skillAmount);
+                    
                         break;
                     case GhostType.Green:
                         battleSystem.OnAttackButtonGreen(skillAmount);
+                     
                         break;
                     default:
                         Debug.LogWarning("Unhandled GhostType in switch statement");
@@ -76,6 +80,7 @@ public class GhostBase : MonoBehaviour
             else if (skill == GhostSkill.Heal)
             {
                 battleSystem.OnHealButton(skillAmount);
+               
             }
         }
     }

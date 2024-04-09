@@ -482,6 +482,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ghost: {fileID: 0}
+  src: {fileID: 0}
+  dmg: {fileID: 8300000, guid: ac1d0a2e1af161644aaa46ebf586516f, type: 3}
+  heal: {fileID: 0}
   type: 1
   skill: 1
   skillAmount: 20
