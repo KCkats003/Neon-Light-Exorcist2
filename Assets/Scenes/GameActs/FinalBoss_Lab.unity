@@ -14927,11 +14927,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   actScenes:
-    actSceneOne: battleScene_FinalBoss
+    actSceneOne: 
     actSceneTwo: 
     actSceneThree: 
   dialogue:
-    battleScene: 
+    battleScene: battleScene_FinalBoss
     HauntingGhost: 
     defaultDialogueLines:
     - character:
