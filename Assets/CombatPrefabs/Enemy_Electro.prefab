@@ -168,7 +168,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   unitName: Electro
-  damage: 25
-  maxHP: 300
-  currentHP: 300
+  damage: 20
+  maxHP: 110
+  currentHP: 110
   type: 2

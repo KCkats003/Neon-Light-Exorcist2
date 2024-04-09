@@ -7,7 +7,7 @@ using UnityEngine.UI;
 //public enum BattleState { START, PLAYERTURN, ENEMYTURN, WON, LOST }
 //this code merge starts with A ndrew's code and gradually adds my code within
 
-public class BattleSystem_Integrate2 : MonoBehaviour
+public class BattleSystem_Integrate3 : MonoBehaviour
 {
 
     public Ghost Ghost;
@@ -36,6 +36,11 @@ public class BattleSystem_Integrate2 : MonoBehaviour
 
     public string SampleScene;
 
+    //SFX
+    public AudioSource src;
+    public AudioClip dmg,heal;
+
+
 
     //Katies Animationss
 
@@ -58,9 +63,6 @@ public class BattleSystem_Integrate2 : MonoBehaviour
 
     public GameObject enemyEffects;
     private Animator EnemyEffectsAnimator;
-
-     public AudioSource src;
-    public AudioClip dmg,heal;
 
 
     //WIN SCREEN
@@ -174,6 +176,9 @@ public class BattleSystem_Integrate2 : MonoBehaviour
         FightAnimator.SetTrigger("PlayerAttack");
         EffectsAnimator.SetTrigger("PlayerHurts");
         //EnemysAnimator.SetTrigger("Hurt");
+
+        //src.clip = dmg;
+        //src.Play();
         
         // end Katie Additions
 
@@ -203,6 +208,8 @@ public class BattleSystem_Integrate2 : MonoBehaviour
     IEnumerator PlayerHeal(int healAmount)
     {
         FightAnimator.SetTrigger("PlayerHeal");
+        //src.clip = heal;
+        //src.Play();
 
         playerUnit.Heal(healAmount);
         
@@ -302,8 +309,7 @@ public class BattleSystem_Integrate2 : MonoBehaviour
 
 
         enemyHUD.SetHP(enemyUnit.currentHP);
-         src.clip = dmg;
-        src.Play();
+
 
         StartCoroutine(PlayerAttack(skillAmount));
     }
@@ -320,8 +326,6 @@ public class BattleSystem_Integrate2 : MonoBehaviour
 
         enemyHUD.SetHP(enemyUnit.currentHP);
 
-        src.clip = dmg;
-        src.Play();
         StartCoroutine(PlayerAttack(skillAmount));
     }
 
@@ -336,8 +340,6 @@ public class BattleSystem_Integrate2 : MonoBehaviour
 
         enemyHUD.SetHP(enemyUnit.currentHP);
 
-         src.clip = dmg;
-        src.Play();
         StartCoroutine(PlayerAttack(skillAmount));
     }
 
@@ -357,10 +359,11 @@ public class BattleSystem_Integrate2 : MonoBehaviour
     {
         if (state != BattleState.PLAYERTURN)
             return;
-
+            
         src.clip = heal;
         src.Play();
         StartCoroutine(PlayerHeal(skillAmount));
+        
     }
 
     void EnableAllButtons()
