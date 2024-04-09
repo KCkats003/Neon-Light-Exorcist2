@@ -15487,6 +15487,26 @@ PrefabInstance:
       propertyPath: actScenes.actSceneThree
       value: ACTIII
       objectReference: {fileID: 0}
+    - target: {fileID: 7792822680772854113, guid: ffbdef1aa937ca34ab1326949535f7a4, type: 3}
+      propertyPath: dialogue.defaultDialogueLines.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7792822680772854113, guid: ffbdef1aa937ca34ab1326949535f7a4, type: 3}
+      propertyPath: dialogue.defaultDialogueLines.Array.data[0].line
+      value: 'Please come back to talk to me when you''ve defeated  2 more ghosts. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 7792822680772854113, guid: ffbdef1aa937ca34ab1326949535f7a4, type: 3}
+      propertyPath: dialogue.defaultDialogueLines.Array.data[0].character.icon
+      value: 
+      objectReference: {fileID: 21300000, guid: 4e91d8d60bcd719409a1d6678ca90cc4, type: 3}
+    - target: {fileID: 7792822680772854113, guid: ffbdef1aa937ca34ab1326949535f7a4, type: 3}
+      propertyPath: dialogue.defaultDialogueLines.Array.data[0].character.name
+      value: Doctor
+      objectReference: {fileID: 0}
+    - target: {fileID: 7792822680772854113, guid: ffbdef1aa937ca34ab1326949535f7a4, type: 3}
+      propertyPath: dialogue.defaultDialogueLines.Array.data[0].character.iconRight
+      value: 
+      objectReference: {fileID: 21300000, guid: 2bd1a7b50792dbf48925b3b83278528f, type: 3}
     - target: {fileID: 8741902363790742615, guid: ffbdef1aa937ca34ab1326949535f7a4, type: 3}
       propertyPath: m_Name
       value: scientist
