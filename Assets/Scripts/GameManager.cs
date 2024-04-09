@@ -20,6 +20,7 @@ public class GameManager : MonoBehaviour
     public static bool actI;
     public static bool actII;
     public static bool actIII;
+    public static bool finalBattle;
 
     public List<Ghost> partyRosterGhosts = new List<Ghost>(); //This is for the UI
     public List<GameObject> partyGhosts = new List<GameObject>(); //These are the ones that show up in combat

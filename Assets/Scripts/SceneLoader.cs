@@ -41,10 +41,15 @@ public class SceneLoader : MonoBehaviour
             GameManager.actI = false;
             GameManager.actII = true;
         }
-        else if (GameManager.enemiesToDestroy.Count < 3)
+        else if (GameManager.enemiesToDestroy.Count == 5)
         {
             GameManager.actII = false;
             GameManager.actIII = true;
+        }
+        else if (GameManager.enemiesToDestroy.Count == 7){
+            
+            GameManager.actIII = false;
+            GameManager.finalBattle = true;
         }
 
         Debug.Log(GameManager.enemiesToDestroy.Count);

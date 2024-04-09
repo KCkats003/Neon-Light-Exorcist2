@@ -24,6 +24,7 @@ public class ActScenes
     public string actSceneOne;
     public string actSceneTwo;
     public string actSceneThree;
+    public string finalSceneBattle;
 }
 
 [System.Serializable]
@@ -108,7 +109,9 @@ public class DialogueTrigger : MonoBehaviour
                 else if (GameManager.actIII == true && dialogue.battleScene == "")
                 {
                     DialogueManager.Instance.SetBattleSceneToLoad(actScenes.actSceneThree);
-                } else {
+                }else if(GameManager.finalBattle == true && dialogue.battleScene == "") 
+                    DialogueManager.Instance.SetBattleSceneToLoad(actScenes.finalSceneBattle);
+                else {
                 DialogueManager.Instance.SetBattleSceneToLoad(dialogue.battleScene);
                 
                 }

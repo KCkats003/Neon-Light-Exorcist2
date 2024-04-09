@@ -31552,6 +31552,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -8250391018980940560, guid: b5a2a15fa4ae6da41914e91b787c5d33, type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8250391018980940560, guid: b5a2a15fa4ae6da41914e91b787c5d33, type: 3}
       propertyPath: MinDistance
       value: 76.036736
       objectReference: {fileID: 0}

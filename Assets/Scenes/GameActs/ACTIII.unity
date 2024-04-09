@@ -10977,9 +10977,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9825cf75425293940b75eabe8af9be5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentHealthText: {fileID: 0}
-  maxHealthText: {fileID: 0}
-  hpSlider: {fileID: 0}
+  currentHealthText: {fileID: 1820473973}
+  maxHealthText: {fileID: 818076520}
+  hpSlider: {fileID: 1909420364}
 --- !u!4 &342440884
 Transform:
   m_ObjectHideFlags: 0
@@ -22030,7 +22030,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 0.236
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
