@@ -113,4 +113,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameActs/Ending.unity
     guid: 215dfa945f24c8a47981c40c254fd0fb
+  - enabled: 1
+    path: Assets/Scenes/GameActs/ACTIII_Lab.unity
+    guid: bc524925032056b4787e852fe68f110e
   m_configObjects: {}

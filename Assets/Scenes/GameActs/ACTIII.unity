@@ -8261,7 +8261,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1ff248989b86d414fa1b510b6956febd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.3399999
+      value: 0.45
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1ff248989b86d414fa1b510b6956febd, type: 3}
       propertyPath: m_LocalPosition.z
@@ -17007,6 +17007,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2718877974616129090, guid: e0e2285da40ed6f46b272dbadb47df40, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2718877974616129090, guid: e0e2285da40ed6f46b272dbadb47df40, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 10.3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -23630,7 +23638,7 @@ Transform:
   m_GameObject: {fileID: 1692057099}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.99, y: 1.75, z: 0}
+  m_LocalPosition: {x: 9.99, y: -2.9, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -23655,7 +23663,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 4.603794, y: 9.83918, z: 36.494156}
+  m_Size: {x: 14.62, y: 27.6, z: 38.65}
   m_Center: {x: 1.801897, y: 4.41959, z: -4.531847}
 --- !u!114 &1692057103
 MonoBehaviour:
@@ -23669,7 +23677,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8e86958306efbf4bab51333b953d79f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  labEnterScene: 
+  labEnterScene: ACTIII_Lab
 --- !u!1001 &1692855729
 PrefabInstance:
   m_ObjectHideFlags: 0
