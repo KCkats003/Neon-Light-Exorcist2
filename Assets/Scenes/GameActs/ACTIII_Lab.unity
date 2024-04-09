@@ -14926,7 +14926,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   actScenes:
-    actSceneOne: 
+    actSceneOne: FinalBoss_Lab
     actSceneTwo: 
     actSceneThree: 
   dialogue:
