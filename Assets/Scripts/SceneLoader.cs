@@ -32,16 +32,16 @@ public class SceneLoader : MonoBehaviour
         }
 
         // Now that all enemies are destroyed, update scene flags based on enemy count
-        if (GameManager.enemiesToDestroy.Count == 0)
+        if (GameManager.enemiesToDestroy.Count == 1)
         {
             GameManager.actI = true;
         }
-        else if (GameManager.enemiesToDestroy.Count == 2)
+        else if (GameManager.enemiesToDestroy.Count == 3)
         {
             GameManager.actI = false;
             GameManager.actII = true;
         }
-        else if (GameManager.enemiesToDestroy.Count == 5)
+        else if (GameManager.enemiesToDestroy.Count < 3)
         {
             GameManager.actII = false;
             GameManager.actIII = true;
