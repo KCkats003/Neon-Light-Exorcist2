@@ -407,6 +407,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 86841120}
   m_CullTransparentMesh: 1
+--- !u!1001 &94693060
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 895650135}
+    m_Modifications:
+    - target: {fileID: 5500666753937145595, guid: 4b2a3634df10dff449719e1887649385, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.5775628
+      objectReference: {fileID: 0}
+    - target: {fileID: 5500666753937145595, guid: 4b2a3634df10dff449719e1887649385, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.1181679
+      objectReference: {fileID: 0}
+    - target: {fileID: 5500666753937145595, guid: 4b2a3634df10dff449719e1887649385, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 13.982162
+      objectReference: {fileID: 0}
+    - target: {fileID: 5500666753937145595, guid: 4b2a3634df10dff449719e1887649385, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5500666753937145595, guid: 4b2a3634df10dff449719e1887649385, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5500666753937145595, guid: 4b2a3634df10dff449719e1887649385, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5500666753937145595, guid: 4b2a3634df10dff449719e1887649385, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5500666753937145595, guid: 4b2a3634df10dff449719e1887649385, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5500666753937145595, guid: 4b2a3634df10dff449719e1887649385, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5500666753937145595, guid: 4b2a3634df10dff449719e1887649385, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8544565256056053113, guid: 4b2a3634df10dff449719e1887649385, type: 3}
+      propertyPath: m_Name
+      value: Src
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4b2a3634df10dff449719e1887649385, type: 3}
 --- !u!1 &114072765
 GameObject:
   m_ObjectHideFlags: 0
@@ -1826,9 +1883,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   partyRosterGhosts:
-  - {fileID: 11400000, guid: 663a79169e8b6654b8152177487ad7d8, type: 2}
+  - {fileID: 11400000, guid: a0c69b98859ea7f418f85c6fe7acf556, type: 2}
+  - {fileID: 11400000, guid: 5ca3fe7da7f94534393314474da33c57, type: 2}
+  - {fileID: 11400000, guid: 6b8e5d346efc18440ab62b389a72ef74, type: 2}
+  - {fileID: 11400000, guid: 79c72f6fc13eb014b827b0b6537ed540, type: 2}
   partyGhosts:
-  - {fileID: 5836910687152915272, guid: f614691b6f2a17347a6958fc0856d233, type: 3}
+  - {fileID: 5836910687152915272, guid: 3bf92c1f74b201b45803e749cafc11dd, type: 3}
+  - {fileID: 5836910687152915272, guid: 1a89c1f41a40f2b4084146a6c0ef249c, type: 3}
+  - {fileID: 5836910687152915272, guid: 6fea4ffcc1f060e429b4c8bff56abd1f, type: 3}
+  - {fileID: 5836910687152915272, guid: 0b895437cd5668d4293ae85469f28233, type: 3}
   defeatedGhosts: []
 --- !u!1001 &848460948
 PrefabInstance:
@@ -2035,6 +2098,7 @@ Transform:
   m_Children:
   - {fileID: 1061315679}
   - {fileID: 1737468688}
+  - {fileID: 2039171447}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &895650137
@@ -2065,13 +2129,16 @@ MonoBehaviour:
   playerHUD: {fileID: 1901947085}
   enemyHUD: {fileID: 1059453583}
   state: 0
-  SampleScene: ACTI
+  SampleScene: Ending
   player: {fileID: 553574457}
   playerPlaque: {fileID: 1061315678}
   enemyPlaque: {fileID: 1737468687}
   effects: {fileID: 1925374670}
   enemy: {fileID: 1525735092}
   enemyEffects: {fileID: 888924351}
+  src: {fileID: 2039171446}
+  dmg: {fileID: 0}
+  heal: {fileID: 0}
   WinScreen: {fileID: 1095379191}
   LoseScreen: {fileID: 1671022830}
 --- !u!1 &910117586
@@ -6385,6 +6452,16 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1990002320}
   m_CullTransparentMesh: 1
+--- !u!82 &2039171446 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 999258072441151867, guid: 4b2a3634df10dff449719e1887649385, type: 3}
+  m_PrefabInstance: {fileID: 94693060}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2039171447 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5500666753937145595, guid: 4b2a3634df10dff449719e1887649385, type: 3}
+  m_PrefabInstance: {fileID: 94693060}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2102090440
 GameObject:
   m_ObjectHideFlags: 0

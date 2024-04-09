@@ -168,7 +168,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   unitName: Final Boss
-  damage: 20
+  damage: 12
   maxHP: 100
   currentHP: 100
   type: 0

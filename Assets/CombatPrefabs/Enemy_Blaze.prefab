@@ -168,7 +168,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   unitName: Blaze
-  damage: 15
+  damage: 10
   maxHP: 115
   currentHP: 115
   type: 0

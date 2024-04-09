@@ -168,7 +168,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   unitName: Death
-  damage: 25
-  maxHP: 250
-  currentHP: 250
+  damage: 10
+  maxHP: 100
+  currentHP: 100
   type: 1
