@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.3731193, g: 0.38073996, b: 0.35872698, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -8647,7 +8647,7 @@ Transform:
   m_GameObject: {fileID: 383515605}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -172.3, y: 2.2174497, z: 54.4}
+  m_LocalPosition: {x: -191.18, y: 2.2174497, z: 54.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -32959,7 +32959,7 @@ Transform:
   m_GameObject: {fileID: 1466944156}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -120.2, y: 2.2174497, z: 1.7}
+  m_LocalPosition: {x: -120.2, y: 2.2174497, z: 17.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -33984,7 +33984,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2992888174688277625, guid: c5d45161dcca83a4fa7486675abebbdc, type: 3}
       propertyPath: dialogue.HauntingGhost
-      value: 
+      value: vial
       objectReference: {fileID: 0}
     - target: {fileID: 2992888174688277625, guid: c5d45161dcca83a4fa7486675abebbdc, type: 3}
       propertyPath: dialogue.defaultDialogueLines.Array.size
