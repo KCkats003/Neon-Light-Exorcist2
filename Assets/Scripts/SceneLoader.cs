@@ -41,7 +41,7 @@ public class SceneLoader : MonoBehaviour
             GameManager.actI = false;
             GameManager.actII = true;
         }
-        else
+        else if (GameManager.enemiesToDestroy.Count == 5)
         {
             GameManager.actII = false;
             GameManager.actIII = true;
