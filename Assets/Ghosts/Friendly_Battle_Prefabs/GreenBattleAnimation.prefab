@@ -482,7 +482,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 2
-  skill: 0
+  skill: 1
   skillAmount: 20
 --- !u!1 &8514339276915165966
 GameObject:
