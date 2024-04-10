@@ -84,6 +84,12 @@ public class GhostManager : MonoBehaviour
     //Putting all my button info on to the ghosts
     private void InstantiateGhostButton(Ghost ghost, Transform parent)
     {
+        if (ghost.ghostName == "Tutorial")
+        {
+            Debug.Log("Skipping instantiation of ghost with name Tutorial");
+            return;
+        }
+
         GameObject obj = Instantiate(miniGhost, parent);
         var ghostButton = obj.GetComponent<Button>();
         var ghostData = ghost;
