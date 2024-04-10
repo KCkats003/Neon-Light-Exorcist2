@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -14331,6 +14331,7 @@ MonoBehaviour:
     actSceneOne: 
     actSceneTwo: 
     actSceneThree: 
+    finalSceneBattle: 
   dialogue:
     battleScene: 
     HauntingGhost: 
@@ -20917,29 +20918,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 647381814850160029, guid: 7749993ccb903c14ebf6ea5a9b5af483, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2099791581}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7749993ccb903c14ebf6ea5a9b5af483, type: 3}
---- !u!1 &2099791580 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 647381814850160029, guid: 7749993ccb903c14ebf6ea5a9b5af483, type: 3}
-  m_PrefabInstance: {fileID: 2099791579}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2099791581
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2099791580}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0cb3e4e35869a24baf0e30f574f1fad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spawnPosition: {x: 1.9, y: 0.01, z: 2.36}
 --- !u!4 &2099912125 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 809025120156589836, guid: 162c8fa71211dfc4980791b8af5801cf, type: 3}

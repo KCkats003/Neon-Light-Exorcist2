@@ -45,6 +45,9 @@ EditorBuildSettings:
     path: Assets/Scenes/GameActs/battleSceneAndrew.unity
     guid: 75386ba356c2bf34d80b15d5dffa343b
   - enabled: 1
+    path: Assets/Scenes/GameActs/Screen_MainMenu.unity
+    guid: 879d1c43fe428c647ac302971575d40e
+  - enabled: 1
     path: Assets/Scenes/GameActs/Tutorial.unity
     guid: d595aac2728f42e4ebc1be66d27eec3d
   - enabled: 0
@@ -96,11 +99,11 @@ EditorBuildSettings:
     path: Assets/Scenes/GameActs/ACTII_Lab.unity
     guid: f8dfd1d7e61a3764d9374e691bb64355
   - enabled: 1
-    path: Assets/Scenes/GameActs/ACTIII.unity
-    guid: 75da0ce22791b63448d5eb61812c1c2b
-  - enabled: 1
     path: Assets/Scenes/GameActs/Intro_Lab.unity
     guid: 4a6bbbe9e3b7cba48880591c0be85ab0
+  - enabled: 1
+    path: Assets/Scenes/GameActs/ACTIII.unity
+    guid: 75da0ce22791b63448d5eb61812c1c2b
   - enabled: 1
     path: Assets/Scenes/battleScene_Tutorial.unity
     guid: afe947901ea01d346951ec038d4ba262

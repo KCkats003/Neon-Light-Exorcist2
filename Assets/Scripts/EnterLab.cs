@@ -26,10 +26,14 @@ public class EnterLab : MonoBehaviour
         inRange = true;
 
         // Capture the player's position upon entering the trigger zone
+       
         if (other.CompareTag("Player"))
         {
             playerEnterPosition = other.transform.position;
+
+            Debug.Log(playerEnterPosition);
         }
+     
     }
 
     void OnTriggerExit(Collider other)
@@ -41,38 +45,3 @@ public class EnterLab : MonoBehaviour
     }
 }
 
-/*
- * 
- * 
- *     void EndDialogue()
-    {
-        isDialogueActive = false;
-        HideDialogueUI();
-
-        GameObject player = GameObject.FindGameObjectWithTag("Player");
-        if (player != null)
-        {
-            playerSpawnPosition = player.transform.position;
-            //PlayerController playerController = player.GetComponent<PlayerController>();
-            playerSpawnPosition = player.transform.position;
-            PlayerController_Katie playerController = player.GetComponent<PlayerController_Katie>();
-            if (playerController != null)
-            {
-                playerController.SetCanMove(true);
-            }
-        }
-
-        if (!string.IsNullOrEmpty(battleSceneToLoad))
-        {
-
-            GameManager.playerStartPosition = playerSpawnPosition;
-
-            Debug.Log("Location saved at: " + playerSpawnPosition);
-
-            SceneManager.LoadScene(battleSceneToLoad, LoadSceneMode.Single);
-        }
-
-    }
- * 
- * 
- */

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -11404,7 +11404,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6780944543692282449, guid: deb08ddacdb398141b7a5b47504e1c03, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 12.79
       objectReference: {fileID: 0}
     - target: {fileID: 6780944543692282449, guid: deb08ddacdb398141b7a5b47504e1c03, type: 3}
       propertyPath: m_LocalPosition.y
@@ -11412,7 +11412,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6780944543692282449, guid: deb08ddacdb398141b7a5b47504e1c03, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 16.24
       objectReference: {fileID: 0}
     - target: {fileID: 6780944543692282449, guid: deb08ddacdb398141b7a5b47504e1c03, type: 3}
       propertyPath: m_LocalRotation.w
@@ -11450,9 +11450,6 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 833864057570717140, guid: deb08ddacdb398141b7a5b47504e1c03, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 3042558261313602212}
     - targetCorrespondingSourceObject: {fileID: 2894211133893543578, guid: deb08ddacdb398141b7a5b47504e1c03, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1936098874}
@@ -11460,24 +11457,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1936098873}
   m_SourcePrefab: {fileID: 100100000, guid: deb08ddacdb398141b7a5b47504e1c03, type: 3}
---- !u!1 &3042558261313602211 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 833864057570717140, guid: deb08ddacdb398141b7a5b47504e1c03, type: 3}
-  m_PrefabInstance: {fileID: 3042558261313602210}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &3042558261313602212
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3042558261313602211}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0cb3e4e35869a24baf0e30f574f1fad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spawnPosition: {x: 14.9, y: 0, z: 18}
 --- !u!1001 &3286438618909892735
 PrefabInstance:
   m_ObjectHideFlags: 0

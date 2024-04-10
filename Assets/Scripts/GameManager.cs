@@ -22,6 +22,9 @@ public class GameManager : MonoBehaviour
     public static bool actIII;
     public static bool finalBattle;
 
+
+    public static bool shouldSetPosition;
+
     public List<Ghost> partyRosterGhosts = new List<Ghost>(); //This is for the UI
     public List<GameObject> partyGhosts = new List<GameObject>(); //These are the ones that show up in combat
 
@@ -62,17 +65,6 @@ public class GameManager : MonoBehaviour
         ghostToActivate.GetComponent<Renderer>().enabled = true;
         ghostToActivate.GetComponent<BoxCollider>().enabled = true;
 
-    }
-
-    void Update()
-    {
-        //Debug.Log("Health amount: " + playerHealth);
-    }
-
-    private void Start()
-    {
-        playerStartPosition = transform.position;
-        // Other initialization code here
     }
 
 

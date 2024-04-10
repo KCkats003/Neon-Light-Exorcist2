@@ -261,6 +261,8 @@ public class BattleSystem_Integrate2 : MonoBehaviour
             // Add the defeated ghost to the GameManager's defeatedGhosts list
             GameManager.instance.AddDefeatedGhost(ghost); //ADDED this here
 
+            GameManager.shouldSetPosition = true;
+
             //WIN SCREEN
             WinScreen.SetActive(true);
 

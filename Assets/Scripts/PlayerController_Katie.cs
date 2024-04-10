@@ -9,6 +9,9 @@ public class PlayerController_Katie : MonoBehaviour
     public float groundDist;
     private bool canMove = true;  // New variable to control movement
 
+     // New variable to determine if player position should be set
+    private List<string> combatSceneNames = new List<string>();
+
     //public GameObject animation_1;
     public GameObject Static;
 
@@ -16,17 +19,17 @@ public class PlayerController_Katie : MonoBehaviour
     public Rigidbody rb;
 
     public GameObject player; 
-    
-    
+        
     private SpriteRenderer ExploreSpriteRenderer;
 
     private Animator ExploreAnimator;
 
 
-    private Vector3 initialSpawnPosition;
+    //private Vector3 initialSpawnPosition;
 
     private void Start()
     {
+
         rb = gameObject.GetComponent<Rigidbody>();
         //BGMusic
         FindObjectOfType<AudioManager>().PlaySound("BGMusic");
@@ -36,15 +39,21 @@ public class PlayerController_Katie : MonoBehaviour
         // SpriteRenderer anim_sr = animation_1.GetComponent<SpriteRenderer>();
         ExploreSpriteRenderer = player.GetComponent<SpriteRenderer>();
 
-        // Retrieve playerStartPosition from GameManager
-        Vector3 playerStartPosition = GameManager.playerStartPosition;
 
-        // Set player's position to playerStartPosition
-        transform.position = playerStartPosition;
+        if (GameManager.shouldSetPosition == true)
+        {
+            // Set the player's position to the last saved position
+            transform.position = GameManager.playerStartPosition;
+            GameManager.shouldSetPosition = false; // Reset the flag
+        }
+
     }
 
     void Update()
     {
+
+
+
         RaycastHit hit;
         Vector3 castPos = transform.position;
         castPos.y += 1;
@@ -132,5 +141,4 @@ public class PlayerController_Katie : MonoBehaviour
     {
         canMove = move;
     }
-
 }

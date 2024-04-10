@@ -116,7 +116,6 @@ public class DialogueManager : MonoBehaviour
         {
             playerSpawnPosition = player.transform.position;
             //PlayerController playerController = player.GetComponent<PlayerController>();
-            playerSpawnPosition = player.transform.position;
             PlayerController_Katie playerController = player.GetComponent<PlayerController_Katie>();
             if (playerController != null)
             {
@@ -131,14 +130,6 @@ public class DialogueManager : MonoBehaviour
             Debug.Log("Location saved at: " + playerSpawnPosition);
 
             SceneManager.LoadScene(battleSceneToLoad, LoadSceneMode.Single);
-
-            /*
-            GameManager.playerStartPosition = playerSpawnPosition;
-
-            Debug.Log("Location saved at: " + playerSpawnPosition);
-
-            SceneManager.LoadScene(battleSceneToLoad, LoadSceneMode.Single);
-            */
         }
 
     }
