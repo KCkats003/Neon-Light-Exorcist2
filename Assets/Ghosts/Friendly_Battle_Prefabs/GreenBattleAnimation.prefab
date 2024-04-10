@@ -394,7 +394,7 @@ GameObject:
   - component: {fileID: -3140705323051852237}
   - component: {fileID: 8966767382186577830}
   - component: {fileID: 3475221300409845853}
-  - component: {fileID: 874427260126387289}
+  - component: {fileID: 3174846478466005026}
   m_Layer: 0
   m_Name: GreenBattleAnimation
   m_TagString: Untagged
@@ -469,7 +469,7 @@ MonoBehaviour:
   movement: 1
   movementSpeed: 0.1
   movementAmount: 0.1
---- !u!114 &874427260126387289
+--- !u!114 &3174846478466005026
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -478,9 +478,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 5836910687152915272}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ae74f86f0718f84e9ccf8baa0102cf4, type: 3}
+  m_Script: {fileID: 11500000, guid: 314b1c18db7188649b1869c38bfa79e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ghost: {fileID: 0}
   type: 2
   skill: 1
   skillAmount: 20

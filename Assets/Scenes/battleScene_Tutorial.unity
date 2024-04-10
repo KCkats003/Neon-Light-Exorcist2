@@ -697,9 +697,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: BattleSystem_KatieVer, Assembly-CSharp
-        m_MethodName: NextScene
+      - m_Target: {fileID: 895650137}
+        m_TargetAssemblyTypeName: BattleSystem_Integrate2, Assembly-CSharp
+        m_MethodName: FleeBattle
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2931,9 +2931,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: BattleSystem_KatieVer, Assembly-CSharp
-        m_MethodName: NextScene
+      - m_Target: {fileID: 895650137}
+        m_TargetAssemblyTypeName: BattleSystem_Integrate2, Assembly-CSharp
+        m_MethodName: FleeBattle
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

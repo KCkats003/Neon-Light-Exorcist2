@@ -116,6 +116,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 692e1c467c59b134891f448fb52d807d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  actScenes:
+    actSceneOne: 
+    actSceneTwo: 
+    actSceneThree: 
+    finalSceneBattle: 
   dialogue:
     battleScene: 
     HauntingGhost: 
@@ -203,7 +208,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 32.99998, y: -149.8}
+  m_AnchoredPosition: {x: 32.99998, y: -137}
   m_SizeDelta: {x: 600, y: 219.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8843595544817128769
@@ -280,7 +285,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 43.999935, y: -61.999977}
+  m_AnchoredPosition: {x: 43.999935, y: -49.19996}
   m_SizeDelta: {x: 600, y: 43.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3516082012302206223
@@ -430,7 +435,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -180, y: -13.5}
+  m_AnchoredPosition: {x: -178, y: -18}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3502721636564282068
@@ -463,8 +468,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Name
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 654e73375a35b1b4daee2f4799b14b57, type: 2}
+  m_sharedMaterial: {fileID: -8091604836260201122, guid: 654e73375a35b1b4daee2f4799b14b57, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -951,7 +956,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 184.79999, y: -201.90001}
+  m_AnchoredPosition: {x: 242.4, y: -251.59998}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6938323362773224554
