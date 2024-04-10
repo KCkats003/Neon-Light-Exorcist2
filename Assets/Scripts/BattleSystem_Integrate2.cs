@@ -36,6 +36,8 @@ public class BattleSystem_Integrate2 : MonoBehaviour
 
     public string SampleScene;
 
+    public string finalLabScene;
+
 
     //Katies Animationss
 
@@ -266,6 +268,7 @@ public class BattleSystem_Integrate2 : MonoBehaviour
             //WIN SCREEN
             WinScreen.SetActive(true);
 
+
         }
         else if (state == BattleState.LOST)
         {
@@ -412,5 +415,11 @@ public class BattleSystem_Integrate2 : MonoBehaviour
     {
         // Load the sample scene
         SceneManager.LoadScene(SampleScene, LoadSceneMode.Single);
+    }
+
+    public void FleeBattleFinalFight()
+    {
+        //Load the lab before fight
+        SceneManager.LoadScene(finalLabScene, LoadSceneMode.Single);
     }
 }

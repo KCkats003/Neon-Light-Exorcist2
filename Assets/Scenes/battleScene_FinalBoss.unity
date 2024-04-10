@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2174,7 +2174,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f7a07f54c938f348830b25f7255fccb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Ghost: {fileID: 11400000, guid: 2f60154e258986344b0450f83987ff61, type: 2}
+  Ghost: {fileID: 0}
   playerPrefab: {fileID: 361492668}
   ghostOne: {fileID: 0}
   ghostTwo: {fileID: 0}
@@ -2191,6 +2191,7 @@ MonoBehaviour:
   enemyHUD: {fileID: 1059453583}
   state: 0
   SampleScene: Ending
+  finalLabScene: FinalBoss_Lab
   player: {fileID: 553574457}
   playerPlaque: {fileID: 1061315678}
   enemyPlaque: {fileID: 1737468687}
@@ -3920,7 +3921,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 895650137}
         m_TargetAssemblyTypeName: BattleSystem_Integrate2, Assembly-CSharp
-        m_MethodName: FleeBattle
+        m_MethodName: FleeBattleFinalFight
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
