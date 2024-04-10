@@ -1612,7 +1612,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7153865378139151039, guid: 22dd9f960a92a3649ae75f1f50436d17, type: 3}
       propertyPath: dialogue.defaultDialogueLines.Array.data[7].line
-      value: "Oh...yeah. There\u2019s this ugly ghost that\u2019s been following
+      value: "Oh...yeah. There\u2019s this ugly fire ghost that\u2019s been following
         me for the past couple days or whatever. Nothing I\u2019m not used to though,
         It\u2019s hard being in the spotlight, you know? But I\u2019m just like...built
         for being a Star.\r\r"
@@ -35880,6 +35880,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 399028343}
     m_Modifications:
     - target: {fileID: 981112568190089846, guid: b54b15ebb2945ad40b939054fb32a5c9, type: 3}
+      propertyPath: dialogue.defaultDialogueLines.Array.size
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 981112568190089846, guid: b54b15ebb2945ad40b939054fb32a5c9, type: 3}
       propertyPath: dialogue.defaultDialogueLines.Array.data[0].line
       value: '*incoherent murmuring*'
       objectReference: {fileID: 0}
@@ -35920,8 +35924,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 981112568190089846, guid: b54b15ebb2945ad40b939054fb32a5c9, type: 3}
       propertyPath: dialogue.defaultDialogueLines.Array.data[11].line
-      value: "Now tell me, young girl, are you here to get back all the citizens
-        after my trick of a lifetime?\r\n\r"
+      value: 'Now tell me, young girl, are you here to get back all the citizens
+        after my trick of a lifetime?
+
+'
       objectReference: {fileID: 0}
     - target: {fileID: 981112568190089846, guid: b54b15ebb2945ad40b939054fb32a5c9, type: 3}
       propertyPath: dialogue.defaultDialogueLines.Array.data[13].line
@@ -35934,6 +35940,14 @@ PrefabInstance:
       propertyPath: dialogue.defaultDialogueLines.Array.data[15].line
       value: "What do you mean think, I did! Only the greatest magician of all time
         could accomplish such a task! Tell them Rhonda! \r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 981112568190089846, guid: b54b15ebb2945ad40b939054fb32a5c9, type: 3}
+      propertyPath: dialogue.defaultDialogueLines.Array.data[16].line
+      value: "\u2026..\r\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 981112568190089846, guid: b54b15ebb2945ad40b939054fb32a5c9, type: 3}
+      propertyPath: dialogue.defaultDialogueLines.Array.data[17].line
+      value: "\u2026..\u2026."
       objectReference: {fileID: 0}
     - target: {fileID: 981112568190089846, guid: b54b15ebb2945ad40b939054fb32a5c9, type: 3}
       propertyPath: dialogue.defaultDialogueLines.Array.data[18].line
@@ -35949,8 +35963,65 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 981112568190089846, guid: b54b15ebb2945ad40b939054fb32a5c9, type: 3}
       propertyPath: dialogue.defaultDialogueLines.Array.data[21].line
+      value: I'm much better than the likes of that electricity ghost. Unlike them,
+        my act includes much more than just zapping audience members close to them!
+      objectReference: {fileID: 0}
+    - target: {fileID: 981112568190089846, guid: b54b15ebb2945ad40b939054fb32a5c9, type: 3}
+      propertyPath: dialogue.defaultDialogueLines.Array.data[22].line
       value: "As I wave my wand, watch as I unfold the tears of time and summon a
         creature from beyond this realm! \r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 981112568190089846, guid: b54b15ebb2945ad40b939054fb32a5c9, type: 3}
+      propertyPath: dialogue.defaultDialogueLines.Array.data[23].line
+      value: Behold!
+      objectReference: {fileID: 0}
+    - target: {fileID: 981112568190089846, guid: b54b15ebb2945ad40b939054fb32a5c9, type: 3}
+      propertyPath: dialogue.defaultDialogueLines.Array.data[16].character.name
+      value: Rhonda
+      objectReference: {fileID: 0}
+    - target: {fileID: 981112568190089846, guid: b54b15ebb2945ad40b939054fb32a5c9, type: 3}
+      propertyPath: dialogue.defaultDialogueLines.Array.data[18].character.name
+      value: The Magnificent Saul
+      objectReference: {fileID: 0}
+    - target: {fileID: 981112568190089846, guid: b54b15ebb2945ad40b939054fb32a5c9, type: 3}
+      propertyPath: dialogue.defaultDialogueLines.Array.data[19].character.name
+      value: Rhonda
+      objectReference: {fileID: 0}
+    - target: {fileID: 981112568190089846, guid: b54b15ebb2945ad40b939054fb32a5c9, type: 3}
+      propertyPath: dialogue.defaultDialogueLines.Array.data[20].character.name
+      value: The Magnificent Saul
+      objectReference: {fileID: 0}
+    - target: {fileID: 981112568190089846, guid: b54b15ebb2945ad40b939054fb32a5c9, type: 3}
+      propertyPath: dialogue.defaultDialogueLines.Array.data[23].character.icon
+      value: 
+      objectReference: {fileID: 21300000, guid: 4e91d8d60bcd719409a1d6678ca90cc4, type: 3}
+    - target: {fileID: 981112568190089846, guid: b54b15ebb2945ad40b939054fb32a5c9, type: 3}
+      propertyPath: dialogue.defaultDialogueLines.Array.data[23].character.name
+      value: The Magnificent Saul
+      objectReference: {fileID: 0}
+    - target: {fileID: 981112568190089846, guid: b54b15ebb2945ad40b939054fb32a5c9, type: 3}
+      propertyPath: dialogue.defaultDialogueLines.Array.data[16].character.iconRight
+      value: 
+      objectReference: {fileID: 21300000, guid: 537f1d47a31cb7f4790e58ade1c96ddb, type: 3}
+    - target: {fileID: 981112568190089846, guid: b54b15ebb2945ad40b939054fb32a5c9, type: 3}
+      propertyPath: dialogue.defaultDialogueLines.Array.data[18].character.iconRight
+      value: 
+      objectReference: {fileID: 21300000, guid: 7c31f521df0a69e48ab53df026aca554, type: 3}
+    - target: {fileID: 981112568190089846, guid: b54b15ebb2945ad40b939054fb32a5c9, type: 3}
+      propertyPath: dialogue.defaultDialogueLines.Array.data[19].character.iconRight
+      value: 
+      objectReference: {fileID: 21300000, guid: 537f1d47a31cb7f4790e58ade1c96ddb, type: 3}
+    - target: {fileID: 981112568190089846, guid: b54b15ebb2945ad40b939054fb32a5c9, type: 3}
+      propertyPath: dialogue.defaultDialogueLines.Array.data[20].character.iconRight
+      value: 
+      objectReference: {fileID: 21300000, guid: 7c31f521df0a69e48ab53df026aca554, type: 3}
+    - target: {fileID: 981112568190089846, guid: b54b15ebb2945ad40b939054fb32a5c9, type: 3}
+      propertyPath: dialogue.defaultDialogueLines.Array.data[23].character.iconRight
+      value: 
+      objectReference: {fileID: 21300000, guid: 7c31f521df0a69e48ab53df026aca554, type: 3}
+    - target: {fileID: 981112568190089846, guid: b54b15ebb2945ad40b939054fb32a5c9, type: 3}
+      propertyPath: dialogue.defaultDialogueLines.Array.data[23].character.useIconRight
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4629282281908667607, guid: b54b15ebb2945ad40b939054fb32a5c9, type: 3}
       propertyPath: m_Materials.Array.data[0]
