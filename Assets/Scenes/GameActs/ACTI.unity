@@ -44043,8 +44043,44 @@ PrefabInstance:
       value: ben Variant
       objectReference: {fileID: 0}
     - target: {fileID: 1974368535235579564, guid: cc10129d77ce2c74aab5bb990116079c, type: 3}
+      propertyPath: dialogue.finalDialogueLines.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1974368535235579564, guid: cc10129d77ce2c74aab5bb990116079c, type: 3}
       propertyPath: dialogue.defaultDialogueLines.Array.size
       value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 1974368535235579564, guid: cc10129d77ce2c74aab5bb990116079c, type: 3}
+      propertyPath: dialogue.finalDialogueLines.Array.data[0].line
+      value: " Oh, it\u2019s you, the girlfriend stealer."
+      objectReference: {fileID: 0}
+    - target: {fileID: 1974368535235579564, guid: cc10129d77ce2c74aab5bb990116079c, type: 3}
+      propertyPath: dialogue.finalDialogueLines.Array.data[1].line
+      value: Sory Ben...
+      objectReference: {fileID: 0}
+    - target: {fileID: 1974368535235579564, guid: cc10129d77ce2c74aab5bb990116079c, type: 3}
+      propertyPath: dialogue.finalDialogueLines.Array.data[2].line
+      value: It's alright, I'm waiting for my one true love.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1974368535235579564, guid: cc10129d77ce2c74aab5bb990116079c, type: 3}
+      propertyPath: dialogue.finalDialogueLines.Array.data[3].line
+      value: "Ahhh yes Gertrude\u2026 My Gertrude Fitzsgibbons.  She\u2019s so beautiful,
+        the first time I saw her my heart skipped a beat and caused me to flat line.
+        It was so worth it though, the angels in the afterlife didn\u2019t even compare
+        to her beauty.\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1974368535235579564, guid: cc10129d77ce2c74aab5bb990116079c, type: 3}
+      propertyPath: dialogue.finalDialogueLines.Array.data[4].line
+      value: "Wow! She sure sounds like something. \r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1974368535235579564, guid: cc10129d77ce2c74aab5bb990116079c, type: 3}
+      propertyPath: dialogue.finalDialogueLines.Array.data[5].line
+      value: "\rShe really was, but now she\u2019s some big-time actress, singer
+        and model in the big city and doesn\u2019t pay attention to me anymore.\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1974368535235579564, guid: cc10129d77ce2c74aab5bb990116079c, type: 3}
+      propertyPath: dialogue.finalDialogueLines.Array.data[6].line
+      value: "Keep your head up King, I\u2019m sure she\u2019ll come back sometime.\r"
       objectReference: {fileID: 0}
     - target: {fileID: 1974368535235579564, guid: cc10129d77ce2c74aab5bb990116079c, type: 3}
       propertyPath: dialogue.defaultDialogueLines.Array.data[0].line
@@ -44132,6 +44168,76 @@ PrefabInstance:
       propertyPath: dialogue.defaultDialogueLines.Array.data[17].line
       value: "Hmm. Looks like I\u2019ve got to find and meet this \u201Csweetheart\u201D
         of yours\u2026 \r\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1974368535235579564, guid: cc10129d77ce2c74aab5bb990116079c, type: 3}
+      propertyPath: dialogue.ghostDefeatedDialogueLines.Array.data[0].line
+      value: Hey Ben, I got rid of the ghost haunting for you!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1974368535235579564, guid: cc10129d77ce2c74aab5bb990116079c, type: 3}
+      propertyPath: dialogue.ghostDefeatedDialogueLines.Array.data[1].line
+      value: "Y\u2026You did what? I can\u2019t believe you're a hater too...You
+        support our relationship!\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1974368535235579564, guid: cc10129d77ce2c74aab5bb990116079c, type: 3}
+      propertyPath: dialogue.ghostDefeatedDialogueLines.Array.data[2].line
+      value: "Ben\u2026Please, let me explain!\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1974368535235579564, guid: cc10129d77ce2c74aab5bb990116079c, type: 3}
+      propertyPath: dialogue.ghostDefeatedDialogueLines.Array.data[3].line
+      value: "How could you take my sugarboo away?\u2026Not even working out and
+        drinking diet coke could heal this broken heart\u2026"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1974368535235579564, guid: cc10129d77ce2c74aab5bb990116079c, type: 3}
+      propertyPath: dialogue.ghostDefeatedDialogueLines.Array.data[4].line
+      value: "Ah\u2026Sorry, Ben\u2026"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1974368535235579564, guid: cc10129d77ce2c74aab5bb990116079c, type: 3}
+      propertyPath: dialogue.finalDialogueLines.Array.data[0].character.icon
+      value: 
+      objectReference: {fileID: 21300000, guid: 4e91d8d60bcd719409a1d6678ca90cc4, type: 3}
+    - target: {fileID: 1974368535235579564, guid: cc10129d77ce2c74aab5bb990116079c, type: 3}
+      propertyPath: dialogue.finalDialogueLines.Array.data[1].character.icon
+      value: 
+      objectReference: {fileID: 21300000, guid: cfb207429ded30940ac159851de0f6c1, type: 3}
+    - target: {fileID: 1974368535235579564, guid: cc10129d77ce2c74aab5bb990116079c, type: 3}
+      propertyPath: dialogue.finalDialogueLines.Array.data[2].character.icon
+      value: 
+      objectReference: {fileID: 21300000, guid: 4e91d8d60bcd719409a1d6678ca90cc4, type: 3}
+    - target: {fileID: 1974368535235579564, guid: cc10129d77ce2c74aab5bb990116079c, type: 3}
+      propertyPath: dialogue.finalDialogueLines.Array.data[2].character.name
+      value: Ben
+      objectReference: {fileID: 0}
+    - target: {fileID: 1974368535235579564, guid: cc10129d77ce2c74aab5bb990116079c, type: 3}
+      propertyPath: dialogue.finalDialogueLines.Array.data[3].character.icon
+      value: 
+      objectReference: {fileID: 21300000, guid: 4e91d8d60bcd719409a1d6678ca90cc4, type: 3}
+    - target: {fileID: 1974368535235579564, guid: cc10129d77ce2c74aab5bb990116079c, type: 3}
+      propertyPath: dialogue.finalDialogueLines.Array.data[3].character.name
+      value: Ben
+      objectReference: {fileID: 0}
+    - target: {fileID: 1974368535235579564, guid: cc10129d77ce2c74aab5bb990116079c, type: 3}
+      propertyPath: dialogue.finalDialogueLines.Array.data[4].character.icon
+      value: 
+      objectReference: {fileID: 21300000, guid: cfb207429ded30940ac159851de0f6c1, type: 3}
+    - target: {fileID: 1974368535235579564, guid: cc10129d77ce2c74aab5bb990116079c, type: 3}
+      propertyPath: dialogue.finalDialogueLines.Array.data[4].character.name
+      value: Exorcist
+      objectReference: {fileID: 0}
+    - target: {fileID: 1974368535235579564, guid: cc10129d77ce2c74aab5bb990116079c, type: 3}
+      propertyPath: dialogue.finalDialogueLines.Array.data[5].character.icon
+      value: 
+      objectReference: {fileID: 21300000, guid: 4e91d8d60bcd719409a1d6678ca90cc4, type: 3}
+    - target: {fileID: 1974368535235579564, guid: cc10129d77ce2c74aab5bb990116079c, type: 3}
+      propertyPath: dialogue.finalDialogueLines.Array.data[5].character.name
+      value: Ben
+      objectReference: {fileID: 0}
+    - target: {fileID: 1974368535235579564, guid: cc10129d77ce2c74aab5bb990116079c, type: 3}
+      propertyPath: dialogue.finalDialogueLines.Array.data[6].character.icon
+      value: 
+      objectReference: {fileID: 21300000, guid: cfb207429ded30940ac159851de0f6c1, type: 3}
+    - target: {fileID: 1974368535235579564, guid: cc10129d77ce2c74aab5bb990116079c, type: 3}
+      propertyPath: dialogue.finalDialogueLines.Array.data[6].character.name
+      value: Exorcist
       objectReference: {fileID: 0}
     - target: {fileID: 1974368535235579564, guid: cc10129d77ce2c74aab5bb990116079c, type: 3}
       propertyPath: dialogue.defaultDialogueLines.Array.data[0].character.icon
@@ -44278,6 +44384,34 @@ PrefabInstance:
       value: Exorcist
       objectReference: {fileID: 0}
     - target: {fileID: 1974368535235579564, guid: cc10129d77ce2c74aab5bb990116079c, type: 3}
+      propertyPath: dialogue.finalDialogueLines.Array.data[0].character.iconRight
+      value: 
+      objectReference: {fileID: 21300000, guid: 2c376ea1b526ab14893539a7b508fe21, type: 3}
+    - target: {fileID: 1974368535235579564, guid: cc10129d77ce2c74aab5bb990116079c, type: 3}
+      propertyPath: dialogue.finalDialogueLines.Array.data[1].character.iconRight
+      value: 
+      objectReference: {fileID: 21300000, guid: 0f142b9755e017a468a30476667e546c, type: 3}
+    - target: {fileID: 1974368535235579564, guid: cc10129d77ce2c74aab5bb990116079c, type: 3}
+      propertyPath: dialogue.finalDialogueLines.Array.data[2].character.iconRight
+      value: 
+      objectReference: {fileID: 21300000, guid: 2c376ea1b526ab14893539a7b508fe21, type: 3}
+    - target: {fileID: 1974368535235579564, guid: cc10129d77ce2c74aab5bb990116079c, type: 3}
+      propertyPath: dialogue.finalDialogueLines.Array.data[3].character.iconRight
+      value: 
+      objectReference: {fileID: 21300000, guid: 2c376ea1b526ab14893539a7b508fe21, type: 3}
+    - target: {fileID: 1974368535235579564, guid: cc10129d77ce2c74aab5bb990116079c, type: 3}
+      propertyPath: dialogue.finalDialogueLines.Array.data[4].character.iconRight
+      value: 
+      objectReference: {fileID: 21300000, guid: 0f142b9755e017a468a30476667e546c, type: 3}
+    - target: {fileID: 1974368535235579564, guid: cc10129d77ce2c74aab5bb990116079c, type: 3}
+      propertyPath: dialogue.finalDialogueLines.Array.data[5].character.iconRight
+      value: 
+      objectReference: {fileID: 21300000, guid: 2c376ea1b526ab14893539a7b508fe21, type: 3}
+    - target: {fileID: 1974368535235579564, guid: cc10129d77ce2c74aab5bb990116079c, type: 3}
+      propertyPath: dialogue.finalDialogueLines.Array.data[6].character.iconRight
+      value: 
+      objectReference: {fileID: 21300000, guid: 0f142b9755e017a468a30476667e546c, type: 3}
+    - target: {fileID: 1974368535235579564, guid: cc10129d77ce2c74aab5bb990116079c, type: 3}
       propertyPath: dialogue.defaultDialogueLines.Array.data[0].character.iconRight
       value: 
       objectReference: {fileID: 21300000, guid: 2c376ea1b526ab14893539a7b508fe21, type: 3}
@@ -44350,6 +44484,34 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 0f142b9755e017a468a30476667e546c, type: 3}
     - target: {fileID: 1974368535235579564, guid: cc10129d77ce2c74aab5bb990116079c, type: 3}
+      propertyPath: dialogue.ghostDefeatedDialogueLines.Array.data[0].character.icon
+      value: 
+      objectReference: {fileID: 21300000, guid: cfb207429ded30940ac159851de0f6c1, type: 3}
+    - target: {fileID: 1974368535235579564, guid: cc10129d77ce2c74aab5bb990116079c, type: 3}
+      propertyPath: dialogue.ghostDefeatedDialogueLines.Array.data[1].character.icon
+      value: 
+      objectReference: {fileID: 21300000, guid: 4e91d8d60bcd719409a1d6678ca90cc4, type: 3}
+    - target: {fileID: 1974368535235579564, guid: cc10129d77ce2c74aab5bb990116079c, type: 3}
+      propertyPath: dialogue.ghostDefeatedDialogueLines.Array.data[2].character.icon
+      value: 
+      objectReference: {fileID: 21300000, guid: cfb207429ded30940ac159851de0f6c1, type: 3}
+    - target: {fileID: 1974368535235579564, guid: cc10129d77ce2c74aab5bb990116079c, type: 3}
+      propertyPath: dialogue.ghostDefeatedDialogueLines.Array.data[3].character.icon
+      value: 
+      objectReference: {fileID: 21300000, guid: 4e91d8d60bcd719409a1d6678ca90cc4, type: 3}
+    - target: {fileID: 1974368535235579564, guid: cc10129d77ce2c74aab5bb990116079c, type: 3}
+      propertyPath: dialogue.ghostDefeatedDialogueLines.Array.data[4].character.icon
+      value: 
+      objectReference: {fileID: 21300000, guid: cfb207429ded30940ac159851de0f6c1, type: 3}
+    - target: {fileID: 1974368535235579564, guid: cc10129d77ce2c74aab5bb990116079c, type: 3}
+      propertyPath: dialogue.ghostDefeatedDialogueLines.Array.data[5].character.icon
+      value: 
+      objectReference: {fileID: 21300000, guid: 4e91d8d60bcd719409a1d6678ca90cc4, type: 3}
+    - target: {fileID: 1974368535235579564, guid: cc10129d77ce2c74aab5bb990116079c, type: 3}
+      propertyPath: dialogue.ghostDefeatedDialogueLines.Array.data[6].character.icon
+      value: 
+      objectReference: {fileID: 21300000, guid: 4e91d8d60bcd719409a1d6678ca90cc4, type: 3}
+    - target: {fileID: 1974368535235579564, guid: cc10129d77ce2c74aab5bb990116079c, type: 3}
       propertyPath: dialogue.defaultDialogueLines.Array.data[12].character.useIconRight
       value: 1
       objectReference: {fileID: 0}
@@ -44373,6 +44535,30 @@ PrefabInstance:
       propertyPath: dialogue.defaultDialogueLines.Array.data[17].character.useIconRight
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1974368535235579564, guid: cc10129d77ce2c74aab5bb990116079c, type: 3}
+      propertyPath: dialogue.ghostDefeatedDialogueLines.Array.data[0].character.iconRight
+      value: 
+      objectReference: {fileID: 21300000, guid: 0f142b9755e017a468a30476667e546c, type: 3}
+    - target: {fileID: 1974368535235579564, guid: cc10129d77ce2c74aab5bb990116079c, type: 3}
+      propertyPath: dialogue.ghostDefeatedDialogueLines.Array.data[1].character.iconRight
+      value: 
+      objectReference: {fileID: 21300000, guid: 2c376ea1b526ab14893539a7b508fe21, type: 3}
+    - target: {fileID: 1974368535235579564, guid: cc10129d77ce2c74aab5bb990116079c, type: 3}
+      propertyPath: dialogue.ghostDefeatedDialogueLines.Array.data[2].character.iconRight
+      value: 
+      objectReference: {fileID: 21300000, guid: 0f142b9755e017a468a30476667e546c, type: 3}
+    - target: {fileID: 1974368535235579564, guid: cc10129d77ce2c74aab5bb990116079c, type: 3}
+      propertyPath: dialogue.ghostDefeatedDialogueLines.Array.data[3].character.iconRight
+      value: 
+      objectReference: {fileID: 21300000, guid: 2c376ea1b526ab14893539a7b508fe21, type: 3}
+    - target: {fileID: 1974368535235579564, guid: cc10129d77ce2c74aab5bb990116079c, type: 3}
+      propertyPath: dialogue.ghostDefeatedDialogueLines.Array.data[4].character.iconRight
+      value: 
+      objectReference: {fileID: 21300000, guid: 0f142b9755e017a468a30476667e546c, type: 3}
+    - target: {fileID: 1974368535235579564, guid: cc10129d77ce2c74aab5bb990116079c, type: 3}
+      propertyPath: dialogue.ghostDefeatedDialogueLines.Array.data[5].character.iconRight
+      value: 
+      objectReference: {fileID: 21300000, guid: 2c376ea1b526ab14893539a7b508fe21, type: 3}
     - target: {fileID: 4487197135897949909, guid: cc10129d77ce2c74aab5bb990116079c, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
