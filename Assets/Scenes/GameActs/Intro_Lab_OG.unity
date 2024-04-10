@@ -10535,7 +10535,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1503600819777057641, guid: f397f814bc790134094a4b933251eb59, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.4780283
+      value: 5.34
       objectReference: {fileID: 0}
     - target: {fileID: 1503600819777057641, guid: f397f814bc790134094a4b933251eb59, type: 3}
       propertyPath: m_LocalPosition.y
@@ -16333,11 +16333,27 @@ PrefabInstance:
       value: GameManager
       objectReference: {fileID: 0}
     - target: {fileID: 5918207679078488952, guid: b5a2a15fa4ae6da41914e91b787c5d33, type: 3}
+      propertyPath: partyGhosts.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5918207679078488952, guid: b5a2a15fa4ae6da41914e91b787c5d33, type: 3}
       propertyPath: defeatedGhosts.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5918207679078488952, guid: b5a2a15fa4ae6da41914e91b787c5d33, type: 3}
+      propertyPath: partyGhosts.Array.data[0]
+      value: 
+      objectReference: {fileID: 5836910687152915272, guid: f614691b6f2a17347a6958fc0856d233, type: 3}
+    - target: {fileID: 5918207679078488952, guid: b5a2a15fa4ae6da41914e91b787c5d33, type: 3}
       propertyPath: defeatedGhosts.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 663a79169e8b6654b8152177487ad7d8, type: 2}
+    - target: {fileID: 5918207679078488952, guid: b5a2a15fa4ae6da41914e91b787c5d33, type: 3}
+      propertyPath: partyRosterGhosts.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5918207679078488952, guid: b5a2a15fa4ae6da41914e91b787c5d33, type: 3}
+      propertyPath: partyRosterGhosts.Array.data[0]
       value: 
       objectReference: {fileID: 11400000, guid: 663a79169e8b6654b8152177487ad7d8, type: 2}
     m_RemovedComponents: []
