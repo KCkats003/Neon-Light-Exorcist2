@@ -258,7 +258,7 @@ public class BattleSystem_Integrate2 : MonoBehaviour
 
             GameManager.AddEnemyToDestroy(GameManager.objectNameToDestroy);
             // Load original scene
-            SceneManager.LoadScene(SampleScene, LoadSceneMode.Single);
+            
 
             // Add the defeated ghost to the GameManager's defeatedGhosts list
             GameManager.instance.AddDefeatedGhost(ghost); //ADDED this here
@@ -346,18 +346,6 @@ public class BattleSystem_Integrate2 : MonoBehaviour
         StartCoroutine(PlayerAttack(skillAmount));
     }
 
-
-
-    /*
-    public void OnAttackButton()
-    {
-        if (state != BattleState.PLAYERTURN)
-            return;
-
-        StartCoroutine(PlayerAttack());
-    }
-    */
-
     public void OnHealButton(int skillAmount)
     {
         if (state != BattleState.PLAYERTURN)
@@ -409,6 +397,11 @@ public class BattleSystem_Integrate2 : MonoBehaviour
             default:
                 return null;
         }
+    }
+
+    public void winScreen()
+    {
+        SceneManager.LoadScene(SampleScene, LoadSceneMode.Single);
     }
 
     public void FleeBattle()
